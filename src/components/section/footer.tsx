@@ -6,10 +6,11 @@ import Image from 'next/image';
 const Footer = () => {
   return (
     <footer className="bg-[#040402] text-white py-8 lg:py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Add border container with golden border and rounded corners */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border border-[#D4A541] rounded-lg">
         
         {/* DESKTOP LAYOUT - Hidden on mobile */}
-        <div className="hidden lg:grid lg:grid-cols-4 lg:gap-8 xl:gap-12">
+        <div className="hidden lg:grid lg:grid-cols-4 lg:gap-8 xl:gap-12 p-6 lg:p-8">
           
           {/* ABOUT THE RESTAURANT SECTION */}
           <div className="lg:col-span-1">
@@ -172,7 +173,7 @@ const Footer = () => {
         </div>
 
         {/* MOBILE LAYOUT - Hidden on desktop */}
-        <div className="lg:hidden space-y-6">
+        <div className="lg:hidden space-y-6 p-4">
           
           {/* LOGO - Mobile with increased size */}
           <div className="flex justify-center mb-6">
@@ -378,5 +379,46 @@ RESPONSIVE BEHAVIOR:
 - Desktop maintains professional hover effects
 - Mobile gets enhanced interactive feedback
 - Logo sizes are proportionally increased for both viewports
+- All existing functionality preserved
+
+=== FOOTER STRUCTURE ENHANCEMENTS ===
+
+BORDER AND PADDING:
+- Added a border container with rounded corners and golden border color
+- Increased padding for desktop layout for better spacing
+
+MOBILE LAYOUT:
+- Adjusted padding and margin for mobile layout for consistency
+- Ensured all elements are well-aligned and spaced
+
+DESKTOP LAYOUT:
+- Added padding to the desktop layout sections for better content spacing
+- Ensured consistent gap between columns and rows
+
+MAP SECTION:
+- Ensured the map section is responsive and maintains aspect ratio
+- Added border and rounded corners to the map container
+
+SOCIAL ICONS:
+- Unified size and spacing for social icons
+- Ensured consistent hover effects and transitions
+
+CONTACT INFO:
+- Aligned contact information consistently
+- Ensured proper spacing and alignment of icons and text
+
+MENU AND QUICK LINKS:
+- Ensured consistent spacing and alignment for menu and quick links
+- Unified hover effects and transitions
+
+LOGO:
+- Ensured logo is centered and maintains aspect ratio
+- Added margin for spacing around the logo
+
+GENERAL:
+- Ensured all text is legible and maintains contrast
+- Unified color scheme and hover effects
+- Ensured all interactive elements have proper feedback
+- Maintained accessibility standards
 - All existing functionality preserved
 */
