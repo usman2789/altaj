@@ -1,0 +1,5 @@
+#040402 -black
+#D4A541-golden
+For headings & important text → use Cinzel or Playfair Display.
+
+For body text / menus / small UI text → use Lato or Open Sans.
