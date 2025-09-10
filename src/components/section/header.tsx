@@ -53,7 +53,7 @@ const Header = () => {
                 alt="Al Taj Ristorante"
                 width={300}
                 height={300}
-                className="h-14 lg:h-20 w-auto"
+                className="h-16 lg:h-20 w-auto"
               />
             </div>
 
