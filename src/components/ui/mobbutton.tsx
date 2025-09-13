@@ -1,10 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import Link from 'next/link';
 const Button = () => {
   return (
     <StyledWrapper>
-      <button >Prenotare <br/>un tavolo </button>
+      <Link href="/tablebooking">
+        <button>Book A Table</button>
+      </Link>
     </StyledWrapper>
   );
 }
