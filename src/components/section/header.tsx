@@ -19,7 +19,7 @@ const Header = () => {
     { name: 'Home', href: '#' },
     { name: 'Menu', href: '#' },
     { name: 'Order', href: '#' },
-    { name: 'Our Story', href: '#' },
+    { name: 'Our Story', href: '/ourstory' },
     { name: 'Contact', href: '/contact' },
     // To add new menu item: { name: 'New Item', href: '/new-link' },
   ];

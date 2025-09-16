@@ -5,7 +5,7 @@ const Button = () => {
   return (
     <StyledWrapper>
       <Link href="/tablebooking">
-        <button>Book A Table</button>
+        <button>Prenotare <br/>un tavolo</button>
       </Link>
     </StyledWrapper>
   );
