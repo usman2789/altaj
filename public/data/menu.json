@@ -1,0 +1,2132 @@
+[
+  {
+    "id": 1,
+    "name": "Mozzarella Stick",
+    "slug": "mozzarella-stick",
+    "shortDescription": "Stringy mozzarella sticks",
+    "description": "Crispy on the outside, soft and cheesy on the inside",
+    "type": "Fried",
+    "price": "€5.00",
+    "image": "/images/mozzarella-stick.png",
+    "category": "APPETIZERS"
+  },
+  {
+    "id": 2,
+    "name": "Chicken Popcorn",
+    "slug": "chicken-popcorn",
+    "shortDescription": "Crispy fried chicken bites",
+    "description": "Perfect as a snack or appetizer",
+    "price": "€5.00",
+    "image": "/images/chicken-popcorn.png",
+    "category": "APPETIZERS"
+  },
+  {
+    "id": 3,
+    "name": "Chicken Wings 5 PCS",
+    "slug": "chicken-wings-5-pcs",
+    "shortDescription": "5 pieces of tasty chicken wings",
+    "description": "Golden and crispy, perfectly cooked",
+    "price": "€5.00",
+    "image": "/images/chicken-wings.png",
+    "category": "APPETIZERS"
+  },
+  {
+    "id": 4,
+    "name": "Nuggets",
+    "slug": "nuggets",
+    "shortDescription": "Golden Chicken Bites",
+    "description": "Crispy on the outside, tender on the inside. Perfect as a snack.",
+    "priceRange": "€4.00 - €6.00",
+    "image": "/images/nuggets.png",
+    "category": "APPETIZERS"
+  },
+  {
+    "id": 5,
+    "name": "Spiral Chips",
+    "slug": "spiral-chips",
+    "shortDescription": "Spiral-cut chips",
+    "description": "Fried until golden brown, crunchy and delicious",
+    "price": "€4.00",
+    "image": "/images/spiral-chips.png",
+    "category": "APPETIZERS"
+  },
+  {
+    "id": 6,
+    "name": "French Fries",
+    "slug": "french-fries",
+    "shortDescription": "Crispy and light",
+    "description": "Perfect for any occasion, excellent as a snack or side",
+    "priceRange": "€2.00 - €3.50",
+    "image": "/images/french-fries.png",
+    "category": "APPETIZERS"
+  },
+  {
+    "id": 7,
+    "name": "Veggie Tikki",
+    "slug": "veggie-tikki",
+    "shortDescription": "Homemade vegetable croquettes",
+    "description": "Prepared with a mix of vegetables and spices",
+    "price": "€4.00",
+    "image": "/images/veggie-tikki.png",
+    "category": "APPETIZERS"
+  },
+  {
+    "id": 8,
+    "name": "Samosa Plate",
+    "slug": "samosa-plate",
+    "shortDescription": "Assortment of crispy samosas",
+    "description": "Served with gravy and chutney",
+    "price": "€3.00",
+    "image": "/images/samosa-plate.png",
+    "category": "APPETIZERS"
+  },
+  {
+    "id": 9,
+    "name": "Samosa Chat",
+    "slug": "samosa-chat",
+    "shortDescription": "Crispy samosas with sauce",
+    "description": "Seasoned with yogurt, spices and chutney",
+    "price": "€5.00",
+    "image": "/images/samosa-chat.png",
+    "category": "APPETIZERS"
+  },
+  {
+    "id": 10,
+    "name": "Gool Gappe",
+    "slug": "gool-gappe",
+    "shortDescription": "Fried whole wheat flour balls",
+    "description": "Filled with fresh vegetables, crunchy and tangy",
+    "price": "€5.00",
+    "image": "/images/gool-gappe.png",
+    "category": "APPETIZERS"
+  },
+  {
+    "id": 11,
+    "name": "Sabzi Samosa",
+    "slug": "sabzi-samosa",
+    "shortDescription": "Stuffed with potatoes and peas",
+    "description": "Prepared with type '00' flour and spices",
+    "price": "€4.00",
+    "image": "/images/sabzi-samosa.png",
+    "category": "APPETIZERS"
+  },
+  {
+    "id": 12,
+    "name": "Chicken Pakora",
+    "slug": "chicken-pakora",
+    "shortDescription": "Fried chicken cubes",
+    "description": "Prepared with chickpea flour and spices",
+    "price": "€6.00",
+    "image": "/images/chicken-pakora.png",
+    "category": "APPETIZERS"
+  },
+  {
+    "id": 13,
+    "name": "Shrimp Pakora",
+    "slug": "shrimp-pakora",
+    "shortDescription": "5 pieces of fried shrimp",
+    "description": "Made with chickpea flour and spices",
+    "price": "€7.00",
+    "image": "/images/shrimp-pakora.png",
+    "category": "APPETIZERS"
+  },
+  {
+    "id": 14,
+    "name": "Fish Pakora",
+    "slug": "fish-pakora",
+    "shortDescription": "Cod fish fritters",
+    "description": "Made with chickpea flour and spices",
+    "price": "€7.00",
+    "image": "/images/fish-pakora.png",
+    "category": "APPETIZERS"
+  },
+  {
+    "id": 15,
+    "name": "Baingan Pakora",
+    "slug": "baingan-pakora",
+    "shortDescription": "Eggplant fritters",
+    "description": "Made with chickpea flour and spices",
+    "price": "€4.00",
+    "image": "/images/baingan-pakora.png",
+    "category": "APPETIZERS"
+  },
+  {
+    "id": 16,
+    "name": "Paneer Pakora",
+    "slug": "paneer-pakora",
+    "shortDescription": "Fried cheese bites",
+    "description": "Made with chickpea flour and spices",
+    "price": "€6.00",
+    "image": "/images/paneer-pakora.png",
+    "category": "APPETIZERS"
+  },
+  {
+    "id": 17,
+    "name": "Onion Bhaggi",
+    "slug": "onion-bhaggi",
+    "shortDescription": "Traditional onion fritters",
+    "description": "Prepared with onions, chickpea flour and spices",
+    "priceRange": "€4.50 - €10.00",
+    "image": "/images/onion-bhaggi.png",
+    "category": "APPETIZERS"
+  },
+  {
+    "id": 18,
+    "name": "Mix Pakora",
+    "slug": "mix-pakora",
+    "shortDescription": "Traditional Indian snack",
+    "description": "Prepared with onions, potatoes, chickpea flour and spices",
+    "price": "€4.50",
+    "image": "/images/mix-pakora.png",
+    "category": "APPETIZERS"
+  }
+  ,{
+    "id": 19,
+    "name": "Kofte Grill",
+    "slug": "kofte-grill",
+    "shortDescription": "Grilled veal meatballs",
+    "description": "Accompanied by fragrant basmati rice and French fries",
+    "price": "€8.00",
+    "image": "/images/kofte-grill.png",
+    "category": "TANDOOR AND GRILL SPECIALTIES"
+  },
+  {
+    "id": 20,
+    "name": "Chicken Skewers",
+    "slug": "chicken-skewers",
+    "shortDescription": "Succulent chicken skewers",
+    "description": "Flavored with mixed spices and cooked with olive oil",
+    "price": "€6.00",
+    "image": "/images/chicken-skewers.png",
+    "category": "TANDOOR AND GRILL SPECIALTIES"
+  },
+  {
+    "id": 21,
+    "name": "Lamb Rib",
+    "slug": "lamb-rib",
+    "shortDescription": "Succulent, grilled lamb chop",
+    "description": "Accompanied by fragrant basmati rice, fries, salad, herbs, sauces, and bread",
+    "price": "€14.00",
+    "image": "/images/lamb-rib.png",
+    "category": "TANDOOR AND GRILL SPECIALTIES"
+  },
+  {
+    "id": 22,
+    "name": "Beef Rib",
+    "slug": "beef-rib",
+    "shortDescription": "Succulent, grilled beef rib",
+    "description": "Accompanied by fragrant basmati rice, fries, salad, salt, pepper, sauces, and bread",
+    "price": "€12.00",
+    "image": "/images/beef-rib.png",
+    "category": "TANDOOR AND GRILL SPECIALTIES"
+  },
+  {
+    "id": 23,
+    "name": "Beef Steak",
+    "slug": "beef-steak",
+    "shortDescription": "Succulent grilled beef steak",
+    "description": "Served with basmati rice, fries, salad, rosemary, sauces, and bread",
+    "price": "€10.00",
+    "image": "/images/beef-steak.png",
+    "category": "TANDOOR AND GRILL SPECIALTIES"
+  },
+  {
+    "id": 24,
+    "name": "Chicken Steak",
+    "slug": "chicken-steak",
+    "shortDescription": "Succulent, grilled chicken steak",
+    "description": "Accompanied by fragrant basmati rice, fries, salad, sauces, and bread",
+    "price": "€8.00",
+    "image": "/images/chicken-steak.png",
+    "category": "TANDOOR AND GRILL SPECIALTIES"
+  },
+  {
+    "id": 25,
+    "name": "Tandoori Charga",
+    "slug": "tandoori-charga",
+    "shortDescription": "Marinated whole chicken",
+    "description": "Prepared with yogurt, garlic, oil, and aromatic spices",
+    "price": "€15.00",
+    "image": "/images/tandoori-charga.png",
+    "category": "TANDOOR AND GRILL SPECIALTIES"
+  },
+  {
+    "id": 26,
+    "name": "Tandoor Prawns",
+    "slug": "tandoor-prawns",
+    "shortDescription": "Prawns marinated with aromatic spices",
+    "description": "Cooked in the tandoor oven until golden and succulent",
+    "price": "€10.00",
+    "image": "/images/tandoor-prawns.png",
+    "category": "TANDOOR AND GRILL SPECIALTIES"
+  },
+  {
+    "id": 27,
+    "name": "Fish Tikka Tandoor",
+    "slug": "fish-tikka-tandoor",
+    "shortDescription": "Marinated cod fillets",
+    "description": "Prepared with yogurt, garlic, oil, and aromatic spices",
+    "price": "€8.00",
+    "image": "/images/fish-tikka-tandoor.png",
+    "category": "TANDOOR AND GRILL SPECIALTIES"
+  },
+  {
+    "id": 28,
+    "name": "Chicken Seekh Kebab",
+    "slug": "chicken-seekh-kebab",
+    "shortDescription": "Ground chicken with eggs and peppers",
+    "description": "Flavored with chili peppers and spices, grilled golden brown",
+    "price": "€6.00",
+    "image": "/images/chicken-seekh-kebab.png",
+    "category": "TANDOOR AND GRILL SPECIALTIES"
+  },
+  {
+    "id": 29,
+    "name": "Seekh Kebab",
+    "slug": "seekh-kebab",
+    "shortDescription": "Ground beef with peppers",
+    "description": "Flavored with chili peppers and spices, grilled golden brown",
+    "price": "€7.00",
+    "image": "/images/seekh-kebab.png",
+    "category": "TANDOOR AND GRILL SPECIALTIES"
+  },
+  {
+    "id": 30,
+    "name": "Chicken Cheese Kebab",
+    "slug": "chicken-cheese-kebab",
+    "shortDescription": "Ground chicken with cheese",
+    "description": "Flavored with selected spices and cooked on the grill",
+    "price": "€8.00",
+    "image": "/images/chicken-cheese-kebab.png",
+    "category": "TANDOOR AND GRILL SPECIALTIES"
+  },
+  {
+    "id": 31,
+    "name": "Chicken Wings",
+    "slug": "chicken-wings",
+    "shortDescription": "Marinated chicken wings",
+    "description": "Prepared with mayonnaise, yogurt, pepper, and spices",
+    "price": "€6.00",
+    "image": "/images/chicken-wings-grill.png",
+    "category": "TANDOOR AND GRILL SPECIALTIES"
+  },
+  {
+    "id": 32,
+    "name": "Mix Grill AL-TAJ",
+    "slug": "mix-grill-al-taj",
+    "shortDescription": "Selection of grilled specialties",
+    "description": "Includes chicken and beef seekh kebabs, chicken wings, thighs, and grilled fish",
+    "priceRange": "€25.00 - €28.00",
+    "image": "/images/mix-grill-al-taj.png",
+    "category": "TANDOOR AND GRILL SPECIALTIES"
+  },
+  {
+    "id": 33,
+    "name": "Malai Tikka Tandoori",
+    "slug": "malai-tikka-tandoori",
+    "shortDescription": "Chicken cubes marinated in a creamy mixture",
+    "description": "Prepared with fresh bread and aromatic spices",
+    "price": "€8.00",
+    "image": "/images/malai-tikka-tandoori.png",
+    "category": "TANDOOR AND GRILL SPECIALTIES"
+  },
+  {
+    "id": 34,
+    "name": "Chicken Tandoori",
+    "slug": "chicken-tandoori",
+    "shortDescription": "Marinated chicken legs",
+    "description": "Prepared with yogurt and aromatic spices, cooked in the tandoor oven",
+    "price": "€6.00",
+    "image": "/images/chicken-tandoori.png",
+    "category": "TANDOOR AND GRILL SPECIALTIES"
+  },
+  {
+    "id": 35,
+    "name": "Chicken Tikka Tandoor",
+    "slug": "chicken-tikka-tandoor",
+    "shortDescription": "Marinated chicken cubes",
+    "description": "Prepared with yogurt and aromatic spices, cooked golden brown",
+    "price": "€7.00",
+    "image": "/images/chicken-tikka-tandoor.png",
+    "category": "TANDOOR AND GRILL SPECIALTIES"
+  }
+,
+{
+  "id": 36,
+  "name": "Karai Paneer",
+  "slug": "karai-paneer",
+  "shortDescription": "Fresh cheese cooked with curry sauce",
+  "description": "Flavored with selected spices, ideal for vegetarians",
+  "price": "€7.00",
+  "image": "/images/vegetarian/karai-paneer.png",
+  "category": "VEGETARIAN"
+},
+{
+  "id": 37,
+  "name": "Navratan Korma",
+  "slug": "navratan-korma",
+  "shortDescription": "Mixed vegetables cooked with fresh cheese",
+  "description": "Enriched with cream and curry sauce",
+  "price": "€8.00",
+  "image": "/images/vegetarian/navratan-korma.png",
+  "category": "VEGETARIAN"
+},
+{
+  "id": 38,
+  "name": "Bengan Bartha",
+  "slug": "bengan-bartha",
+  "shortDescription": "Grilled eggplant cooked with curry sauce",
+  "description": "Enriched with fresh cream and flavored with spices",
+  "price": "€7.00",
+  "image": "/images/vegetarian/bengan-bartha.png",
+  "category": "VEGETARIAN"
+},
+{
+  "id": 39,
+  "name": "Aloo Matar",
+  "slug": "aloo-matar",
+  "shortDescription": "Potatoes cooked with fresh peas",
+  "description": "Prepared with curry sauce and flavored with spices",
+  "price": "€6.00",
+  "image": "/images/vegetarian/aloo-matar.png",
+  "category": "VEGETARIAN"
+},
+{
+  "id": 40,
+  "name": "Shahi Paneer",
+  "slug": "shahi-paneer",
+  "shortDescription": "Fresh cheese cooked with almonds and cashews",
+  "description": "Flavored with selected spices",
+  "price": "€7.00",
+  "image": "/images/vegetarian/shahi-paneer.png",
+  "category": "VEGETARIAN"
+},
+{
+  "id": 41,
+  "name": "Channa Paneer",
+  "slug": "channa-paneer",
+  "shortDescription": "Chickpeas cooked with cream and fresh cheese",
+  "description": "Enriched with spices",
+  "price": "€6.00",
+  "image": "/images/vegetarian/channa-paneer.png",
+  "category": "VEGETARIAN"
+},
+{
+  "id": 42,
+  "name": "Aloo Palak",
+  "slug": "aloo-palak",
+  "shortDescription": "Potatoes cooked with fresh spinach",
+  "description": "Prepared with fresh cream and flavored with spices",
+  "price": "€6.00",
+  "image": "/images/vegetarian/aloo-palak.png",
+  "category": "VEGETARIAN"
+},
+{
+  "id": 43,
+  "name": "Karella Masala",
+  "slug": "karella-masala",
+  "shortDescription": "Karella cooked with onions and tomatoes",
+  "description": "Flavored with selected spices, available with gosht or qeema options",
+  "price": "€7.00",
+  "image": "/images/vegetarian/karella-masala.png",
+  "category": "VEGETARIAN"
+},
+{
+  "id": 44,
+  "name": "Okra (Bindi) Masala",
+  "slug": "okra-bindi-masala",
+  "shortDescription": "Okra cooked with onions and tomatoes",
+  "description": "Flavored with selected spices, available with gosht or qeema options",
+  "price": "€7.00",
+  "image": "/images/vegetarian/okra-bindi-masala.png",
+  "category": "VEGETARIAN"
+},
+{
+  "id": 45,
+  "name": "Palak Paneer",
+  "slug": "palak-paneer",
+  "shortDescription": "Fresh spinach and paneer cheese",
+  "description": "Prepared with cream, curry sauce and spices",
+  "price": "€7.00",
+  "image": "/images/vegetarian/palak-paneer.png",
+  "category": "VEGETARIAN"
+},
+{
+  "id": 46,
+  "name": "Mix Sabzi",
+  "slug": "mix-sabzi",
+  "shortDescription": "Fresh vegetable mix",
+  "description": "Includes potatoes, carrots, peas and peppers flavored with spices",
+  "price": "€6.00",
+  "image": "/images/vegetarian/mix-sabzi.png",
+  "category": "VEGETARIAN"
+}
+,
+
+  {
+    "id": 47,
+    "name": "Daal Masoor",
+    "slug": "daal-masoor",
+    "shortDescription": "Red lentils cooked in curry sauce",
+    "description": "Red lentils cooked in curry sauce enriched with butter and spices",
+    "price": "€6.00",
+    "image": "/images/daal-masoor.png",
+    "category": "DAAL CURRY SPECIALTY"
+  },
+  {
+    "id": 48,
+    "name": "Daal Mash",
+    "slug": "daal-mash",
+    "shortDescription": "White lentils cooked in curry sauce",
+    "description": "White lentils cooked in curry sauce flavored with aromatic spices",
+    "price": "€7.00",
+    "image": "/images/daal-mash.png",
+    "category": "DAAL CURRY SPECIALTY"
+  },
+  {
+    "id": 49,
+    "name": "Daal Chana",
+    "slug": "daal-chana",
+    "shortDescription": "Yellow lentils cooked in curry sauce",
+    "description": "Yellow lentils cooked in curry sauce enriched with butter and spices",
+    "price": "€6.00",
+    "image": "/images/daal-chana.png",
+    "category": "DAAL CURRY SPECIALTY"
+  },
+  {
+    "id": 50,
+    "name": "Chicken Sweet and Sour",
+    "slug": "chicken-sweet-and-sour",
+    "shortDescription": "Chicken cubes in a sweet and sour sauce",
+    "description": "Diced chicken in a sweet and sour sauce with fresh cream, coconut powder, lemon juice and sugar",
+    "price": "€10.00",
+    "image": "/images/chicken-sweet-and-sour.png",
+    "category": "MAIN COURSES - CHICKEN SPECIALTIES"
+  },
+  {
+    "id": 51,
+    "name": "Butter Chicken",
+    "slug": "butter-chicken",
+    "shortDescription": "Chicken cubes cooked in the tandoor oven",
+    "description": "Diced chicken cooked in the tandoor oven with peppers, onions, butter and spices",
+    "price": "€10.00",
+    "image": "/images/butter-chicken.png",
+    "category": "MAIN COURSES - CHICKEN SPECIALTIES"
+  },
+  {
+    "id": 52,
+    "name": "Chicken Tikka Masala",
+    "slug": "chicken-tikka-masala",
+    "shortDescription": "Chicken cubes cooked in the tandoor oven",
+    "description": "Diced chicken cooked in the tandoor oven with bell peppers, coriander and a creamy curry sauce",
+    "price": "€9.00",
+    "image": "/images/chicken-tikka-masala.png",
+    "category": "MAIN COURSES - CHICKEN SPECIALTIES"
+  },
+  {
+    "id": 53,
+    "name": "Chicken Jalfrezi",
+    "slug": "chicken-jalfrezi",
+    "shortDescription": "Chicken cubes cooked with peppers and fresh tomatoes",
+    "description": "Diced chicken with peppers, fresh tomatoes and eggs in a curry sauce",
+    "price": "€8.00",
+    "image": "/images/chicken-jalfrezi.png",
+    "category": "MAIN COURSES - CHICKEN SPECIALTIES"
+  },
+  {
+    "id": 54,
+    "name": "Chicken Palik",
+    "slug": "chicken-palik",
+    "shortDescription": "Chicken cubes cooked with spinach",
+    "description": "Diced chicken and spinach in a creamy butter curry sauce",
+    "price": "€8.00",
+    "image": "/images/chicken-palik.png",
+    "category": "MAIN COURSES - CHICKEN SPECIALTIES"
+  },
+  {
+    "id": 55,
+    "name": "Chicken Chili Taj",
+    "slug": "chicken-chili-taj",
+    "shortDescription": "Chicken cubes cooked with peppers and chili",
+    "description": "Diced chicken with peppers and chili in a spicy curry sauce",
+    "price": "€8.00",
+    "image": "/images/chicken-chili-taj.png",
+    "category": "MAIN COURSES - CHICKEN SPECIALTIES"
+  },
+  {
+    "id": 56,
+    "name": "Chicken Vindaloo",
+    "slug": "chicken-vindaloo",
+    "shortDescription": "Chicken cubes cooked in a spicy curry sauce",
+    "description": "Diced chicken and potatoes cooked in a spicy curry sauce",
+    "price": "€7.00",
+    "image": "/images/chicken-vindaloo.png",
+    "category": "MAIN COURSES - CHICKEN SPECIALTIES"
+  },
+  {
+    "id": 57,
+    "name": "Madras Chicken Curry",
+    "slug": "madras-chicken-curry",
+    "shortDescription": "Chicken cubes cooked in a spicy curry sauce",
+    "description": "Diced chicken in a curry sauce with fresh cream, coconut powder and curry leaves",
+    "price": "€8.00",
+    "image": "/images/madras-chicken-curry.png",
+    "category": "MAIN COURSES - CHICKEN SPECIALTIES"
+  },
+  {
+    "id": 58,
+    "name": "Chicken Curry",
+    "slug": "chicken-curry",
+    "shortDescription": "Chicken cubes cooked in a savory curry sauce",
+    "description": "Diced chicken cooked in curry sauce with coriander and aromatic spices",
+    "price": "€8.00",
+    "image": "/images/chicken-curry.png",
+    "category": "MAIN COURSES - CHICKEN SPECIALTIES"
+  },
+  {
+    "id": 59,
+    "name": "Aloo Kima",
+    "slug": "aloo-kima",
+    "shortDescription": "Ground beef with potatoes",
+    "description": "Minced beef with potatoes cooked in a spicy curry sauce",
+    "price": "€8.00",
+    "image": "/images/aloo-kima.png",
+    "category": "MAIN COURSES - LAMB SPECIALTIES"
+  },
+  {
+    "id": 60,
+    "name": "Kima Mattr",
+    "slug": "kima-mattr",
+    "shortDescription": "Ground beef with peas",
+    "description": "Minced beef with peas cooked in a rich and spicy curry sauce",
+    "price": "€9.00",
+    "image": "/images/kima-mattr.png",
+    "category": "MAIN COURSES - LAMB SPECIALTIES"
+  },
+  {
+    "id": 61,
+    "name": "Lamb Palak",
+    "slug": "lamb-palak",
+    "shortDescription": "Lamb meat with fresh spinach",
+    "description": "Tender lamb meat cooked with fresh spinach in a creamy curry sauce with butter",
+    "price": "€10.00",
+    "image": "/images/lamb-palak.png",
+    "category": "MAIN COURSES - LAMB SPECIALTIES"
+  },
+  {
+    "id": 62,
+    "name": "Lamb Vindaloo",
+    "slug": "lamb-vindaloo",
+    "shortDescription": "Spiced lamb with potatoes",
+    "description": "Lamb with potatoes cooked in a spicy curry sauce",
+    "price": "€10.00",
+    "image": "/images/lamb-vindaloo.png",
+    "category": "MAIN COURSES - LAMB SPECIALTIES"
+  },
+  {
+    "id": 63,
+    "name": "Lamb Korma",
+    "slug": "lamb-korma",
+    "shortDescription": "Tender lamb in a creamy curry sauce",
+    "description": "Lamb meat cooked in a creamy curry sauce with butter and fresh cream",
+    "price": "€11.00",
+    "image": "/images/lamb-korma.png",
+    "category": "MAIN COURSES - LAMB SPECIALTIES"
+  },
+  {
+    "id": 64,
+    "name": "Lamb Moughlai Korma",
+    "slug": "lamb-moughlai-korma",
+    "shortDescription": "Tender lamb meat in a creamy sauce",
+    "description": "Lamb meat cooked in a creamy sauce enriched with almonds, cashews and coconut",
+    "price": "€12.00",
+    "image": "/images/lamb-moughlai-korma.png",
+    "category": "MAIN COURSES - LAMB SPECIALTIES"
+  }
+,
+{
+  "id": 65,
+  "name": "Lamb Karai",
+  "slug": "lamb-karai",
+  "shortDescription": "Tender lamb meat with curry sauce",
+  "description": "Tender lamb meat cooked with fresh tomatoes, onions, and curry sauce, enriched with aromatic spices.",
+  "price": "€12.00",
+  "image": "/images/lamb-karai.png",
+  "category": "MAIN COURSES - LAMB SPECIALTIES"
+},
+{
+  "id": 66,
+  "name": "Lamb Madras Curry",
+  "slug": "lamb-madras-curry",
+  "shortDescription": "Spicy lamb curry",
+  "description": "Lamb meat prepared with dried chilies, coconut, and curry leaves, offering a bold and spicy taste.",
+  "price": "€12.00",
+  "image": "/images/lamb-madras-curry.png",
+  "category": "MAIN COURSES - LAMB SPECIALTIES"
+},
+{
+  "id": 67,
+  "name": "Lamb Curry",
+  "slug": "lamb-curry",
+  "shortDescription": "Classic lamb curry",
+  "description": "Tender lamb pieces cooked in a rich curry sauce with fresh spices and herbs.",
+  "price": "€11.00",
+  "image": "/images/lamb-curry.png",
+  "category": "MAIN COURSES - LAMB SPECIALTIES"
+},
+{
+  "id": 68,
+  "name": "Shrimp Masala",
+  "slug": "shrimp-masala",
+  "shortDescription": "Shrimp with spicy curry",
+  "description": "Fresh shrimp cooked with peppers and tomatoes in a rich, spicy curry sauce.",
+  "price": "€12.00",
+  "image": "/images/shrimp-masala.png",
+  "category": "FISH CURRY SPECIALTIES"
+},
+{
+  "id": 69,
+  "name": "Shrimp Curry",
+  "slug": "shrimp-curry",
+  "shortDescription": "Shrimp in aromatic curry",
+  "description": "Juicy prawns simmered in a rich curry sauce infused with aromatic spices.",
+  "price": "€11.00",
+  "image": "/images/shrimp-curry.png",
+  "category": "FISH CURRY SPECIALTIES"
+},
+{
+  "id": 70,
+  "name": "Fish Jalfrezi",
+  "slug": "fish-jalfrezi",
+  "shortDescription": "Spicy cod curry",
+  "description": "Fresh cod cooked with peppers, onions, and tomatoes in a spicy curry sauce.",
+  "price": "€10.00",
+  "image": "/images/fish-jalfrezi.png",
+  "category": "FISH CURRY SPECIALTIES"
+},
+{
+  "id": 71,
+  "name": "Kirla Fish Curry",
+  "slug": "kirla-fish-curry",
+  "shortDescription": "Cod in creamy curry",
+  "description": "Cod fish simmered in curry sauce with dried chili, coconut powder, and fresh cream.",
+  "price": "€11.00",
+  "image": "/images/kirla-fish-curry.png",
+  "category": "FISH CURRY SPECIALTIES"
+},
+{
+  "id": 72,
+  "name": "Goan Fish Curry",
+  "slug": "goan-fish-curry",
+  "shortDescription": "Spicy Goan-style fish",
+  "description": "Fresh cod cooked in a spicy curry sauce with aromatic curry leaves for a traditional Goan flavor.",
+  "price": "€10.00",
+  "image": "/images/goan-fish-curry.png",
+  "category": "FISH CURRY SPECIALTIES"
+},
+{
+  "id": 73,
+  "name": "Basmati Rice",
+  "slug": "basmati-rice",
+  "shortDescription": "Delicate aromatic rice",
+  "description": "Natural basmati rice seasoned with salt and butter, cooked to perfection with a delicate aroma.",
+  "price": "€3.50",
+  "image": "/images/basmati-rice.png",
+  "category": "BASMATI RICE"
+},
+{
+  "id": 74,
+  "name": "Zeera Rice",
+  "slug": "zeera-rice",
+  "shortDescription": "Rice with cumin flavor",
+  "description": "Basmati rice cooked with butter, cumin, and black pepper for a fragrant taste.",
+  "price": "€4.00",
+  "image": "/images/zeera-rice.png",
+  "category": "BASMATI RICE"
+},
+{
+  "id": 75,
+  "name": "Mutter Pilao",
+  "slug": "mutter-pilao",
+  "shortDescription": "Rice with peas",
+  "description": "Peas cooked with curry sauce and black pepper, served with aromatic basmati rice.",
+  "price": "€6.00",
+  "image": "/images/mutter-pilao.png",
+  "category": "BASMATI RICE"
+},
+{
+  "id": 76,
+  "name": "Sabzi Biryani",
+  "slug": "sabzi-biryani",
+  "shortDescription": "Vegetable biryani",
+  "description": "Mixed vegetables cooked in curry sauce with aromatic basmati rice and rich spices.",
+  "price": "€6.50",
+  "image": "/images/sabzi-biryani.png",
+  "category": "BASMATI RICE"
+},
+{
+  "id": 77,
+  "name": "Chicken Tikka Biryani",
+  "slug": "chicken-tikka-biryani",
+  "shortDescription": "Chicken biryani",
+  "description": "Tandoor-roasted chicken cubes cooked with curry sauce and layered with aromatic basmati rice.",
+  "price": "€9.00",
+  "image": "/images/chicken-tikka-biryani.png",
+  "category": "BASMATI RICE"
+},
+{
+  "id": 78,
+  "name": "Prawn Biryani",
+  "slug": "prawn-biryani",
+  "shortDescription": "Shrimp biryani",
+  "description": "Shrimp cooked with curry sauce, spices, and aromatic basmati rice.",
+  "price": "€10.00",
+  "image": "/images/prawn-biryani.png",
+  "category": "BASMATI RICE"
+},
+{
+  "id": 79,
+  "name": "Jungli Pilao",
+  "slug": "jungli-pilao",
+  "shortDescription": "Mixed meat pilao",
+  "description": "Aromatic basmati rice with shrimp, chicken, lamb, and mixed vegetables cooked in curry sauce.",
+  "price": "€10.00",
+  "image": "/images/jungli-pilao.png",
+  "category": "BASMATI RICE"
+},
+{
+  "id": 80,
+  "name": "Sekh Kebab Biryani",
+  "slug": "sekh-kebab-biryani",
+  "shortDescription": "Beef kebab biryani",
+  "description": "Minced beef cooked with curry sauce and spices, layered with basmati rice.",
+  "price": "€8.50",
+  "image": "/images/sekh-kebab-biryani.png",
+  "category": "BASMATI RICE"
+},
+{
+  "id": 81,
+  "name": "Lamb Biryani",
+  "slug": "lamb-biryani",
+  "shortDescription": "Lamb biryani",
+  "description": "Boneless lamb cooked in curry sauce and layered with aromatic basmati rice.",
+  "price": "€9.00",
+  "image": "/images/lamb-biryani.png",
+  "category": "BASMATI RICE"
+},
+{
+  "id": 82,
+  "name": "Chicken Biryani",
+  "slug": "chicken-biryani",
+  "shortDescription": "Chicken with rice",
+  "description": "Chicken cooked with curry sauce, spices, and aromatic basmati rice.",
+  "price": "€7.00",
+  "image": "/images/chicken-biryani.png",
+  "category": "BASMATI RICE"
+},
+{
+  "id": 83,
+  "name": "Vegetable Soup",
+  "slug": "vegetable-soup",
+  "shortDescription": "Soup with fresh vegetables",
+  "description": "Fresh mixed vegetables cooked and thickened with corn flour, flavored with spices.",
+  "price": "€6.00",
+  "image": "/images/vegetable-soup.png",
+  "category": "SOUPS"
+},
+{
+  "id": 84,
+  "name": "Dal Soup",
+  "slug": "dal-soup",
+  "shortDescription": "Red lentil soup",
+  "description": "Tasty red lentils simmered with corn flour and aromatic spices.",
+  "price": "€6.00",
+  "image": "/images/dal-soup.png",
+  "category": "SOUPS"
+},
+{
+  "id": 85,
+  "name": "Tomato Soup",
+  "slug": "tomato-soup",
+  "shortDescription": "Creamy tomato soup",
+  "description": "Fresh tomato soup enriched with cream and corn flour for a velvety texture.",
+  "price": "€6.00",
+  "image": "/images/tomato-soup.png",
+  "category": "SOUPS"
+},
+{
+  "id": 86,
+  "name": "Chicken Corn Soup",
+  "slug": "chicken-corn-soup",
+  "shortDescription": "Classic chicken corn soup",
+  "description": "Chicken, peppers, carrots, eggs, and corn flour cooked into a rich soup with aromatic spices.",
+  "price": "€7.00",
+  "image": "/images/chicken-corn-soup.png",
+  "category": "SOUPS"
+}
+,
+{
+  "id": 87,
+  "name": "Kulcha",
+  "slug": "kulcha",
+  "shortDescription": "Soft bread with sesame seeds",
+  "description": "Traditional soft bread made with '00' flour and milk, garnished with sesame seeds for extra flavor.",
+  "price": "€2.00",
+  "image": "/images/kulcha.png",
+  "category": "TANDOOR BREAD"
+},
+{
+  "id": 88,
+  "name": "Naan Garlic",
+  "slug": "naan-garlic",
+  "shortDescription": "Garlic-flavored naan",
+  "description": "Soft naan bread made with '00' flour and butter, flavored with freshly chopped garlic.",
+  "price": "€3.00",
+  "image": "/images/naan-garlic.png",
+  "category": "TANDOOR BREAD"
+},
+{
+  "id": 89,
+  "name": "Qeema Naan",
+  "slug": "qeema-naan",
+  "shortDescription": "Stuffed naan with minced beef",
+  "description": "Delicious naan bread made with '00' flour and butter, filled with seasoned minced beef.",
+  "price": "€4.50",
+  "image": "/images/qeema-naan.png",
+  "category": "TANDOOR BREAD"
+},
+{
+  "id": 90,
+  "name": "Naan Paneer",
+  "slug": "naan-paneer",
+  "shortDescription": "Stuffed naan with paneer",
+  "description": "Soft naan bread prepared with '00' flour, milk, and butter, stuffed with fresh paneer cheese filling.",
+  "price": "€4.50",
+  "image": "/images/naan-paneer.png",
+  "category": "TANDOOR BREAD"
+},
+{
+  "id": 91,
+  "name": "Naan Afghani",
+  "slug": "naan-afghani",
+  "shortDescription": "Soft naan with sesame seeds",
+  "description": "Traditional Afghani-style naan made with '00' flour, milk, and butter, topped with sesame seeds.",
+  "price": "€3.50",
+  "image": "/images/naan-afghani.png",
+  "category": "TANDOOR BREAD"
+},
+{
+  "id": 92,
+  "name": "Naan Sada O Roghni",
+  "slug": "naan-sada-o-roghni",
+  "shortDescription": "Plain and roghni naan",
+  "description": "Classic naan bread varieties made with '00' flour, water, sugar, and eggs, baked soft and fluffy.",
+  "price": "€2.00",
+  "image": "/images/naan-sada-roghni.png",
+  "category": "TANDOOR BREAD"
+},
+{
+  "id": 93,
+  "name": "Naan Aloo",
+  "slug": "naan-aloo",
+  "shortDescription": "Stuffed naan with vegetables",
+  "description": "Soft naan bread made with '00' flour, sugar, and eggs, stuffed with spiced mixed vegetables.",
+  "price": "€3.00",
+  "image": "/images/naan-aloo.png",
+  "category": "TANDOOR BREAD"
+}
+,
+{
+  "id": 94,
+  "name": "Akhrot Halwa",
+  "slug": "akhrot-halwa",
+  "shortDescription": "Nut-based Indian sweet",
+  "description": "Thick and rich dessert made with nuts, milk, and butter for a creamy and flavorful taste.",
+  "price": "€4.00",
+  "image": "/images/akhrot-halwa.png",
+  "category": "INDIAN DESSERTS"
+},
+{
+  "id": 95,
+  "name": "Coconut Halwa",
+  "slug": "coconut-halwa",
+  "shortDescription": "Creamy coconut sweet",
+  "description": "Traditional Indian halwa made with fresh coconut, milk, and butter for a rich flavor.",
+  "price": "€4.00",
+  "image": "/images/coconut-halwa.png",
+  "category": "INDIAN DESSERTS"
+},
+{
+  "id": 96,
+  "name": "Barfi",
+  "slug": "barfi",
+  "shortDescription": "Milk-based Indian sweet",
+  "description": "Delicious dessert made with condensed milk, sugar, and walnuts, thick and creamy.",
+  "price": "€4.00",
+  "image": "/images/barfi.png",
+  "category": "INDIAN DESSERTS"
+},
+{
+  "id": 97,
+  "name": "Ras Gulla",
+  "slug": "ras-gulla",
+  "shortDescription": "Milk balls in syrup",
+  "description": "Soft and spongy dessert made with fresh milk balls soaked in sugar syrup.",
+  "price": "€4.00",
+  "image": "/images/ras-gulla.png",
+  "category": "INDIAN DESSERTS"
+},
+{
+  "id": 98,
+  "name": "Gulab Jamun",
+  "slug": "gulab-jamun",
+  "shortDescription": "Fried milk sweet",
+  "description": "Famous Indian dessert made with powdered milk and flour, fried and soaked in sugar syrup.",
+  "price": "€4.00",
+  "image": "/images/gulab-jamun.png",
+  "category": "INDIAN DESSERTS"
+},
+{
+  "id": 99,
+  "name": "Kheer",
+  "slug": "kheer",
+  "shortDescription": "Milk and rice pudding",
+  "description": "Creamy dessert prepared with fresh milk, rice, and pistachios for a rich flavor.",
+  "price": "€4.00",
+  "image": "/images/kheer.png",
+  "category": "INDIAN DESSERTS"
+},
+{
+  "id": 100,
+  "name": "Ras Malay",
+  "slug": "ras-malay",
+  "shortDescription": "Creamy milk dessert",
+  "description": "Traditional Indian sweet made with fresh milk and sugar, enriched with pistachios for a velvety texture.",
+  "price": "€4.00",
+  "image": "/images/ras-malay.png",
+  "category": "INDIAN DESSERTS"
+},
+{
+  "id": 101,
+  "name": "Gajrela (Winter Production)",
+  "slug": "gajrela",
+  "shortDescription": "Carrot-based sweet",
+  "description": "Seasonal dessert made with fresh carrots, milk, pistachios, and almonds, rich and flavorful.",
+  "price": "€4.00",
+  "image": "/images/gajrela.png",
+  "category": "INDIAN DESSERTS"
+},
+{
+  "id": 102,
+  "name": "Mango Lassi",
+  "slug": "mango-lassi",
+  "shortDescription": "Mango yogurt drink",
+  "description": "Refreshing creamy lassi made with fresh mango and yogurt for a sweet tropical taste.",
+  "price": "€5.00",
+  "image": "/images/mango-lassi.png",
+  "category": "ETHNIC DRINKS"
+},
+{
+  "id": 103,
+  "name": "Namak Lassi",
+  "slug": "namak-lassi",
+  "shortDescription": "Salty yogurt drink",
+  "description": "Savory lassi prepared with yogurt, salt, and spices, refreshing and tangy.",
+  "price": "€4.00",
+  "image": "/images/namak-lassi.png",
+  "category": "ETHNIC DRINKS"
+},
+{
+  "id": 104,
+  "name": "Pudina Lassi",
+  "slug": "pudina-lassi",
+  "shortDescription": "Mint-flavored lassi",
+  "description": "Refreshing yogurt-based lassi made with fresh mint, sugar, and spices for a cooling taste.",
+  "price": "€4.00",
+  "image": "/images/pudina-lassi.png",
+  "category": "ETHNIC DRINKS"
+},
+{
+  "id": 105,
+  "name": "Lassi",
+  "slug": "lassi",
+  "shortDescription": "Classic yogurt drink",
+  "description": "Traditional Indian lassi made with yogurt, sugar, and spices, smooth and refreshing.",
+  "price": "€4.00",
+  "image": "/images/lassi.png",
+  "category": "ETHNIC DRINKS"
+},
+{
+  "id": 106,
+  "name": "Strawberry Shake",
+  "slug": "strawberry-shake",
+  "shortDescription": "Strawberry milkshake",
+  "description": "Refreshing smoothie prepared with fresh strawberries, milk, and sugar for a creamy taste.",
+  "price": "€5.00",
+  "image": "/images/strawberry-shake.png",
+  "category": "ETHNIC DRINKS"
+},
+{
+  "id": 107,
+  "name": "Banana Shake",
+  "slug": "banana-shake",
+  "shortDescription": "Banana milkshake",
+  "description": "Creamy smoothie made with ripe bananas, fresh milk, and sugar, rich and sweet.",
+  "price": "€5.00",
+  "image": "/images/banana-shake.png",
+  "category": "ETHNIC DRINKS"
+},
+{
+  "id": 108,
+  "name": "Mango Shake",
+  "slug": "mango-shake",
+  "shortDescription": "Mango milkshake",
+  "description": "Delicious tropical smoothie made with fresh mango, milk, and sugar for a creamy flavor.",
+  "price": "€5.00",
+  "image": "/images/mango-shake.png",
+  "category": "ETHNIC DRINKS"
+}
+,
+
+  {
+    "id": 101,
+    "name": "Bavarian",
+    "slug": "bavarian-pizza",
+    "shortDescription": "Unique mix of sausage, spinach, and egg",
+    "description": "Tomato sauce and fresh mozzarella with halal sausage, spinach, and egg for an irresistible flavor.",
+    "price": "€8.00",
+    "image": "/images/bavarian.png",
+    "category": "CLASSIC PIZZAS"
+  },
+  {
+    "id": 102,
+    "name": "Gorgo Salami",
+    "slug": "gorgo-salami-pizza",
+    "shortDescription": "Spicy salami with gorgonzola",
+    "description": "Tomato sauce, fresh mozzarella, halal spicy salami, and gorgonzola for bold taste.",
+    "price": "€8.00",
+    "image": "/images/gorgo-salami.png",
+    "category": "CLASSIC PIZZAS"
+  },
+  {
+    "id": 103,
+    "name": "Light Pizza",
+    "slug": "light-pizza",
+    "shortDescription": "Fresh and light with bresaola",
+    "description": "Tomato sauce, mozzarella, halal beef bresaola, arugula, cherry tomatoes, and parmesan shavings.",
+    "price": "€9.00",
+    "image": "/images/light-pizza.png",
+    "category": "CLASSIC PIZZAS"
+  },
+  {
+    "id": 104,
+    "name": "Doc",
+    "slug": "doc-pizza",
+    "shortDescription": "Pizza with grilled vegetables",
+    "description": "Tomato sauce, mozzarella, peppers, aubergines, courgettes, porcini mushrooms, and arugula.",
+    "price": "€8.00",
+    "image": "/images/doc.png",
+    "category": "CLASSIC PIZZAS"
+  },
+  {
+    "id": 105,
+    "name": "Shrimp",
+    "slug": "shrimp-pizza",
+    "shortDescription": "Mozzarella with shrimps",
+    "description": "Fresh tomato sauce and stringy mozzarella topped with shrimps and arugula.",
+    "price": "€8.00",
+    "image": "/images/shrimp.png",
+    "category": "CLASSIC PIZZAS"
+  },
+  {
+    "id": 106,
+    "name": "Vegetarian",
+    "slug": "vegetarian-pizza",
+    "shortDescription": "Pizza with grilled vegetables",
+    "description": "Tomato sauce, mozzarella, parmesan, and seasonal grilled vegetables.",
+    "price": "€8.00",
+    "image": "/images/vegetarian.png",
+    "category": "CLASSIC PIZZAS"
+  },
+  {
+    "id": 107,
+    "name": "Margellina",
+    "slug": "margellina-pizza",
+    "shortDescription": "Ricotta with spicy salami",
+    "description": "Fresh tomato sauce, mozzarella, ricotta, halal spicy salami, and turnip tops.",
+    "price": "€8.00",
+    "image": "/images/margellina.png",
+    "category": "CLASSIC PIZZAS"
+  },
+  {
+    "id": 108,
+    "name": "Parmigiana",
+    "slug": "parmigiana-pizza",
+    "shortDescription": "Eggplant with parmesan",
+    "description": "Rich tomato sauce with mozzarella and grilled eggplant topped with parmesan shavings.",
+    "price": "€7.50",
+    "image": "/images/parmigiana.png",
+    "category": "CLASSIC PIZZAS"
+  },
+  {
+    "id": 109,
+    "name": "Caprese",
+    "slug": "caprese-pizza",
+    "shortDescription": "Buffalo mozzarella with basil",
+    "description": "Tomato sauce, buffalo mozzarella, cherry tomatoes, and fresh basil.",
+    "price": "€7.00",
+    "image": "/images/caprese.png",
+    "category": "CLASSIC PIZZAS"
+  },
+  {
+    "id": 110,
+    "name": "Pizza Kebab",
+    "slug": "pizza-kebab",
+    "shortDescription": "Kebab meat topping",
+    "description": "Tomato sauce, mozzarella, and juicy kebab meat for a fusion taste.",
+    "price": "€8.00",
+    "image": "/images/pizza-kebab.png",
+    "category": "CLASSIC PIZZAS"
+  },
+  {
+    "id": 111,
+    "name": "Gorgonzola",
+    "slug": "gorgonzola-pizza",
+    "shortDescription": "Mozzarella with gorgonzola",
+    "description": "Tomato sauce with mozzarella and rich gorgonzola cheese for a creamy taste.",
+    "price": "€7.00",
+    "image": "/images/gorgonzola.png",
+    "category": "CLASSIC PIZZAS"
+  },
+  {
+    "id": 112,
+    "name": "Apulian",
+    "slug": "apulian-pizza",
+    "shortDescription": "Onion and mozzarella pizza",
+    "description": "Tomato sauce, fior di latte mozzarella, and onions for a southern Italian flavor.",
+    "price": "€7.00",
+    "image": "/images/apulian.png",
+    "category": "CLASSIC PIZZAS"
+  },
+  {
+    "id": 113,
+    "name": "Spicy Salami",
+    "slug": "spicy-salami-pizza",
+    "shortDescription": "Spicy halal salami pizza",
+    "description": "Rich tomato sauce with mozzarella and halal spicy salami.",
+    "price": "€8.00",
+    "image": "/images/spicy-salami.png",
+    "category": "CLASSIC PIZZAS"
+  },
+  {
+    "id": 114,
+    "name": "Roman",
+    "slug": "roman-pizza",
+    "shortDescription": "Anchovies and capers",
+    "description": "Tomato sauce, mozzarella, anchovies, capers, and oregano for a Roman classic.",
+    "price": "€7.50",
+    "image": "/images/roman.png",
+    "category": "CLASSIC PIZZAS"
+  },
+  {
+    "id": 115,
+    "name": "Naples",
+    "slug": "naples-pizza",
+    "shortDescription": "Anchovy Naples pizza",
+    "description": "Tomato sauce, mozzarella, and anchovies with oregano for a Neapolitan style.",
+    "price": "€7.00",
+    "image": "/images/naples.png",
+    "category": "CLASSIC PIZZAS"
+  },
+  {
+    "id": 116,
+    "name": "American",
+    "slug": "american-pizza",
+    "shortDescription": "Halal sausage and fries",
+    "description": "Tomato sauce, mozzarella, halal sausage, and fries for an American twist.",
+    "price": "€7.50",
+    "image": "/images/american.png",
+    "category": "CLASSIC PIZZAS"
+  },
+  {
+    "id": 117,
+    "name": "French Fries",
+    "slug": "french-fries-pizza",
+    "shortDescription": "Mozzarella and fries",
+    "description": "Tomato sauce, mozzarella, and French fries for a fun topping.",
+    "price": "€7.00",
+    "image": "/images/french-fries.png",
+    "category": "CLASSIC PIZZAS"
+  },
+  {
+    "id": 118,
+    "name": "Halal Sausage",
+    "slug": "halal-sausage-pizza",
+    "shortDescription": "Sausage lovers pizza",
+    "description": "Tomato sauce, mozzarella, and halal sausages for a hearty choice.",
+    "price": "€7.00",
+    "image": "/images/halal-sausage.png",
+    "category": "CLASSIC PIZZAS"
+  },
+  {
+    "id": 119,
+    "name": "Four Cheeses",
+    "slug": "four-cheeses-pizza",
+    "shortDescription": "Mix of four cheeses",
+    "description": "Tomato sauce, mozzarella, gorgonzola, taleggio, asiago, scamorza, and grana padano.",
+    "price": "€10.00",
+    "image": "/images/four-cheeses.png",
+    "category": "CLASSIC PIZZAS"
+  },
+  {
+    "id": 120,
+    "name": "Mother in law",
+    "slug": "mother-in-law-pizza",
+    "shortDescription": "Scamorza and arugula",
+    "description": "Scamorza cheese, tomato sauce, mozzarella, oregano, and fresh arugula.",
+    "price": "€8.00",
+    "image": "/images/mother-in-law.png",
+    "category": "CLASSIC PIZZAS"
+  },
+  {
+    "id": 121,
+    "name": "Arugula",
+    "slug": "arugula-pizza",
+    "shortDescription": "Arugula with scamorza",
+    "description": "Smoky scamorza cheese, tomato sauce, mozzarella, oregano, and arugula.",
+    "price": "€8.00",
+    "image": "/images/arugula.png",
+    "category": "CLASSIC PIZZAS"
+  },
+  {
+    "id": 122,
+    "name": "Devil",
+    "slug": "devil-pizza",
+    "shortDescription": "Spicy pizza with olives",
+    "description": "Tomato sauce, mozzarella, black olives, spicy salami, and peppers.",
+    "price": "€8.00",
+    "image": "/images/devil.png",
+    "category": "CLASSIC PIZZAS"
+  },
+  {
+    "id": 123,
+    "name": "Tasty Pizza",
+    "slug": "tasty-pizza",
+    "shortDescription": "Anchovies and salami",
+    "description": "Tomato sauce, fior di latte mozzarella, anchovies, onion, garlic oil, and halal spicy salami.",
+    "price": "€9.00",
+    "image": "/images/tasty.png",
+    "category": "CLASSIC PIZZAS"
+  },
+  {
+    "id": 124,
+    "name": "Squid",
+    "slug": "squid-pizza",
+    "shortDescription": "Pizza with fried calamari",
+    "description": "Tomato sauce, mozzarella, and fried calamari for a seafood delight.",
+    "price": "€9.00",
+    "image": "/images/squid.png",
+    "category": "CLASSIC PIZZAS"
+  },
+  {
+    "id": 125,
+    "name": "Porcini",
+    "slug": "porcini-pizza",
+    "shortDescription": "Porcini mushroom pizza",
+    "description": "Tomato sauce, fior di latte mozzarella, porcini mushrooms in oil, and grana padano shavings.",
+    "price": "€8.00",
+    "image": "/images/porcini.png",
+    "category": "CLASSIC PIZZAS"
+  },
+  {
+    "id": 126,
+    "name": "Genoese",
+    "slug": "genoese-pizza",
+    "shortDescription": "Tuna and onion pizza",
+    "description": "Tomato sauce, mozzarella, tuna, onions, and oregano for a Genovese touch.",
+    "price": "€7.00",
+    "image": "/images/genoese.png",
+    "category": "CLASSIC PIZZAS"
+  },
+  {
+    "id": 127,
+    "name": "Four Seasons",
+    "slug": "four-seasons-pizza",
+    "shortDescription": "Pizza with four toppings",
+    "description": "Tomato sauce, mozzarella, halal turkey ham, mushrooms, artichokes, and black olives.",
+    "price": "€8.00",
+    "image": "/images/four-seasons.png",
+    "category": "CLASSIC PIZZAS"
+  },
+  {
+    "id": 128,
+    "name": "Capricious",
+    "slug": "capricious-pizza",
+    "shortDescription": "Ham and artichokes",
+    "description": "Tomato sauce, mozzarella, mushrooms, artichokes, and halal turkey ham.",
+    "price": "€8.00",
+    "image": "/images/capricious.png",
+    "category": "CLASSIC PIZZAS"
+  },
+  {
+    "id": 129,
+    "name": "Ham and Mushrooms",
+    "slug": "ham-mushrooms-pizza",
+    "shortDescription": "Turkey ham with mushrooms",
+    "description": "Tomato sauce, mozzarella, halal turkey ham, and mushrooms.",
+    "price": "€8.00",
+    "image": "/images/ham-mushrooms.png",
+    "category": "CLASSIC PIZZAS"
+  },
+  {
+    "id": 130,
+    "name": "Dried Ham",
+    "slug": "dried-ham-pizza",
+    "shortDescription": "Turkey ham pizza",
+    "description": "Tomato sauce, mozzarella, and halal turkey ham.",
+    "price": "€7.00",
+    "image": "/images/dried-ham.png",
+    "category": "CLASSIC PIZZAS"
+  },
+  {
+    "id": 131,
+    "name": "Artichokes",
+    "slug": "artichokes-pizza",
+    "shortDescription": "Pizza with artichokes",
+    "description": "Tomato sauce, mozzarella, and fresh artichokes.",
+    "price": "€7.00",
+    "image": "/images/artichokes.png",
+    "category": "CLASSIC PIZZAS"
+  },
+  {
+    "id": 132,
+    "name": "Mushrooms",
+    "slug": "mushrooms-pizza",
+    "shortDescription": "Mushroom lovers pizza",
+    "description": "Tomato sauce, mozzarella, and mushrooms for a rich flavor.",
+    "price": "€7.00",
+    "image": "/images/mushrooms.png",
+    "category": "CLASSIC PIZZAS"
+  },
+  {
+    "id": 133,
+    "name": "Margherita",
+    "slug": "margherita-pizza",
+    "shortDescription": "Classic tomato and mozzarella",
+    "description": "Tomato sauce and stringy mozzarella for the Italian classic.",
+    "price": "€6.00",
+    "image": "/images/margherita.png",
+    "category": "CLASSIC PIZZAS"
+  },
+  {
+    "id": 134,
+    "name": "Marinara",
+    "slug": "marinara-pizza",
+    "shortDescription": "Garlic and oregano pizza",
+    "description": "Tomato sauce, garlic, oil, and oregano for a simple classic.",
+    "price": "€6.00",
+    "image": "/images/marinara.png",
+    "category": "CLASSIC PIZZAS"
+  }
+,{
+  "id": 135,
+  "name": "Punjabi Pizza",
+  "slug": "punjabi-pizza",
+  "shortDescription": "Spicy Indian-inspired pizza",
+  "description": "Classic tomato and mozzarella base topped with chicken tikka, ginger, coriander, and green chili pepper.",
+  "price": "€9.00",
+  "image": "/images/punjabi-pizza.png",
+  "category": "SPECIAL PIZZAS"
+},
+{
+  "id": 136,
+  "name": "Delight",
+  "slug": "delight",
+  "shortDescription": "Sweet and savory pizza",
+  "description": "Tomato and mozzarella base with gorgonzola, pears, walnuts, and arugula.",
+  "price": "€9.00",
+  "image": "/images/delight.png",
+  "category": "SPECIAL PIZZAS"
+},
+{
+  "id": 137,
+  "name": "Gorgo Noci",
+  "slug": "gorgo-noci",
+  "shortDescription": "Cheesy walnut delight",
+  "description": "Tomato and mozzarella base topped with rich gorgonzola and crunchy walnuts.",
+  "price": "€9.00",
+  "image": "/images/gorgo-noci.png",
+  "category": "SPECIAL PIZZAS"
+},
+{
+  "id": 138,
+  "name": "Star",
+  "slug": "star",
+  "shortDescription": "Richly topped pizza",
+  "description": "Tomato and mozzarella base with asparagus, halal spicy salami, parmesan, Asiago, and cherry tomatoes.",
+  "price": "€9.00",
+  "image": "/images/star.png",
+  "category": "SPECIAL PIZZAS"
+},
+{
+  "id": 139,
+  "name": "Gorgo Asparagus",
+  "slug": "gorgo-asparagus",
+  "shortDescription": "Cheesy asparagus pizza",
+  "description": "Tomato and mozzarella base with creamy gorgonzola and fresh asparagus.",
+  "price": "€8.00",
+  "image": "/images/gorgo-asparagus.png",
+  "category": "SPECIAL PIZZAS"
+},
+{
+  "id": 140,
+  "name": "Coast",
+  "slug": "coast",
+  "shortDescription": "Seafood pizza",
+  "description": "Tomato and mozzarella base with seafood salad, arugula, cherry tomatoes, and parmesan shavings.",
+  "price": "€11.00",
+  "image": "/images/coast.png",
+  "category": "SPECIAL PIZZAS"
+},
+{
+  "id": 141,
+  "name": "Sea and Mountains",
+  "slug": "sea-and-mountains",
+  "shortDescription": "Seafood and mushroom mix",
+  "description": "Tomato and mozzarella base topped with porcini mushrooms, tuna, and seafood.",
+  "price": "€11.00",
+  "image": "/images/sea-and-mountains.png",
+  "category": "SPECIAL PIZZAS"
+},
+{
+  "id": 142,
+  "name": "At the Taj",
+  "slug": "at-the-taj",
+  "shortDescription": "Signature pizza",
+  "description": "Tomato and mozzarella base with porcini mushrooms in oil, halal beef bresaola, and parmesan shavings.",
+  "price": "€10.00",
+  "image": "/images/at-the-taj.png",
+  "category": "SPECIAL PIZZAS"
+},
+{
+  "id": 143,
+  "name": "Novella",
+  "slug": "novella",
+  "shortDescription": "Fresh vegetable pizza",
+  "description": "Tomato base with buffalo mozzarella, seasonal vegetables, and parmesan shavings.",
+  "price": "€10.00",
+  "image": "/images/novella.png",
+  "category": "SPECIAL PIZZAS"
+},
+{
+  "id": 144,
+  "name": "Italy",
+  "slug": "italy",
+  "shortDescription": "Classic Italian taste",
+  "description": "Tomato and fior di latte mozzarella base with asparagus, cherry tomatoes, and parmesan shavings.",
+  "price": "€9.00",
+  "image": "/images/italy.png",
+  "category": "SPECIAL PIZZAS"
+},
+{
+  "id": 145,
+  "name": "Mediterranean",
+  "slug": "mediterranean",
+  "shortDescription": "Bold Mediterranean flavors",
+  "description": "Buffalo mozzarella base with turnip greens, spicy halal salami, anchovies, and cherry tomatoes.",
+  "price": "€8.00",
+  "image": "/images/mediterranean.png",
+  "category": "WHITE PIZZAS"
+},
+{
+  "id": 146,
+  "name": "Calabrian",
+  "slug": "calabrian",
+  "shortDescription": "Rich Calabrian pizza",
+  "description": "Buffalo mozzarella base with cherry tomatoes, sun-dried tomatoes, and halal spicy salami.",
+  "price": "€8.00",
+  "image": "/images/calabrian.png",
+  "category": "WHITE PIZZAS"
+},
+{
+  "id": 147,
+  "name": "Taggiasca",
+  "slug": "taggiasca",
+  "shortDescription": "Olive-based pizza",
+  "description": "Cherry tomatoes, mozzarella, oregano, basil, and Taggiasca olives on a fresh base.",
+  "price": "€7.00",
+  "image": "/images/taggiasca.png",
+  "category": "WHITE PIZZAS"
+},
+{
+  "id": 148,
+  "name": "Trevisana",
+  "slug": "trevisana",
+  "shortDescription": "Radicchio special",
+  "description": "Cherry tomatoes, mozzarella, scamorza, and Treviso radicchio.",
+  "price": "€7.00",
+  "image": "/images/trevisana.png",
+  "category": "WHITE PIZZAS"
+},
+{
+  "id": 149,
+  "name": "Valtellina",
+  "slug": "valtellina",
+  "shortDescription": "Cheese and bresaola mix",
+  "description": "Four cheeses with mozzarella, cherry tomatoes, and halal beef bresaola.",
+  "price": "€8.00",
+  "image": "/images/valtellina.png",
+  "category": "WHITE PIZZAS"
+},
+{
+  "id": 150,
+  "name": "Buffalo",
+  "slug": "buffalo",
+  "shortDescription": "Fresh buffalo pizza",
+  "description": "Mozzarella base with buffalo mozzarella, cherry tomatoes, oregano, parmesan, and basil.",
+  "price": "€8.00",
+  "image": "/images/buffalo.png",
+  "category": "WHITE PIZZAS"
+},
+{
+  "id": 151,
+  "name": "Shrimp Zucchini",
+  "slug": "shrimp-zucchini",
+  "shortDescription": "Seafood veggie pizza",
+  "description": "Mozzarella and fior di latte mozzarella base with fresh prawns and grilled zucchini.",
+  "price": "€8.00",
+  "image": "/images/shrimp-zucchini.png",
+  "category": "WHITE PIZZAS"
+},
+{
+  "id": 152,
+  "name": "Calzone Kebab",
+  "slug": "calzone-kebab",
+  "shortDescription": "Stuffed kebab calzone",
+  "description": "Calzone filled with tomato, mozzarella, and kebab meat.",
+  "price": "€8.00",
+  "image": "/images/calzone-kebab.png",
+  "category": "CALZONE"
+},
+{
+  "id": 153,
+  "name": "Angry Calzone",
+  "slug": "angry-calzone",
+  "shortDescription": "Spicy stuffed calzone",
+  "description": "Calzone filled with tomato, mozzarella, spicy salami, and peppers.",
+  "price": "€8.00",
+  "image": "/images/angry-calzone.png",
+  "category": "CALZONE"
+},
+{
+  "id": 154,
+  "name": "Stuffed Calzone",
+  "slug": "stuffed-calzone",
+  "shortDescription": "Vegetarian calzone",
+  "description": "Calzone filled with tomato, mozzarella, mushrooms, and artichokes.",
+  "price": "€8.00",
+  "image": "/images/stuffed-calzone.png",
+  "category": "CALZONE"
+},
+{
+  "id": 155,
+  "name": "Normal Calzone",
+  "slug": "normal-calzone",
+  "shortDescription": "Classic calzone",
+  "description": "Calzone with tomato, mozzarella, and halal turkey ham.",
+  "price": "€7.00",
+  "image": "/images/normal-calzone.png",
+  "category": "CALZONE"
+},
+{
+  "id": 156,
+  "name": "Smooth Calzone",
+  "slug": "smooth-calzone",
+  "shortDescription": "Simple calzone",
+  "description": "Calzone flavored with extra virgin olive oil and oregano.",
+  "price": "€6.50",
+  "image": "/images/smooth-calzone.png",
+  "category": "CALZONE"
+}
+,{
+  "id": 157,
+  "name": "Qahwa",
+  "slug": "qahwa",
+  "shortDescription": "Spicy Arabic tea",
+  "description": "Aromatic qahwa infused with cinnamon, cardamom, and refreshing green tea.",
+  "price": "€2.00",
+  "image": "/images/qahwa.png",
+  "category": "COFFEE SHOP"
+},
+{
+  "id": 158,
+  "name": "Sabaz Chaye (Indian Tea)",
+  "slug": "sabaz-chaye",
+  "shortDescription": "Milk herbal tea",
+  "description": "Hot black tea blended with milk and herbal infusion for a relaxing drink.",
+  "price": "€2.50",
+  "image": "/images/sabaz-chaye.png",
+  "category": "COFFEE SHOP"
+},
+{
+  "id": 159,
+  "name": "Chaye (Indian Tea)",
+  "slug": "chaye",
+  "shortDescription": "Spiced milk tea",
+  "description": "Traditional Indian spiced tea with milk for comfort and relaxation.",
+  "price": "€2.00",
+  "image": "/images/chaye.png",
+  "category": "COFFEE SHOP"
+},
+{
+  "id": 160,
+  "name": "Hot Tea",
+  "slug": "hot-tea",
+  "shortDescription": "Classic hot tea",
+  "description": "Steaming cup of tea with an enveloping aroma, warming and invigorating.",
+  "price": "€2.00",
+  "image": "/images/hot-tea.png",
+  "category": "COFFEE SHOP"
+},
+{
+  "id": 161,
+  "name": "Cappuccino",
+  "slug": "cappuccino",
+  "shortDescription": "Espresso with foam",
+  "description": "Perfect balance of espresso and frothy milk with dense, velvety foam.",
+  "price": "€1.50",
+  "image": "/images/cappuccino.png",
+  "category": "COFFEE SHOP"
+},
+{
+  "id": 162,
+  "name": "Large Ginseng",
+  "slug": "large-ginseng",
+  "shortDescription": "Energy-rich coffee",
+  "description": "Large cup of ginseng coffee with deep aroma and rich flavor for extra energy.",
+  "price": "€2.00",
+  "image": "/images/large-ginseng.png",
+  "category": "COFFEE SHOP"
+},
+{
+  "id": 163,
+  "name": "Small Ginseng",
+  "slug": "small-ginseng",
+  "shortDescription": "Natural ginseng coffee",
+  "description": "Small cup of ginseng coffee offering intense aroma and natural energy.",
+  "price": "€1.50",
+  "image": "/images/small-ginseng.png",
+  "category": "COFFEE SHOP"
+},
+{
+  "id": 164,
+  "name": "Large Barley Coffee",
+  "slug": "large-barley-coffee",
+  "shortDescription": "Caffeine-free coffee",
+  "description": "Large roasted barley coffee, caffeine-free and rich in aroma, ideal anytime.",
+  "price": "€1.50",
+  "image": "/images/large-barley-coffee.png",
+  "category": "COFFEE SHOP"
+},
+{
+  "id": 165,
+  "name": "Small Barley Coffee",
+  "slug": "small-barley-coffee",
+  "shortDescription": "Light caffeine-free coffee",
+  "description": "Small roasted barley coffee, caffeine-free with a delicate aroma.",
+  "price": "€1.20",
+  "image": "/images/small-barley-coffee.png",
+  "category": "COFFEE SHOP"
+},
+{
+  "id": 166,
+  "name": "Deca Coffee",
+  "slug": "deca-coffee",
+  "shortDescription": "Decaffeinated coffee",
+  "description": "A cup of decaffeinated coffee served with rich aroma and intense taste.",
+  "price": "€1.20",
+  "image": "/images/deca-coffee.png",
+  "category": "COFFEE SHOP"
+},
+{
+  "id": 167,
+  "name": "Coffee with a Twist",
+  "slug": "coffee-with-a-twist",
+  "shortDescription": "Coffee with liqueur",
+  "description": "Caffè corretto served with a touch of liqueur for a strong taste.",
+  "price": "€1.50",
+  "image": "/images/coffee-with-a-twist.png",
+  "category": "COFFEE SHOP"
+},
+{
+  "id": 168,
+  "name": "Coffee",
+  "slug": "coffee",
+  "shortDescription": "Classic hot coffee",
+  "description": "Rich, aromatic coffee served hot in a cup for a timeless taste.",
+  "price": "€1.20",
+  "image": "/images/coffee.png",
+  "category": "COFFEE SHOP"
+}
+,
+
+  {
+    "id": 167,
+    "name": "Heineken Beer",
+    "slug": "heineken-beer",
+    "shortDescription": "Dutch lager beer",
+    "description": "Fresh and balanced taste with moderate alcohol content, perfect to accompany any meal.",
+    "price": "€3.00",
+    "image": "/images/heineken-beer.png",
+    "category": "DRINKS"
+  },
+  {
+    "id": 168,
+    "name": "Beck's Beer",
+    "slug": "becks-beer",
+    "shortDescription": "German lager beer",
+    "description": "Fresh and slightly bitter taste, produced according to the traditional German purity law.",
+    "price": "€3.00",
+    "image": "/images/becks-beer.png",
+    "category": "DRINKS"
+  },
+  {
+    "id": 169,
+    "name": "Red Bull",
+    "slug": "red-bull",
+    "shortDescription": "Energy drink",
+    "description": "Provides immediate energy with its classic and sparkling taste, perfect for an instant boost.",
+    "price": "€3.00",
+    "image": "/images/red-bull.png",
+    "category": "DRINKS"
+  },
+  {
+    "id": 170,
+    "name": "Fruit Juice",
+    "slug": "fruit-juice",
+    "shortDescription": "Natural fruit juice",
+    "description": "Available in various flavors, made fresh with no added preservatives.",
+    "price": "€3.00",
+    "image": "/images/fruit-juice.png",
+    "category": "DRINKS"
+  },
+  {
+    "id": 171,
+    "name": "Bottled Drinks",
+    "slug": "bottled-drinks",
+    "shortDescription": "Selection of bottled drinks",
+    "description": "Variety of flavors available, fresh and thirst-quenching, ideal to accompany meals.",
+    "price": "€2.50",
+    "image": "/images/bottled-drinks.png",
+    "category": "DRINKS"
+  },
+  {
+    "id": 172,
+    "name": "Canned Drinks",
+    "slug": "canned-drinks",
+    "shortDescription": "Large selection of canned drinks",
+    "description": "Available in different flavors, fresh, fizzy, and ready to drink.",
+    "price": "€2.00",
+    "image": "/images/canned-drinks.png",
+    "category": "DRINKS"
+  },
+  {
+    "id": 173,
+    "name": "Coca-Cola on Tap",
+    "slug": "coca-cola-on-tap",
+    "shortDescription": "Coca-Cola served on tap",
+    "description": "Fresh, high-quality sparkling drink, ideal to accompany meals. Available in price range €2.00 - €3.00.",
+    "price": "€2.00 - €3.00",
+    "image": "/images/coca-cola-on-tap.png",
+    "category": "DRINKS"
+  },
+  {
+    "id": 174,
+    "name": "PET Water 50cl",
+    "slug": "pet-water-50cl",
+    "shortDescription": "Mineral water in a 50cl PET bottle",
+    "description": "Fresh and purified mineral water, ideal for hydration at any time of day.",
+    "price": "€1.00",
+    "image": "/images/pet-water-50cl.png",
+    "category": "DRINKS"
+  },
+  {
+    "id": 175,
+    "name": "Glass Water 75cl",
+    "slug": "glass-water-75cl",
+    "shortDescription": "Natural mineral water",
+    "description": "Packaged in a 75cl glass bottle, fresh and pure, ideal for table service.",
+    "price": "€2.50",
+    "image": "/images/glass-water-75cl.png",
+    "category": "DRINKS"
+  }
+,
+
+  {
+    "id": 176,
+    "name": "Corona 33cl",
+    "slug": "corona-33cl",
+    "shortDescription": "Lager beer in a 33cl bottle",
+    "description": "Fresh and light lager beer, ideal for a refreshing drink.",
+    "price": "€4.00",
+    "image": "/images/corona-33cl.png",
+    "category": "MENABREA BLONDE ON TAP"
+  },
+  {
+    "id": 177,
+    "name": "Ceres 33cl",
+    "slug": "ceres-33cl",
+    "shortDescription": "Ceres Beer 33cl",
+    "description": "Rich and malty taste, perfect for every occasion.",
+    "price": "€4.00",
+    "image": "/images/ceres-33cl.png",
+    "category": "MENABREA BLONDE ON TAP"
+  },
+  {
+    "id": 178,
+    "name": "Bud 33cl",
+    "slug": "bud-33cl",
+    "shortDescription": "Budweiser beer in a 33cl bottle",
+    "description": "Light and refreshing taste, excellent to enjoy chilled.",
+    "price": "€4.00",
+    "image": "/images/bud-33cl.png",
+    "category": "MENABREA BLONDE ON TAP"
+  },
+  {
+    "id": 179,
+    "name": "Heineken 0.0 33cl",
+    "slug": "heineken-0-0-33cl",
+    "shortDescription": "Heineken non-alcoholic beer",
+    "description": "33cl pack, authentic and fresh taste without alcohol.",
+    "price": "€4.00",
+    "image": "/images/heineken-0-0-33cl.png",
+    "category": "MENABREA BLONDE ON TAP"
+  },
+  {
+    "id": 180,
+    "name": "Heineken 33cl",
+    "slug": "heineken-33cl",
+    "shortDescription": "High quality lager beer",
+    "description": "33cl bottle, fresh taste and premium quality.",
+    "price": "€3.50",
+    "image": "/images/heineken-33cl.png",
+    "category": "MENABREA BLONDE ON TAP"
+  },
+  {
+    "id": 181,
+    "name": "Beck's 33cl",
+    "slug": "becks-33cl",
+    "shortDescription": "33cl Lager Beer",
+    "description": "Fresh and light taste with hop aromas, perfect for a classic lager experience.",
+    "price": "€3.50",
+    "image": "/images/becks-33cl.png",
+    "category": "MENABREA BLONDE ON TAP"
+  },
+  {
+    "id": 182,
+    "name": "Moretti Beer",
+    "slug": "moretti-beer",
+    "shortDescription": "Italian lager beer",
+    "description": "Balanced and slightly bitter taste, ideal to pair with Italian dishes.",
+    "price": "€3.00",
+    "image": "/images/moretti-beer.png",
+    "category": "MENABREA BLONDE ON TAP"
+  }
+,
+
+  {
+    "id": 183,
+    "name": "Valdobbiadene Prosecco Superiore Extra Dry Serena",
+    "slug": "valdobbiadene-prosecco-superiore-extra-dry-serena",
+    "shortDescription": "Prosecco Superiore Extra Dry",
+    "description": "High quality Glera grapes, fresh and elegant sparkling wine. Perfect as an aperitif or for special occasions.",
+    "price": "€4.00 - €17.00",
+    "image": "/images/prosecco-superiore-serena.png",
+    "category": "BUBBLES"
+  },
+  {
+    "id": 184,
+    "name": "Franciacorta Rosé Millesimato (Organic) Barone Pizzini",
+    "slug": "franciacorta-rose-millesimato-organic-barone-pizzini",
+    "shortDescription": "Organic Franciacorta Rosé",
+    "description": "Blend of Chardonnay and Pinot Noir, high-quality organic sparkling wine from a vintage year.",
+    "price": "€35.00",
+    "image": "/images/franciacorta-rose-barone-pizzini.png",
+    "category": "BUBBLES"
+  },
+  {
+    "id": 185,
+    "name": "Franciacorta Satèn Millesimato (Organic) Barone Pizzini",
+    "slug": "franciacorta-saten-millesimato-organic-barone-pizzini",
+    "shortDescription": "Organic Franciacorta Satèn",
+    "description": "Vintage sparkling wine made from Chardonnay grapes, aged with care for an elegant taste.",
+    "price": "€35.00",
+    "image": "/images/franciacorta-saten-barone-pizzini.png",
+    "category": "BUBBLES"
+  },
+  {
+    "id": 186,
+    "name": "Animating Franciacorta (Organic) Barone Pizzini",
+    "slug": "animating-franciacorta-organic-barone-pizzini",
+    "shortDescription": "High-quality organic Franciacorta",
+    "description": "Blend of Chardonnay, Pinot Noir, Pinot Blanc, and Herbamat. A refined organic sparkling wine.",
+    "price": "€30.00",
+    "image": "/images/animante-franciacorta-barone-pizzini.png",
+    "category": "BUBBLES"
+  },
+  {
+    "id": 187,
+    "name": "Franciacorta Brut Vigna Dorata",
+    "slug": "franciacorta-brut-vigna-dorata",
+    "shortDescription": "Franciacorta Brut",
+    "description": "Elegant sparkling wine made from Chardonnay and Pinot Noir, from selected vineyards.",
+    "price": "€25.00",
+    "image": "/images/franciacorta-brut-vigna-dorata.png",
+    "category": "BUBBLES"
+  },
+  {
+    "id": 188,
+    "name": "Franciacorta Brut Ferghettina",
+    "slug": "franciacorta-brut-ferghettina",
+    "shortDescription": "Franciacorta Brut Sparkling Wine",
+    "description": "Made from Chardonnay and Pinot Noir grapes, fresh and lively with fine perlage.",
+    "price": "€30.00",
+    "image": "/images/franciacorta-brut-ferghettina.png",
+    "category": "BUBBLES"
+  },
+  {
+    "id": 189,
+    "name": "Cuvée Prestige Franciacorta Ca' del Bosco",
+    "slug": "cuvee-prestige-franciacorta-ca-del-bosco",
+    "shortDescription": "High-quality Franciacorta sparkling wine",
+    "description": "Blend of Chardonnay, Pinot Bianco, and Pinot Noir. Elegant and refined sparkling wine.",
+    "price": "€45.00",
+    "image": "/images/cuvee-prestige-ca-del-bosco.png",
+    "category": "BUBBLES"
+  },
+  {
+    "id": 190,
+    "name": "61 Franciacorta Nature Millesimato Berlucchi",
+    "slug": "61-franciacorta-nature-millesimato-berlucchi",
+    "shortDescription": "High-quality vintage Franciacorta",
+    "description": "Blend of Chardonnay and Pinot Noir, elegant sparkling wine with no added sugar.",
+    "price": "€40.00",
+    "image": "/images/61-franciacorta-nature-berlucchi.png",
+    "category": "BUBBLES"
+  },
+  {
+    "id": 191,
+    "name": "61 Franciacorta Rosé Berlucchi",
+    "slug": "61-franciacorta-rose-berlucchi",
+    "shortDescription": "Rosé sparkling wine",
+    "description": "Made from Pinot Noir and Chardonnay, elegant and refined sparkling rosé.",
+    "price": "€35.00",
+    "image": "/images/61-franciacorta-rose-berlucchi.png",
+    "category": "BUBBLES"
+  },
+  {
+    "id": 192,
+    "name": "61 Franciacorta Satèn Berlucchi",
+    "slug": "61-franciacorta-saten-berlucchi",
+    "shortDescription": "Franciacorta Satèn",
+    "description": "Produced exclusively with Chardonnay grapes, elegant and refined with fine perlage.",
+    "price": "€30.00",
+    "image": "/images/61-franciacorta-saten-berlucchi.png",
+    "category": "BUBBLES"
+  },
+  {
+    "id": 193,
+    "name": "61 Franciacorta Extra Brut Berlucchi",
+    "slug": "61-franciacorta-extra-brut-berlucchi",
+    "shortDescription": "Franciacorta Extra Brut Sparkling Wine",
+    "description": "Composed of Chardonnay and Pinot Noir, fresh, crisp, and elegant sparkling wine.",
+    "price": "€30.00",
+    "image": "/images/61-franciacorta-extra-brut-berlucchi.png",
+    "category": "BUBBLES"
+  },
+  {
+    "id": 194,
+    "name": "Alma Grande Cuvée Franciacorta Brut Bellavista",
+    "slug": "alma-grande-cuvee-franciacorta-brut-bellavista",
+    "shortDescription": "Franciacorta Brut Sparkling Wine",
+    "description": "Blend of Chardonnay and Pinot Noir, elegant and refined sparkling wine of great prestige.",
+    "price": "€50.00",
+    "image": "/images/alma-grande-cuvee-bellavista.png",
+    "category": "BUBBLES"
+  }
+,
+  {
+    "id": 201,
+    "name": "Cabernet Serena",
+    "slug": "cabernet-serena",
+    "shortDescription": "Cabernet Red Wine",
+    "description": "High-quality pure Cabernet with rich character and smooth notes.",
+    "price": "€3.00 - €12.00",
+    "image": "/images/cabernet-serena.png",
+    "category": "RED WINE"
+  },
+  {
+    "id": 202,
+    "name": "Montenetto di Brescia Rosso (BIO) – Barone Pizzini",
+    "slug": "montenetto-di-brescia-rosso-bio-barone-pizzini",
+    "shortDescription": "Organic Red Wine",
+    "description": "Produced using organic methods, a balanced red wine from Barone Pizzini.",
+    "price": "€4.00 - €15.00",
+    "image": "/images/montenetto-rosso-barone-pizzini.png",
+    "category": "RED WINE"
+  },
+  {
+    "id": 203,
+    "name": "Curtefranca Rosso (BIO) – Barone Pizzini",
+    "slug": "curtefranca-rosso-bio-barone-pizzini",
+    "shortDescription": "Organic Red Wine",
+    "description": "Produced with organic methods, a refined blend of grapes from Curtefranca.",
+    "price": "€17.00",
+    "image": "/images/curtefranca-rosso-barone-pizzini.png",
+    "category": "RED WINE"
+  },
+  {
+    "id": 204,
+    "name": "Montenetto di Brescia Red Stag Beetle (Organic) – Barone Pizzini",
+    "slug": "montenetto-di-brescia-red-stag-beetle-barone-pizzini",
+    "shortDescription": "Organic Red Wine",
+    "description": "Blend of Marzemino and Merlot. Organic wine from Montenetto di Brescia, Lombardy.",
+    "price": "€25.00",
+    "image": "/images/montenetto-red-stag-barone-pizzini.png",
+    "category": "RED WINE"
+  },
+  {
+    "id": 205,
+    "name": "Corte del Lupo Rosso – Ca' del Bosco",
+    "slug": "corte-del-lupo-rosso-ca-del-bosco",
+    "shortDescription": "Red wine from Lombardy",
+    "description": "Elegant red wine with notes of red fruits, produced by Ca' del Bosco winery.",
+    "price": "€35.00",
+    "image": "/images/corte-del-lupo-rosso-ca-del-bosco.png",
+    "category": "RED WINE"
+  },
+  {
+    "id": 206,
+    "name": "From Hand to Hand – Cavalleri",
+    "slug": "from-hand-to-hand-cavalleri",
+    "shortDescription": "Italian Red Wine",
+    "description": "Di Mano in Mano Cavalleri, a red wine with fruity notes and smooth body.",
+    "price": "€25.00",
+    "image": "/images/from-hand-to-hand-cavalleri.png",
+    "category": "RED WINE"
+  },
+  {
+    "id": 207,
+    "name": "Plumbago Planeta Nero d'Avola",
+    "slug": "plumbago-planeta-nero-davola",
+    "shortDescription": "Nero d'Avola Red Wine",
+    "description": "A Sicilian red wine with fruity notes, made from Nero d'Avola grapes.",
+    "price": "€20.00",
+    "image": "/images/plumbago-nero-davola.png",
+    "category": "RED WINE"
+  }
+  
+]
+
+
+

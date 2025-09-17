@@ -1,1 +1,3 @@
-mobile header logo size issue
+conatct page ,bookatable page csr to ssr 
+coloring 
+line below the menu links in header and footer
