@@ -1,16 +1,9 @@
-import React from 'react';
-import { useParams } from 'next/navigation';
+import React from 'react'
 
-const MenuPage = () => {
-    const params = useParams();
-    const { slug } = params as { slug: string };
+function page() {
+  return (
+    <div>page</div>
+  )
+}
 
-    return (
-        <main>
-            <h1>Menu: {slug}</h1>
-            {/* Add your menu content here */}
-        </main>
-    );
-};
-
-export default MenuPage;
+export default page
