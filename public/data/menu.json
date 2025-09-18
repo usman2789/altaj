@@ -17,7 +17,7 @@
     "shortDescription": "Crispy fried chicken bites",
     "description": "Perfect as a snack or appetizer",
     "price": "€5.00",
-    "image": "/images/chicken-popcorn.png",
+    "image": "/images/POPCORN-POLLO.png",
     "category": "APPETIZERS"
   },
   {
@@ -47,7 +47,7 @@
     "shortDescription": "Spiral-cut chips",
     "description": "Fried until golden brown, crunchy and delicious",
     "price": "€4.00",
-    "image": "/images/spiral-chips.png",
+    "image": "/images/Patatine-1.png",
     "category": "APPETIZERS"
   },
   {
@@ -57,7 +57,7 @@
     "shortDescription": "Crispy and light",
     "description": "Perfect for any occasion, excellent as a snack or side",
     "priceRange": "€2.00 - €3.50",
-    "image": "/images/french-fries.png",
+    "image": "/images/Patatine.png",
     "category": "APPETIZERS"
   },
   {
@@ -97,7 +97,7 @@
     "shortDescription": "Fried whole wheat flour balls",
     "description": "Filled with fresh vegetables, crunchy and tangy",
     "price": "€5.00",
-    "image": "/images/gool-gappe.png",
+    "image": "/images/Chicken-Pakora-2.png",
     "category": "APPETIZERS"
   },
   {
@@ -107,7 +107,7 @@
     "shortDescription": "Stuffed with potatoes and peas",
     "description": "Prepared with type '00' flour and spices",
     "price": "€4.00",
-    "image": "/images/sabzi-samosa.png",
+    "image": "/images/Chicken-Pakora-1.png",
     "category": "APPETIZERS"
   },
   {
@@ -127,7 +127,7 @@
     "shortDescription": "5 pieces of fried shrimp",
     "description": "Made with chickpea flour and spices",
     "price": "€7.00",
-    "image": "/images/shrimp-pakora.png",
+    "image": "/images/Gamberetti-Pakora.png",
     "category": "APPETIZERS"
   },
   {
@@ -137,7 +137,7 @@
     "shortDescription": "Cod fish fritters",
     "description": "Made with chickpea flour and spices",
     "price": "€7.00",
-    "image": "/images/fish-pakora.png",
+    "image": "/images/Paneer-Pakora-2.png",
     "category": "APPETIZERS"
   },
   {
@@ -147,7 +147,7 @@
     "shortDescription": "Eggplant fritters",
     "description": "Made with chickpea flour and spices",
     "price": "€4.00",
-    "image": "/images/baingan-pakora.png",
+    "image": "/images/Paneer-Pakora-1.png",
     "category": "APPETIZERS"
   },
   {
@@ -187,7 +187,7 @@
     "shortDescription": "Grilled veal meatballs",
     "description": "Accompanied by fragrant basmati rice and French fries",
     "price": "€8.00",
-    "image": "/images/kofte-grill.png",
+    "image": "/images/Grilled-Kofta.png",
     "category": "TANDOOR AND GRILL SPECIALTIES"
   },
   {
@@ -207,7 +207,7 @@
     "shortDescription": "Succulent, grilled lamb chop",
     "description": "Accompanied by fragrant basmati rice, fries, salad, herbs, sauces, and bread",
     "price": "€14.00",
-    "image": "/images/lamb-rib.png",
+    "image": "/images/Costata-di-Manzo.png",
     "category": "TANDOOR AND GRILL SPECIALTIES"
   },
   {
@@ -217,7 +217,7 @@
     "shortDescription": "Succulent, grilled beef rib",
     "description": "Accompanied by fragrant basmati rice, fries, salad, salt, pepper, sauces, and bread",
     "price": "€12.00",
-    "image": "/images/beef-rib.png",
+    "image": "/images/Costata-di-Manzo-1.png",
     "category": "TANDOOR AND GRILL SPECIALTIES"
   },
   {
@@ -227,7 +227,7 @@
     "shortDescription": "Succulent grilled beef steak",
     "description": "Served with basmati rice, fries, salad, rosemary, sauces, and bread",
     "price": "€10.00",
-    "image": "/images/beef-steak.png",
+    "image": "/images/Grilled-Beef-Steak.png",
     "category": "TANDOOR AND GRILL SPECIALTIES"
   },
   {
@@ -237,7 +237,7 @@
     "shortDescription": "Succulent, grilled chicken steak",
     "description": "Accompanied by fragrant basmati rice, fries, salad, sauces, and bread",
     "price": "€8.00",
-    "image": "/images/chicken-steak.png",
+    "image": "/images/Bistecca-di-Pollo.png",
     "category": "TANDOOR AND GRILL SPECIALTIES"
   },
   {
@@ -257,7 +257,7 @@
     "shortDescription": "Prawns marinated with aromatic spices",
     "description": "Cooked in the tandoor oven until golden and succulent",
     "price": "€10.00",
-    "image": "/images/tandoor-prawns.png",
+    "image": "/images/Gamberoni-Tandoor.png",
     "category": "TANDOOR AND GRILL SPECIALTIES"
   },
   {
@@ -267,7 +267,7 @@
     "shortDescription": "Marinated cod fillets",
     "description": "Prepared with yogurt, garlic, oil, and aromatic spices",
     "price": "€8.00",
-    "image": "/images/fish-tikka-tandoor.png",
+    "image": "/images/FISH-TIKKA-TANDOORi.png",
     "category": "TANDOOR AND GRILL SPECIALTIES"
   },
   {
@@ -287,7 +287,7 @@
     "shortDescription": "Ground beef with peppers",
     "description": "Flavored with chili peppers and spices, grilled golden brown",
     "price": "€7.00",
-    "image": "/images/seekh-kebab.png",
+    "image": "/images/MIX-GRILL-AL-TAJ-1.png",
     "category": "TANDOOR AND GRILL SPECIALTIES"
   },
   {
@@ -297,7 +297,7 @@
     "shortDescription": "Ground chicken with cheese",
     "description": "Flavored with selected spices and cooked on the grill",
     "price": "€8.00",
-    "image": "/images/chicken-cheese-kebab.png",
+    "image": "/images/Chicken-Cheese-Kabab.png",
     "category": "TANDOOR AND GRILL SPECIALTIES"
   },
   {
@@ -307,7 +307,7 @@
     "shortDescription": "Marinated chicken wings",
     "description": "Prepared with mayonnaise, yogurt, pepper, and spices",
     "price": "€6.00",
-    "image": "/images/chicken-wings-grill.png",
+    "image": "/images/Chicken-Wings.png",
     "category": "TANDOOR AND GRILL SPECIALTIES"
   },
   {
@@ -470,7 +470,7 @@
     "shortDescription": "Red lentils cooked in curry sauce",
     "description": "Red lentils cooked in curry sauce enriched with butter and spices",
     "price": "€6.00",
-    "image": "/images/daal-masoor.png",
+    "image": "/images/DAAL-Massor.png",
     "category": "DAAL CURRY SPECIALTY"
   },
   {
@@ -500,7 +500,7 @@
     "shortDescription": "Chicken cubes in a sweet and sour sauce",
     "description": "Diced chicken in a sweet and sour sauce with fresh cream, coconut powder, lemon juice and sugar",
     "price": "€10.00",
-    "image": "/images/chicken-sweet-and-sour.png",
+    "image": "/images/CHICKEN-SWEET-E-SUVER.png",
     "category": "MAIN COURSES - CHICKEN SPECIALTIES"
   },
   {
@@ -510,7 +510,7 @@
     "shortDescription": "Chicken cubes cooked in the tandoor oven",
     "description": "Diced chicken cooked in the tandoor oven with peppers, onions, butter and spices",
     "price": "€10.00",
-    "image": "/images/butter-chicken.png",
+    "image": "/images/Butter-Chicken-.png",
     "category": "MAIN COURSES - CHICKEN SPECIALTIES"
   },
   {
@@ -520,7 +520,7 @@
     "shortDescription": "Chicken cubes cooked in the tandoor oven",
     "description": "Diced chicken cooked in the tandoor oven with bell peppers, coriander and a creamy curry sauce",
     "price": "€9.00",
-    "image": "/images/chicken-tikka-masala.png",
+    "image": "/images/Lamb-Madras-Curry.png",
     "category": "MAIN COURSES - CHICKEN SPECIALTIES"
   },
   {
@@ -550,7 +550,7 @@
     "shortDescription": "Chicken cubes cooked with peppers and chili",
     "description": "Diced chicken with peppers and chili in a spicy curry sauce",
     "price": "€8.00",
-    "image": "/images/chicken-chili-taj.png",
+    "image": "/images/CHICKEN-CHILLI-TAJ.png",
     "category": "MAIN COURSES - CHICKEN SPECIALTIES"
   },
   {
@@ -681,7 +681,7 @@
   "shortDescription": "Shrimp with spicy curry",
   "description": "Fresh shrimp cooked with peppers and tomatoes in a rich, spicy curry sauce.",
   "price": "€12.00",
-  "image": "/images/shrimp-masala.png",
+  "image": "/images/GAMBERI-MASALA.png",
   "category": "FISH CURRY SPECIALTIES"
 },
 {
@@ -691,7 +691,7 @@
   "shortDescription": "Shrimp in aromatic curry",
   "description": "Juicy prawns simmered in a rich curry sauce infused with aromatic spices.",
   "price": "€11.00",
-  "image": "/images/shrimp-curry.png",
+  "image": "/images/Gamberi-Curry.png",
   "category": "FISH CURRY SPECIALTIES"
 },
 {
@@ -721,7 +721,7 @@
   "shortDescription": "Spicy Goan-style fish",
   "description": "Fresh cod cooked in a spicy curry sauce with aromatic curry leaves for a traditional Goan flavor.",
   "price": "€10.00",
-  "image": "/images/goan-fish-curry.png",
+  "image": "/images/Goa-Fish-Curry.png",
   "category": "FISH CURRY SPECIALTIES"
 },
 {
@@ -761,7 +761,7 @@
   "shortDescription": "Vegetable biryani",
   "description": "Mixed vegetables cooked in curry sauce with aromatic basmati rice and rich spices.",
   "price": "€6.50",
-  "image": "/images/sabzi-biryani.png",
+  "image": "/images/Sabzi-Biryani-1.png",
   "category": "BASMATI RICE"
 },
 {
@@ -781,7 +781,7 @@
   "shortDescription": "Shrimp biryani",
   "description": "Shrimp cooked with curry sauce, spices, and aromatic basmati rice.",
   "price": "€10.00",
-  "image": "/images/prawn-biryani.png",
+  "image": "/images/Gamberi-Biryani.png",
   "category": "BASMATI RICE"
 },
 {
@@ -841,7 +841,7 @@
   "shortDescription": "Red lentil soup",
   "description": "Tasty red lentils simmered with corn flour and aromatic spices.",
   "price": "€6.00",
-  "image": "/images/dal-soup.png",
+  "image": "/images/Daal-Soup.png",
   "category": "SOUPS"
 },
 {
@@ -882,7 +882,7 @@
   "shortDescription": "Garlic-flavored naan",
   "description": "Soft naan bread made with '00' flour and butter, flavored with freshly chopped garlic.",
   "price": "€3.00",
-  "image": "/images/naan-garlic.png",
+  "image": "/images/Garlic-naan.png",
   "category": "TANDOOR BREAD"
 },
 {
@@ -902,7 +902,7 @@
   "shortDescription": "Stuffed naan with paneer",
   "description": "Soft naan bread prepared with '00' flour, milk, and butter, stuffed with fresh paneer cheese filling.",
   "price": "€4.50",
-  "image": "/images/naan-paneer.png",
+  "image": "/images/Paneer-Naan.png",
   "category": "TANDOOR BREAD"
 },
 {
@@ -922,7 +922,7 @@
   "shortDescription": "Plain and roghni naan",
   "description": "Classic naan bread varieties made with '00' flour, water, sugar, and eggs, baked soft and fluffy.",
   "price": "€2.00",
-  "image": "/images/naan-sada-roghni.png",
+  "image": "/images/NAAN-SADA-O-ROGHNI.png",
   "category": "TANDOOR BREAD"
 },
 {
@@ -983,7 +983,7 @@
   "shortDescription": "Fried milk sweet",
   "description": "Famous Indian dessert made with powdered milk and flour, fried and soaked in sugar syrup.",
   "price": "€4.00",
-  "image": "/images/gulab-jamun.png",
+  "image": "/images/GULAB-JAMAN.png",
   "category": "INDIAN DESSERTS"
 },
 {
@@ -1013,7 +1013,7 @@
   "shortDescription": "Carrot-based sweet",
   "description": "Seasonal dessert made with fresh carrots, milk, pistachios, and almonds, rich and flavorful.",
   "price": "€4.00",
-  "image": "/images/gajrela.png",
+  "image": "/images/Gajrela-.png",
   "category": "INDIAN DESSERTS"
 },
 {
@@ -1083,7 +1083,7 @@
   "shortDescription": "Mango milkshake",
   "description": "Delicious tropical smoothie made with fresh mango, milk, and sugar for a creamy flavor.",
   "price": "€5.00",
-  "image": "/images/mango-shake.png",
+  "image": "/images/Mango-Shake-1.png",
   "category": "ETHNIC DRINKS"
 }
 ,
@@ -1615,7 +1615,7 @@
   "shortDescription": "Spicy stuffed calzone",
   "description": "Calzone filled with tomato, mozzarella, spicy salami, and peppers.",
   "price": "€8.00",
-  "image": "/images/angry-calzone.png",
+  "image": "/images/Calzone-Arrabbiato.png",
   "category": "CALZONE"
 },
 {
@@ -1625,7 +1625,7 @@
   "shortDescription": "Vegetarian calzone",
   "description": "Calzone filled with tomato, mozzarella, mushrooms, and artichokes.",
   "price": "€8.00",
-  "image": "/images/stuffed-calzone.png",
+  "image": "/images/CALZONE-NORMALE-1-1.png",
   "category": "CALZONE"
 },
 {
@@ -1635,7 +1635,7 @@
   "shortDescription": "Classic calzone",
   "description": "Calzone with tomato, mozzarella, and halal turkey ham.",
   "price": "€7.00",
-  "image": "/images/normal-calzone.png",
+  "image": "/images/CALZONE-NORMALE.png",
   "category": "CALZONE"
 },
 {
@@ -1645,7 +1645,7 @@
   "shortDescription": "Simple calzone",
   "description": "Calzone flavored with extra virgin olive oil and oregano.",
   "price": "€6.50",
-  "image": "/images/smooth-calzone.png",
+  "image": "/images/Calzone-Liscio.png",
   "category": "CALZONE"
 }
 ,{
