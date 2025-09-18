@@ -1,4 +1,6 @@
-  import React from 'react';
+'use client';
+
+import React, { useState } from 'react';
 import Image from 'next/image';
 
 interface DishCardProps {
@@ -22,39 +24,64 @@ const DishCard: React.FC<DishCardProps> = ({
   category
 }) => {
   const displayPrice = price || priceRange || 'Price on request';
+  const [imageError, setImageError] = useState(false);
+  
+  // Create a placeholder component for missing images
+  const PlaceholderImage = () => (
+    <div className="w-full h-full bg-gradient-to-br from-[#D4A541]/20 to-[#040402] flex items-center justify-center">
+      <div className="text-center p-4">
+        <div className="text-[#D4A541] text-3xl mb-3">🍽️</div>
+        <h4 className="text-white text-sm font-bold mb-1">Al Taj Restaurant</h4>
+        <p className="text-gray-300 text-xs">Image Coming Soon</p>
+        <p className="text-[#D4A541] text-xs mt-2 font-medium">{category}</p>
+      </div>
+    </div>
+  );
 
   return (
     <div className="group bg-[#040402] border border-[#D4A541]/20 rounded-xl overflow-hidden hover:border-[#D4A541]/60 transition-all duration-300 hover:shadow-lg hover:shadow-[#D4A541]/20 hover:-translate-y-2">
-      {/* Image Container */}
-      <div className="relative h-48 sm:h-52 md:h-56 lg:h-60 overflow-hidden bg-gradient-to-br from-[#D4A541]/5 to-transparent">
-        <Image
-          src={image}
-          alt={`${name} - ${shortDescription}`}
-          fill
-          className="object-cover group-hover:scale-110 transition-transform duration-500"
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          placeholder="blur"
-          blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGBkbHB0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
-        />
+      {/* Image Container - Optimized for 555×592 (1:1.07 ratio) */}
+      <div className="relative w-full overflow-hidden bg-gradient-to-br from-[#D4A541]/5 to-transparent">
+        {/* Responsive aspect ratio container for 555×592 images */}
+        <div className="aspect-[555/592] relative">
+          {imageError ? (
+            <PlaceholderImage />
+          ) : (
+            <Image
+              src={image}
+              alt={`${name} - ${shortDescription}`}
+              fill
+              className="object-cover group-hover:scale-110 transition-transform duration-500"
+              sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+              placeholder="blur"
+              blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGBkbHB0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
+              priority={false}
+              onError={() => {
+                console.error(`Failed to load image: ${image}`);
+                setImageError(true);
+              }}
+            />
+          )}
+        </div>
         
         {/* Category Badge */}
-        <div className="absolute top-3 left-3">
-          <span className="bg-[#D4A541]/90 backdrop-blur-sm text-[#040402] text-xs font-bold px-2 py-1 rounded-full">
+        <div className="absolute top-3 left-3 z-10">
+          <span className="bg-[#D4A541]/90 backdrop-blur-sm text-[#040402] text-xs font-bold px-2 py-1 rounded-full shadow-lg">
             {category}
           </span>
         </div>
 
         {/* Price Badge */}
-        <div className="absolute top-3 right-3">
-          <span className="bg-[#040402]/80 backdrop-blur-sm text-[#D4A541] text-sm font-bold px-3 py-1 rounded-full border border-[#D4A541]/30">
+        <div className="absolute top-3 right-3 z-10">
+          <span className="bg-[#040402]/90 backdrop-blur-sm text-[#D4A541] text-sm font-bold px-3 py-1 rounded-full border border-[#D4A541]/30 shadow-lg">
             {displayPrice}
           </span>
         </div>
 
         {/* Hover Overlay - Only visible on desktop */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#040402]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 hidden md:block">
+        <div className="absolute inset-0 bg-gradient-to-t from-[#040402]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 hidden md:block z-10">
           <div className="absolute bottom-4 left-4 right-4">
-            <button className="w-full bg-[#D4A541] hover:bg-[#B8941A] text-[#040402] font-bold py-2 px-4 rounded-lg transition-colors duration-200 transform translate-y-4 group-hover:translate-y-0">
+            <button className="w-full bg-[#D4A541] hover:bg-[#B8941A] text-[#040402] font-bold py-2 px-4 rounded-lg transition-colors duration-200 transform translate-y-4 group-hover:translate-y-0 shadow-lg">
               View Details
             </button>
           </div>
