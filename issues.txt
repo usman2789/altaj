@@ -1,0 +1,3 @@
+conatct page ,bookatable page csr to ssr 
+coloring 
+line below the menu links in header and footer
