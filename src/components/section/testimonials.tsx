@@ -197,9 +197,9 @@ const Testimonials = () => {
                   </span>
                 </div>
 
-                {/* Testimonial Text */}
+                {/* Testimonial Text - Fix escaped quotes */}
                 <blockquote className="text-gray-200 text-lg lg:text-xl font-serif leading-relaxed mb-8 italic">
-                  "{testimonials[currentSlide].comment}"
+                  &ldquo;{testimonials[currentSlide].comment}&rdquo;
                 </blockquote>
 
                 {/* Customer Info with Premium Styling */}

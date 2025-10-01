@@ -27,7 +27,7 @@ const WhyChooseUs = () => {
       id: 3,
       icon: '/other images/why_feature_3.svg',
       title: 'Servizio Eccellente',
-      description: 'Staff professionale e atmosfera familiare per un\'esperienza culinaria indimenticabile nel cuore di Brescia.'
+      description: 'Staff professionale e atmosfera familiare per un&apos;esperienza culinaria indimenticabile nel cuore di Brescia.'
     }
   ];
 
@@ -79,7 +79,7 @@ const WhyChooseUs = () => {
 
         {/* Features Grid - Enhanced with mobile animations */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-          {features.map((feature, index) => (
+          {features.map((feature) => (
             <div 
               key={feature.id}
               className="group text-center cursor-pointer"
@@ -134,9 +134,9 @@ const WhyChooseUs = () => {
           {/* Decorative Border */}
           <div className="w-24 h-px bg-gradient-to-r from-transparent via-[#A48134] to-transparent mx-auto mb-6 animate-pulse"></div>
           
-          {/* CTA Text */}
+          {/* CTA Text - Fix escaped quotes */}
           <p className="text-gray-300 text-base lg:text-lg font-serif italic mb-6">
-            "Vieni a scoprire il gusto autentico della tradizione Pak-Indiana"
+            &ldquo;Vieni a scoprire il gusto autentico della tradizione Pak-Indiana&rdquo;
           </p>
           
           {/* CTA Button - Enhanced with mobile touch animations */}
