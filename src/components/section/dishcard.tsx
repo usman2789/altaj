@@ -17,7 +17,7 @@ interface DishCardProps {
 }
 
 const DishCard: React.FC<DishCardProps> = ({
-  id,
+  
   name,
   slug,
   shortDescription,

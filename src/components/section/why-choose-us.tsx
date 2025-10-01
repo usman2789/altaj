@@ -72,7 +72,7 @@ const WhyChooseUs = () => {
           
           {/* Description - Reduced size */}
           <p className="text-gray-300 text-base lg:text-lg max-w-2xl mx-auto leading-relaxed font-serif">
-            Al TAJ RISTORANTE offriamo un'autentica esperienza culinaria Pak-Indiana nel cuore di Brescia. 
+            Al TAJ RISTORANTE offriamo un&apos;autentica esperienza culinaria Pak-Indiana nel cuore di Brescia. 
             La nostra dedizione alla qualità e al servizio eccellente ci distingue da sempre.
           </p>
         </div>
