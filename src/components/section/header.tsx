@@ -16,8 +16,8 @@ const Header = () => {
 
   // Navigation menu items - Add/remove items here to modify navigation
   const menuItems = [
-    { name: 'Home', href: '#' },
-    { name: 'Menu', href: '#' },
+    { name: 'Home', href: '/#' },
+    { name: 'Menu', href: '/menu' },
     { name: 'Order', href: '#' },
     { name: 'Our Story', href: '/ourstory' },
     { name: 'Contact', href: '/contact' },
