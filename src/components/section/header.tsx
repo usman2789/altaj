@@ -28,24 +28,32 @@ const Header = () => {
     <>
       {/* MAIN HEADER */}
       <header 
-        className="bg-black/95 backdrop-blur-md border-2 relative top-4 z-50 rounded-xl lg:rounded-2xl mt-2 lg:mt-2 mx-1 lg:mx-0" 
-        style={{ borderColor: '#a57f2cff' }}
+        className="backdrop-blur-md border-2 relative top-4 z-50 rounded-xl lg:rounded-2xl mt-2 lg:mt-2 mx-1 lg:mx-0" 
+        style={{ 
+          borderColor: '#a57f2cff',
+          background: 'linear-gradient(135deg, rgba(0, 0, 0, 0.95) 0%, rgba(165, 127, 44, 0.15) 50%, rgba(0, 0, 0, 0.95) 100%)'
+        }}
         // CUSTOMIZATION: 
-        // - Change background: modify 'bg-black/95' 
+        // - Premium gradient background with golden accent
         // - Change border radius: modify 'rounded-xl lg:rounded-2xl'
         // - Change border color: modify the hex value in style prop
         // - Change positioning: modify 'top-4', 'mt-2 lg:mt-4', 'mx-1 lg:mx-2'
+        // - Adjust golden shade: modify 'rgba(165, 127, 44, 0.15)' opacity value
       >
         <div className="max-w-7xl mx-auto px-3 sm:px-8 lg:px-12">
           {/* HEADER CONTENT CONTAINER */}
-          <div className="flex items-center justify-between h-20 lg:h-28">
-            {/* CUSTOMIZATION: Change header height by modifying 'h-20 lg:h-28' */}
+          <div className="flex items-center justify-between h-24 lg:h-28">
+            {/* CUSTOMIZATION: 
+                - Mobile height increased: 'h-24' (was h-20)
+                - Desktop height: 'lg:h-28'
+                - Change heights as needed
+            */}
             
             {/* LOGO SECTION */}
             <div className="flex-shrink-0 -ml-2 lg:ml-0">
               {/* CUSTOMIZATION: 
                   - Logo positioning: modify '-ml-2 lg:ml-0' (negative margin moves left)
-                  - Logo size: modify 'h-14 lg:h-20' (height classes)
+                  - Logo size: modify 'h-16 lg:h-20' (height classes)
                   - Logo source: change src="/logo.jpg" path
               */}
               <Image
@@ -82,13 +90,13 @@ const Header = () => {
 
             {/* DESKTOP RIGHT SIDE - Hidden on mobile */}
             <div className="hidden lg:flex items-center space-x-5">
-              {/* CUSTOMIZATION: Change spacing between elements with 'space-x-6' */}
+              {/* CUSTOMIZATION: Change spacing between elements with 'space-x-5' */}
               
               {/* PHONE NUMBER SECTION WITH CALL FOR RESERVATION */}
               <div className="flex flex-col items-center ">
                 {/* PHONE NUMBER LINK */}
                 <a
-                  href="tel:++39 030 0983 508"
+                  href="tel:+390300983508"
                   className="flex items-center text-white hover:text-amber-400 transition-colors duration-300"
                   // CUSTOMIZATION: Change phone number in href attribute
                 >
@@ -164,14 +172,15 @@ const Header = () => {
               {!isMobileMenuOpen && (
                 <button
                   onClick={toggleMobileMenu}
-                  className="text-white hover:text-amber-400 transition-colors duration-300 p-1 bg-[#A48134]"
+                  className="text-white hover:text-amber-400 transition-colors duration-300 p-1 bg-[#A48134] rounded-md"
                   // CUSTOMIZATION: 
-                  // - Change padding: modify 'p-2'
+                  // - Change padding: modify 'p-1'
                   // - Change colors: modify text and hover colors
+                  // - Added rounded corners: 'rounded-md'
                 >
                   {/* HAMBURGER ICON */}
                   <svg
-                    className="w-6 h-6  "
+                    className="w-6 h-6"
                     // CUSTOMIZATION: Change hamburger icon size with 'w-6 h-6'
                     fill="none"
                     stroke="Black"
@@ -205,12 +214,15 @@ const Header = () => {
 
       {/* MOBILE SLIDE-OUT MENU */}
       <div
-        className={`fixed top-0 left-0 h-full w-full bg-black/95 backdrop-blur-sm border-r border-amber-400/20 transform transition-transform duration-300 ease-in-out z-50 lg:hidden ${
+        className={`fixed top-0 left-0 h-full w-full backdrop-blur-sm border-r border-amber-400/20 transform transition-transform duration-300 ease-in-out z-50 lg:hidden ${
           isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
         }`}
+        style={{
+          background: 'linear-gradient(135deg, rgba(0, 0, 0, 0.97) 0%, rgba(165, 127, 44, 0.2) 50%, rgba(0, 0, 0, 0.97) 100%)'
+        }}
         // CUSTOMIZATION:
+        // - Premium gradient background for mobile menu
         // - Menu width: change 'w-full' to w-80, w-64, w-72, w-96, etc.
-        // - Menu background: modify 'bg-black/95'
         // - Border color: modify 'border-amber-400/20'
         // - Animation speed: modify 'duration-300' (300ms)
         // - Animation style: modify 'ease-in-out'
@@ -299,6 +311,13 @@ export default Header;
 /*
 === CUSTOMIZATION GUIDE ===
 
+NEW PREMIUM CHANGES:
+- Mobile header height: Increased from h-20 to h-24 for better spacing
+- Background: Premium gradient with subtle golden accent (15% opacity)
+- Mobile menu: Matching gradient background (20% opacity for visibility)
+- Gradient: Diagonal 135deg for modern look
+- Golden shade: rgba(165, 127, 44, 0.15) - adjust opacity for more/less gold
+
 PHONE SECTION CUSTOMIZATION:
 - "Call for reservation" text: Modify 'text-sm' for size (text-xs, text-base, text-lg)
 - Text color: Change 'text-white' to other colors
@@ -317,6 +336,7 @@ MOBILE SPECIFIC CHANGES:
 - Button: Now uses MobButton component - edit mobbutton.tsx for styling
 - Menu width: Change 'w-full' for mobile menu width
 - Menu slide direction: Change translate classes for right-side menu
+- Header height: Now 'h-24' (increased from h-20)
 
 DESKTOP SPECIFIC CHANGES:
 - Logo size: Modify 'lg:h-20' for desktop logo height
@@ -324,11 +344,12 @@ DESKTOP SPECIFIC CHANGES:
 - Navigation spacing: Modify 'space-x-8' for desktop menu spacing
 - Button: Uses regular Button component - edit button.tsx for styling
 
-COLORS:
+COLORS & GRADIENTS:
 - Border: Change '#a57f2cff' in style prop
 - Text: Modify 'text-white' classes
 - Hover: Modify 'hover:text-amber-400' classes
-- Background: Modify 'bg-black/95' classes
+- Gradient: Adjust rgba values in linear-gradient for different effects
+- Golden accent: rgba(165, 127, 44, X) - change X for opacity (0.1-0.3 recommended)
 
 SPACING:
 - Header margins: Modify 'mx-1 lg:mx-2' and 'mt-2 lg:mt-4'
