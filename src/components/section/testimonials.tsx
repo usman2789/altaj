@@ -1,7 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
-import Image from 'next/image';
+import React, { useState, useEffect, useCallback, useMemo } from 'react';
 
 interface Testimonial {
   id: number;
@@ -9,96 +8,99 @@ interface Testimonial {
   location: string;
   rating: number;
   comment: string;
-  image: string;
   dish?: string;
 }
+
+// Move testimonials data outside component to prevent recreation on every render
+const TESTIMONIALS: Testimonial[] = [
+  {
+    id: 1,
+    name: 'Emma Rodriguez',
+    location: 'Milano, Italia',
+    rating: 5,
+    comment: 'Incredibile esperienza culinaria! I sapori autentici Pak-Indiani sono semplicemente perfetti. Il Chicken Biryani era delizioso e il servizio impeccabile. Torneremo sicuramente!',
+    dish: 'Chicken Biryani'
+  },
+  {
+    id: 2,
+    name: 'Marco Albertini',
+    location: 'Brescia, Italia',
+    rating: 5,
+    comment: 'Al Taj è diventato il nostro ristorante preferito! Ogni piatto è preparato con amore e ingredienti freschi. L\'atmosfera familiare e il personale cordiale rendono ogni visita speciale.',
+    dish: 'Tandoori Mix Grill'
+  },
+  {
+    id: 3,
+    name: 'Sofia Benedetti',
+    location: 'Verona, Italia',
+    rating: 5,
+    comment: 'Una scoperta fantastica! La cucina autentica e i sapori ricchi mi hanno conquistato. Il Lamb Curry era spettacolare. Ambiente elegante e servizio professionale. Altamente raccomandato!',
+    dish: 'Lamb Curry'
+  },
+  {
+    id: 4,
+    name: 'Alessandro Rossi',
+    location: 'Bergamo, Italia',
+    rating: 5,
+    comment: 'Qualità eccezionale e prezzi onesti. La passione per la cucina traspare in ogni piatto. Il personale è sempre sorridente e disponibile. Un vero gioiello a Brescia!',
+    dish: 'Butter Chicken'
+  }
+];
+
+// Memoized star rendering component
+const StarRating = React.memo(({ rating }: { rating: number }) => {
+  return (
+    <>
+      {Array.from({ length: 5 }, (_, index) => (
+        <svg
+          key={index}
+          className={`w-5 h-5 ${index < rating ? 'text-[#A48134]' : 'text-gray-300'}`}
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          aria-hidden="true"
+        >
+          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+        </svg>
+      ))}
+    </>
+  );
+});
+
+StarRating.displayName = 'StarRating';
 
 const Testimonials = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
 
-  // Testimonials data with authentic restaurant reviews
-  const testimonials: Testimonial[] = [
-    {
-      id: 1,
-      name: 'Emma Rodriguez',
-      location: 'Milano, Italia',
-      rating: 5,
-      comment: 'Incredibile esperienza culinaria! I sapori autentici Pak-Indiani sono semplicemente perfetti. Il Chicken Biryani era delizioso e il servizio impeccabile. Torneremo sicuramente!',
-      image: '/other images/test-1.jpg',
-      dish: 'Chicken Biryani'
-    },
-    {
-      id: 2,
-      name: 'Marco Albertini',
-      location: 'Brescia, Italia',
-      rating: 5,
-      comment: 'Al Taj è diventato il nostro ristorante preferito! Ogni piatto è preparato con amore e ingredienti freschi. L\'atmosfera familiare e il personale cordiale rendono ogni visita speciale.',
-      image: '/other images/test-2.jpg',
-      dish: 'Tandoori Mix Grill'
-    },
-    {
-      id: 3,
-      name: 'Sofia Benedetti',
-      location: 'Verona, Italia',
-      rating: 5,
-      comment: 'Una scoperta fantastica! La cucina autentica e i sapori ricchi mi hanno conquistato. Il Lamb Curry era spettacolare. Ambiente elegante e servizio professionale. Altamente raccomandato!',
-      image: '/other images/test-3.jpg',
-      dish: 'Lamb Curry'
-    },
-    {
-      id: 4,
-      name: 'Alessandro Rossi',
-      location: 'Bergamo, Italia',
-      rating: 5,
-      comment: 'Qualità eccezionale e prezzi onesti. La passione per la cucina traspare in ogni piatto. Il personale è sempre sorridente e disponibile. Un vero gioiello a Brescia!',
-      image: '/other images/test-4.jpg',
-      dish: 'Butter Chicken'
-    }
-  ];
+  // Get current testimonial
+  const currentTestimonial = useMemo(() => TESTIMONIALS[currentSlide], [currentSlide]);
 
   // Auto-play carousel
   useEffect(() => {
     if (!isAutoPlaying) return;
     
     const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % testimonials.length);
+      setCurrentSlide((prev) => (prev + 1) % TESTIMONIALS.length);
     }, 5000);
 
     return () => clearInterval(interval);
-  }, [isAutoPlaying, testimonials.length]);
+  }, [isAutoPlaying]);
 
-  // Navigation functions
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % testimonials.length);
+  // Memoized navigation functions
+  const nextSlide = useCallback(() => {
+    setCurrentSlide((prev) => (prev + 1) % TESTIMONIALS.length);
     setIsAutoPlaying(false);
-  };
+  }, []);
 
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+  const prevSlide = useCallback(() => {
+    setCurrentSlide((prev) => (prev - 1 + TESTIMONIALS.length) % TESTIMONIALS.length);
     setIsAutoPlaying(false);
-  };
+  }, []);
 
-  const goToSlide = (index: number) => {
+  const goToSlide = useCallback((index: number) => {
     setCurrentSlide(index);
     setIsAutoPlaying(false);
-  };
-
-  // Render stars
-  const renderStars = (rating: number) => {
-    return Array.from({ length: 5 }, (_, index) => (
-      <svg
-        key={index}
-        className={`w-5 h-5 ${
-          index < rating ? 'text-[#A48134]' : 'text-gray-300'
-        }`}
-        fill="currentColor"
-        viewBox="0 0 20 20"
-      >
-        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-      </svg>
-    ));
-  };
+  }, []);
 
   return (
     <section className="py-16 lg:py-24 bg-black relative overflow-hidden">
@@ -154,72 +156,56 @@ const Testimonials = () => {
             {/* Premium Golden Border Accent */}
             <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#A48134] via-[#a57f2cff] to-[#A48134]"></div>
             
-            <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[400px]">
+            <div className="min-h-[400px] flex items-center justify-center">
               
-              {/* Image Section - Enhanced mobile interactions */}
-              <div className="relative bg-gradient-to-br from-[#A48134]/20 to-[#a57f2cff]/10 flex items-center justify-center p-8 lg:p-12">
-                {/* Customer Image - Enhanced with mobile touch */}
-                <div className="relative group-hover:scale-105 group-active:scale-105 active:scale-105 transition-transform duration-300">
-                  <div className="w-32 h-32 lg:w-40 lg:h-40 relative rounded-full overflow-hidden border-4 border-[#A48134] shadow-2xl group-hover:shadow-[#A48134]/30 group-active:shadow-[#A48134]/30 active:shadow-[#A48134]/30 transition-all duration-500">
-                    <Image
-                      src={testimonials[currentSlide].image}
-                      alt={testimonials[currentSlide].name}
-                      fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-110 group-active:scale-110 active:scale-110"
-                    />
-                    {/* Golden Overlay - Enhanced for mobile */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#A48134]/20 to-transparent opacity-0 group-hover:opacity-100 group-active:opacity-100 active:opacity-100 transition-opacity duration-300"></div>
-                  </div>
-                  
-                  {/* Animated Decorative Ring - Enhanced mobile animations */}
-                  <div className="absolute -inset-3 border-2 border-[#A48134]/40 rounded-full animate-spin group-hover:border-[#A48134]/60 group-active:border-[#A48134]/60 active:border-[#A48134]/60 transition-colors duration-300" style={{ animationDuration: '20s' }}></div>
-                  <div className="absolute -inset-6 border border-[#a57f2cff]/20 rounded-full animate-pulse group-hover:border-[#a57f2cff]/40 group-active:border-[#a57f2cff]/40 active:border-[#a57f2cff]/40 transition-colors duration-300"></div>
-                  
-                  {/* Premium Quote Icon - Enhanced bounce animation */}
-                  <div className="absolute -top-2 -right-2 w-12 h-12 bg-gradient-to-br from-[#A48134] to-[#a57f2cff] rounded-full flex items-center justify-center shadow-lg animate-bounce group-hover:scale-110 group-active:scale-110 active:scale-110 transition-transform duration-300" style={{ animationDuration: '2s' }}>
-                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+              {/* Content Section with Premium Black Styling - Full Width */}
+              <div className="p-8 sm:p-10 lg:p-16 flex flex-col justify-center w-full max-w-4xl mx-auto text-center">
+                
+                {/* Premium Quote Icon */}
+                <div className="flex justify-center mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-[#A48134] to-[#a57f2cff] rounded-full flex items-center justify-center shadow-lg animate-pulse">
+                    <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
                     </svg>
                   </div>
                 </div>
-              </div>
-
-              {/* Content Section with Premium Black Styling */}
-              <div className="p-8 lg:p-12 flex flex-col justify-center">
                 
                 {/* Stars Rating with Golden Theme */}
-                <div className="flex items-center mb-6">
+                <div className="flex items-center justify-center mb-6 lg:mb-8">
                   <div className="flex space-x-1 mr-3">
-                    {renderStars(testimonials[currentSlide].rating)}
+                    <StarRating rating={currentTestimonial.rating} />
                   </div>
-                  <span className="text-[#A48134] font-serif text-lg font-medium">
+                  <span className="text-[#A48134] font-serif text-base lg:text-lg font-medium">
                     Eccellente
                   </span>
                 </div>
 
-                {/* Testimonial Text - Fix escaped quotes */}
-                <blockquote className="text-gray-200 text-lg lg:text-xl font-serif leading-relaxed mb-8 italic">
-                  &ldquo;{testimonials[currentSlide].comment}&rdquo;
+                {/* Testimonial Text */}
+                <blockquote className="text-gray-200 text-lg sm:text-xl lg:text-2xl font-serif leading-relaxed mb-8 lg:mb-10 italic px-4 lg:px-8">
+                  &ldquo;{currentTestimonial.comment}&rdquo;
                 </blockquote>
 
                 {/* Customer Info with Premium Styling */}
-                <div className="border-t border-[#A48134]/30 pt-6">
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <h4 className="text-xl font-serif font-bold text-white mb-1 hover:text-[#A48134] transition-colors duration-300">
-                        {testimonials[currentSlide].name}
+                <div className="border-t border-[#A48134]/30 pt-6 lg:pt-8 mt-4">
+                  <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-12">
+                    <div className="text-center sm:text-left">
+                      <h4 className="text-xl lg:text-2xl font-serif font-bold text-white mb-2 hover:text-[#A48134] transition-colors duration-300">
+                        {currentTestimonial.name}
                       </h4>
-                      <p className="text-gray-400 font-serif">
-                        {testimonials[currentSlide].location}
+                      <p className="text-gray-400 font-serif text-sm lg:text-base flex items-center justify-center sm:justify-start gap-2">
+                        <svg className="w-4 h-4 text-[#A48134]" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                          <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                        </svg>
+                        {currentTestimonial.location}
                       </p>
                     </div>
                     
                     {/* Favorite Dish with Golden Accent */}
-                    {testimonials[currentSlide].dish && (
-                      <div className="text-right">
-                        <p className="text-sm text-gray-500 font-serif mb-1">Piatto Preferito:</p>
-                        <p className="text-[#A48134] font-serif font-medium animate-pulse">
-                          {testimonials[currentSlide].dish}
+                    {currentTestimonial.dish && (
+                      <div className="text-center sm:text-left px-6 py-3 bg-[#A48134]/10 rounded-lg border border-[#A48134]/30">
+                        <p className="text-xs lg:text-sm text-gray-400 font-serif mb-1">Piatto Preferito</p>
+                        <p className="text-base lg:text-lg text-[#A48134] font-serif font-bold">
+                          {currentTestimonial.dish}
                         </p>
                       </div>
                     )}
@@ -229,21 +215,23 @@ const Testimonials = () => {
             </div>
           </div>
 
-          {/* Premium Navigation Arrows - Enhanced mobile touch */}
+          {/* Premium Navigation Arrows - Enhanced mobile touch - Fixed positioning */}
           <button
             onClick={prevSlide}
-            className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-gradient-to-br from-[#A48134] to-[#a57f2cff] rounded-full shadow-2xl border border-[#A48134]/50 flex items-center justify-center text-white hover:shadow-[#A48134]/50 hover:shadow-2xl hover:scale-110 active:shadow-2xl active:scale-110 transition-all duration-300 group touch-manipulation"
+            aria-label="Previous testimonial"
+            className="absolute left-2 lg:left-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-br from-[#A48134] to-[#a57f2cff] rounded-full shadow-2xl border border-[#A48134]/50 flex items-center justify-center text-white hover:shadow-[#A48134]/50 hover:shadow-2xl hover:scale-110 active:shadow-2xl active:scale-110 transition-all duration-300 group touch-manipulation"
           >
-            <svg className="w-6 h-6 transform group-hover:scale-110 group-active:scale-110 active:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-5 h-5 lg:w-6 lg:h-6 transform group-hover:scale-110 group-active:scale-110 active:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
           </button>
 
           <button
             onClick={nextSlide}
-            className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-gradient-to-br from-[#A48134] to-[#a57f2cff] rounded-full shadow-2xl border border-[#A48134]/50 flex items-center justify-center text-white hover:shadow-[#A48134]/50 hover:shadow-2xl hover:scale-110 active:shadow-2xl active:scale-110 transition-all duration-300 group touch-manipulation"
+            aria-label="Next testimonial"
+            className="absolute right-2 lg:right-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-br from-[#A48134] to-[#a57f2cff] rounded-full shadow-2xl border border-[#A48134]/50 flex items-center justify-center text-white hover:shadow-[#A48134]/50 hover:shadow-2xl hover:scale-110 active:shadow-2xl active:scale-110 transition-all duration-300 group touch-manipulation"
           >
-            <svg className="w-6 h-6 transform group-hover:scale-110 group-active:scale-110 active:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-5 h-5 lg:w-6 lg:h-6 transform group-hover:scale-110 group-active:scale-110 active:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </button>
@@ -251,10 +239,11 @@ const Testimonials = () => {
 
         {/* Premium Dots Navigation - Enhanced mobile touch */}
         <div className="flex items-center justify-center mt-8 space-x-3">
-          {testimonials.map((_, index) => (
+          {TESTIMONIALS.map((testimonial, index) => (
             <button
-              key={index}
+              key={testimonial.id}
               onClick={() => goToSlide(index)}
+              aria-label={`Go to testimonial ${index + 1}`}
               className={`rounded-full transition-all duration-300 hover:scale-125 active:scale-125 touch-manipulation ${
                 index === currentSlide
                   ? 'w-8 h-3 bg-gradient-to-r from-[#A48134] to-[#a57f2cff] animate-pulse'

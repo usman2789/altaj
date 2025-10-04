@@ -3,13 +3,13 @@ import Image from 'next/image';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#040402] text-white py-8 lg:py-12">
-      {/* Enhanced border container with better styling */}
+    <footer className="bg-[#000000] text-white py-8 lg:py-12">
+      {/* Simple border container */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="border-3 border-[#D4A541] rounded-2xl mx-2 sm:mx-4 lg:mx-0 shadow-lg shadow-[#D4A541]/20 bg-gradient-to-b from-[#D4A541]/5 to-transparent">
+        <div className="border-2 border-[#D4A541]/20 rounded-xl mx-0 lg:mx-0">
         
           {/* Top accent line */}
-          <div className="h-1 bg-gradient-to-r from-transparent via-[#D4A541] to-transparent rounded-t-2xl"></div>
+          <div className="h-0.5 bg-[#D4A541]/10 rounded-t-xl"></div>
           
           {/* DESKTOP LAYOUT - Hidden on mobile */}
           <div className="hidden lg:grid lg:grid-cols-4 lg:gap-8 xl:gap-12 p-6 lg:p-8">
@@ -19,7 +19,7 @@ const Footer = () => {
               {/* LOGO - Increased size for desktop */}
               <div className="mb-6">
                 <Image
-                  src="/logo.jpg"
+                  src="/logo-f.png"
                   alt="Al Taj Ristorante"
                   width={300}
                   height={300}
@@ -91,11 +91,11 @@ const Footer = () => {
             <div className="lg:col-span-1 mt-6">
               <h3 className="text-[#D4A541] text-lg font-bold mb-6">Quick Links</h3>
               <ul className="space-y-3">
-                <li><a href="#" className="text-white hover:text-[#D4A541] transition-colors duration-300 text-sm font-medium">Home</a></li>
-                <li><a href="#" className="text-white hover:text-[#D4A541] transition-colors duration-300 text-sm font-medium">Menu</a></li>
-                <li><a href="#" className="text-white hover:text-[#D4A541] transition-colors duration-300 text-sm font-medium">Shop</a></li>
-                <li><a href="#" className="text-white hover:text-[#D4A541] transition-colors duration-300 text-sm font-medium">Who We Are</a></li>
-                <li><a href="#" className="text-white hover:text-[#D4A541] transition-colors duration-300 text-sm font-medium">Contact us</a></li>
+                <li><a href="#" className="text-white hover:text-[#D4A541] transition-colors duration-300 text-lg font-medium">Home</a></li>
+                <li><a href="#" className="text-white hover:text-[#D4A541] transition-colors duration-300 text-lg font-medium">Menu</a></li>
+                <li><a href="#" className="text-white hover:text-[#D4A541] transition-colors duration-300 text-lg font-medium">Shop</a></li>
+                <li><a href="#" className="text-white hover:text-[#D4A541] transition-colors duration-300 text-lg font-medium">Who We Are</a></li>
+                <li><a href="#" className="text-white hover:text-[#D4A541] transition-colors duration-300 text-lg font-medium">Contact us</a></li>
               </ul>
             </div>
 
@@ -103,13 +103,13 @@ const Footer = () => {
             <div className="lg:col-span-1 mt-6">
               <h3 className="text-[#D4A541] text-lg font-bold mb-6">Our Menu</h3>
               <ul className="space-y-3">
-                <li><a href="#" className="text-white hover:text-[#D4A541] transition-colors duration-300 text-sm font-medium">My Account</a></li>
-                <li><a href="#" className="text-white hover:text-[#D4A541] transition-colors duration-300 text-sm font-medium">Tandoor and Grill</a></li>
-                <li><a href="#" className="text-white hover:text-[#D4A541] transition-colors duration-300 text-sm font-medium">Special Pizzas</a></li>
-                <li><a href="#" className="text-white hover:text-[#D4A541] transition-colors duration-300 text-sm font-medium">Coffee shop</a></li>
-                <li><a href="#" className="text-white hover:text-[#D4A541] transition-colors duration-300 text-sm font-medium">Red wine</a></li>
-                <li><a href="#" className="text-white hover:text-[#D4A541] transition-colors duration-300 text-sm font-medium">Appetizers</a></li>
-                <li><a href="#" className="text-white hover:text-[#D4A541] transition-colors duration-300 text-sm font-medium">Proceed to payment</a></li>
+                <li><a href="#" className="text-white hover:text-[#D4A541] transition-colors duration-300 text-lg font-medium">My Account</a></li>
+                <li><a href="#" className="text-white hover:text-[#D4A541] transition-colors duration-300 text-lg font-medium">Tandoor and Grill</a></li>
+                <li><a href="#" className="text-white hover:text-[#D4A541] transition-colors duration-300 text-lg font-medium">Special Pizzas</a></li>
+                <li><a href="#" className="text-white hover:text-[#D4A541] transition-colors duration-300 text-lg font-medium">Coffee shop</a></li>
+                <li><a href="#" className="text-white hover:text-[#D4A541] transition-colors duration-300 text-lg font-medium">Red wine</a></li>
+                <li><a href="#" className="text-white hover:text-[#D4A541] transition-colors duration-300 text-lg font-medium">Appetizers</a></li>
+                <li><a href="#" className="text-white hover:text-[#D4A541] transition-colors duration-300 text-lg font-medium">Proceed to payment</a></li>
               </ul>
             </div>
 
@@ -180,7 +180,7 @@ const Footer = () => {
             {/* LOGO - Mobile with increased size */}
             <div className="flex justify-center mb-6">
               <Image
-                src="/logo.jpg"
+                src="/logo-f.png"
                 alt="Al Taj Ristorante"
                 width={160}
                 height={160}
@@ -192,7 +192,7 @@ const Footer = () => {
             <div className="text-center">
               <h3 className="text-[#D4A541] text-lg font-bold mb-4">About the Restaurant...</h3>
               <p className="text-white text-sm leading-relaxed px-2 font-medium">
-                Welcome to Al Taj Restaurant, where tradition meets flavor. 
+                Welcome to Al Taj Ristorante, where tradition meets flavor. 
                 We bring the best of Pak-Indian and Italian cuisine to your table, 
                 crafted with authentic flavors and fresh ingredients. Enjoy a 
                 unique culinary experience with dishes that reflect our passion 
@@ -249,11 +249,11 @@ const Footer = () => {
             <div className="mt-8">
               <h3 className="text-[#D4A541] text-lg font-bold mb-4 text-left px-6">Quick Links</h3>
               <ul className="space-y-3 text-left px-6">
-                <li><a href="#" className="text-white hover:text-[#D4A541] hover:translate-x-2 transition-all duration-300 text-sm font-medium block py-1">Home</a></li>
-                <li><a href="#" className="text-white hover:text-[#D4A541] hover:translate-x-2 transition-all duration-300 text-sm font-medium block py-1">Menu</a></li>
-                <li><a href="#" className="text-white hover:text-[#D4A541] hover:translate-x-2 transition-all duration-300 text-sm font-medium block py-1">Shop</a></li>
-                <li><a href="#" className="text-white hover:text-[#D4A541] hover:translate-x-2 transition-all duration-300 text-sm font-medium block py-1">Who We Are</a></li>
-                <li><a href="#" className="text-white hover:text-[#D4A541] hover:translate-x-2 transition-all duration-300 text-sm font-medium block py-1">Contact us</a></li>
+                <li><a href="#" className="text-white hover:text-[#D4A541] hover:translate-x-2 transition-all duration-300 text-lg font-medium block py-1">Home</a></li>
+                <li><a href="#" className="text-white hover:text-[#D4A541] hover:translate-x-2 transition-all duration-300 text-lg font-medium block py-1">Menu</a></li>
+                <li><a href="#" className="text-white hover:text-[#D4A541] hover:translate-x-2 transition-all duration-300 text-lg font-medium block py-1">Shop</a></li>
+                <li><a href="#" className="text-white hover:text-[#D4A541] hover:translate-x-2 transition-all duration-300 text-lg font-medium block py-1">Who We Are</a></li>
+                <li><a href="#" className="text-white hover:text-[#D4A541] hover:translate-x-2 transition-all duration-300 text-lg font-medium block py-1">Contact us</a></li>
               </ul>
             </div>
 
@@ -261,13 +261,13 @@ const Footer = () => {
             <div className="mt-8">
               <h3 className="text-[#D4A541] text-lg font-bold mb-4 text-left px-6">Our Menu</h3>
               <ul className="space-y-3 text-left px-6">
-                <li><a href="#" className="text-white hover:text-[#D4A541] hover:translate-x-2 transition-all duration-300 text-sm font-medium block py-1">My Account</a></li>
-                <li><a href="#" className="text-white hover:text-[#D4A541] hover:translate-x-2 transition-all duration-300 text-sm font-medium block py-1">Tandoor and Grill</a></li>
-                <li><a href="#" className="text-white hover:text-[#D4A541] hover:translate-x-2 transition-all duration-300 text-sm font-medium block py-1">Special Pizzas</a></li>
-                <li><a href="#" className="text-white hover:text-[#D4A541] hover:translate-x-2 transition-all duration-300 text-sm font-medium block py-1">Coffee shop</a></li>
-                <li><a href="#" className="text-white hover:text-[#D4A541] hover:translate-x-2 transition-all duration-300 text-sm font-medium block py-1">Red wine</a></li>
-                <li><a href="#" className="text-white hover:text-[#D4A541] hover:translate-x-2 transition-all duration-300 text-sm font-medium block py-1">Appetizers</a></li>
-                <li><a href="#" className="text-white hover:text-[#D4A541] hover:translate-x-2 transition-all duration-300 text-sm font-medium block py-1">Proceed to payment</a></li>
+                <li><a href="#" className="text-white hover:text-[#D4A541] hover:translate-x-2 transition-all duration-300 text-lg font-medium block py-1">My Account</a></li>
+                <li><a href="#" className="text-white hover:text-[#D4A541] hover:translate-x-2 transition-all duration-300 text-lg font-medium block py-1">Tandoor and Grill</a></li>
+                <li><a href="#" className="text-white hover:text-[#D4A541] hover:translate-x-2 transition-all duration-300 text-lg font-medium block py-1">Special Pizzas</a></li>
+                <li><a href="#" className="text-white hover:text-[#D4A541] hover:translate-x-2 transition-all duration-300 text-lg font-medium block py-1">Coffee shop</a></li>
+                <li><a href="#" className="text-white hover:text-[#D4A541] hover:translate-x-2 transition-all duration-300 text-lg font-medium block py-1">Red wine</a></li>
+                <li><a href="#" className="text-white hover:text-[#D4A541] hover:translate-x-2 transition-all duration-300 text-lg font-medium block py-1">Appetizers</a></li>
+                <li><a href="#" className="text-white hover:text-[#D4A541] hover:translate-x-2 transition-all duration-300 text-lg font-medium block py-1">Proceed to payment</a></li>
               </ul>
             </div>
 
@@ -337,7 +337,7 @@ const Footer = () => {
           </div>
           
           {/* Bottom accent line */}
-          <div className="h-1 bg-gradient-to-r from-transparent via-[#D4A541] to-transparent rounded-b-2xl"></div>
+          <div className="h-0.5 bg-[#D4A541]/10 rounded-b-xl"></div>
         </div>
       </div>
     </footer>

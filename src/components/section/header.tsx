@@ -31,7 +31,7 @@ const Header = () => {
         className="backdrop-blur-md border-2 relative top-4 z-50 rounded-xl lg:rounded-2xl mt-2 lg:mt-2 mx-1 lg:mx-0" 
         style={{ 
           borderColor: '#a57f2cff',
-          background: 'linear-gradient(135deg, rgba(0, 0, 0, 0.95) 0%, rgba(165, 127, 44, 0.15) 50%, rgba(0, 0, 0, 0.95) 100%)'
+          background: '#100C07'
         }}
         // CUSTOMIZATION: 
         // - Premium gradient background with golden accent

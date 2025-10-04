@@ -137,11 +137,11 @@ const HeroSection = () => {
         
         {/* Subtitle with Logo */}
         <div className="flex items-center gap-3 mb-6 animate-fade-in">
-          <div className="w-3 h-3 rounded-full bg-[#FFC700] animate-pulse"></div>
+          <div className="w-3 h-3 rounded-full bg-[#A48134] animate-pulse"></div>
           <h2 className="text-white text-sm sm:text-base lg:text-lg font-medium tracking-[0.3em] uppercase">
             {slides[currentSlide].subtitle}
           </h2>
-          <div className="w-3 h-3 rounded-full bg-[#FFC700] animate-pulse"></div>
+          <div className="w-3 h-3 rounded-full bg-[#A48134] animate-pulse"></div>
         </div>
 
         {/* Main Title */}
@@ -210,13 +210,13 @@ const HeroSection = () => {
             {/* Yellow Progress Loader - Moves along the border */}
             <svg 
               className="absolute inset-0 w-full h-full -rotate-90 pointer-events-none" 
-              style={{ filter: 'drop-shadow(0 0 15px rgba(255, 199, 0, 0.8))' }}
+              style={{ filter: 'drop-shadow(0 0 15px rgba(164, 129, 52, 0.8))' }}
             >
               <circle
                 cx="50%"
                 cy="50%"
                 r="48%"
-                stroke="#FFC700"
+                stroke="#A48134"
                 strokeWidth="4"
                 fill="none"
                 strokeDasharray={circumference}
@@ -298,7 +298,7 @@ const HeroSection = () => {
           <button
             onMouseEnter={() => setIsAutoPlaying(false)}
             onMouseLeave={() => setIsAutoPlaying(true)}
-            className="px-8 py-3 sm:px-10 sm:py-4 lg:px-12 lg:py-4 bg-[#FFC700] text-black font-bold text-sm sm:text-base lg:text-lg rounded-full hover:bg-[#FFD700] transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-[#FFC700]/50 active:scale-100 uppercase tracking-wider touch-manipulation"
+            className="px-8 py-3 sm:px-10 sm:py-4 lg:px-12 lg:py-4 bg-[#A48134] text-white font-bold text-sm sm:text-base lg:text-lg rounded-full hover:bg-[#B8923A] transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-[#A48134]/50 active:scale-100 uppercase tracking-wider touch-manipulation"
           >
             BOOK A TABLE
           </button>
@@ -310,9 +310,9 @@ const HeroSection = () => {
             onMouseLeave={() => setIsAutoPlaying(true)}
             disabled={isTransitioning}
             aria-label="Next slide"
-            className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-full bg-[#FFC700] flex items-center justify-center hover:bg-[#FFD700] transition-all duration-300 hover:scale-110 active:scale-105 hover:shadow-2xl hover:shadow-[#FFC700]/50 group touch-manipulation disabled:opacity-50"
+            className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-full bg-[#A48134] flex items-center justify-center hover:bg-[#B8923A] transition-all duration-300 hover:scale-110 active:scale-105 hover:shadow-2xl hover:shadow-[#A48134]/50 group touch-manipulation disabled:opacity-50"
           >
-            <svg className="w-5 h-5 sm:w-6 sm:h-6 text-black group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </button>
@@ -330,18 +330,12 @@ const HeroSection = () => {
               aria-label={`Go to slide ${index + 1}`}
               className={`transition-all duration-300 rounded-full touch-manipulation disabled:opacity-50 ${
                 index === currentSlide
-                  ? 'w-10 h-2 sm:w-12 sm:h-2 bg-[#FFC700]'
+                  ? 'w-10 h-2 sm:w-12 sm:h-2 bg-[#A48134]'
                   : 'w-2 h-2 bg-white/40 hover:bg-white/60 hover:scale-125'
               }`}
             />
           ))}
         </div>
-      </div>
-
-      {/* Year Badge */}
-      <div className="absolute bottom-8 left-8 text-white font-bold text-xl sm:text-2xl opacity-50">
-        <div>20</div>
-        <div>24</div>
       </div>
 
       <style jsx>{`
