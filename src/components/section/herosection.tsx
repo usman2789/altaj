@@ -25,34 +25,34 @@ const HeroSection = () => {
     {
       id: 1,
       title: 'Seasonal Delights',
-      subtitle: 'PLATES OF PERFECTION',
-      description: 'Experience the best of each season with our menu, featuring fresh, locally sourced ingredients. Savor the vibrant tastes of nature&apos;s bounty.',
+      subtitle: 'AL Taj Ristorante',
+      description: 'Un’armonia di sapori intensi e dolci ricordi — dove l’Oriente incontra l’Occidente.',
       dishes: {
-        left: '/hero/p12.png',
-        center: '/hero/p13.png',
-        right: '/hero/p14.png'
+        left: '/hero/s1-1.png',
+        center: '/hero/s1-2.png',
+        right: '/hero/s1-3.png'
       }
     },
     {
       id: 2,
-      title: 'Chef&apos;s Creations',
+      title: 'Classici Italiani',
       subtitle: 'PLATES OF PERFECTION',
-      description: 'Indulge in the artistry of our chef&apos;s specialties, where culinary expertise meets innovative flair.',
+      description: 'Sapori italiani senza tempo, semplici e autentici.',
       dishes: {
-        left: '/hero/p4.png',
-        center: '/hero/p5.png',
-        right: '/hero/p6.png'
+        left: '/hero/s2-1.png',
+        center: '/hero/s2-2.png',
+        right: '/hero/s2-3.png'
       }
     },
     {
       id: 3,
-      title: 'Gourmet Experience',
-      subtitle: 'PLATES OF PERFECTION',
-      description: 'Discover an exceptional dining journey with meticulously crafted dishes that celebrate flavors from around the world.',
+      title: 'Spezie e Griglia',
+      subtitle: 'AL Taj Ristorante',
+      description: 'Dove il fuoco incontra il sapore — audace, affumicato, indimenticabile.',
       dishes: {
-        left: '/hero/p7.png',
-        center: '/hero/p8.png',
-        right: '/hero/p9.png'
+        left: '/hero/s3-1.png',
+        center: '/hero/s3-2.png',
+        right: '/hero/s3-3.png'
       }
     }
   ];
@@ -300,7 +300,7 @@ const HeroSection = () => {
             onMouseLeave={() => setIsAutoPlaying(true)}
             className="px-8 py-3 sm:px-10 sm:py-4 lg:px-12 lg:py-4 bg-[#A48134] text-white font-bold text-sm sm:text-base lg:text-lg rounded-full hover:bg-[#B8923A] transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-[#A48134]/50 active:scale-100 uppercase tracking-wider touch-manipulation"
           >
-            BOOK A TABLE
+            EXPLORA MENU
           </button>
 
           {/* Next Button */}

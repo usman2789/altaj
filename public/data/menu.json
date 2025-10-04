@@ -10,16 +10,7 @@
     "image": "/images/Mozzarella-Stick.png",
     "category": "APPETIZERS"
   },
-  {
-    "id": 2,
-    "name": "Chicken Popcorn",
-    "slug": "chicken-popcorn",
-    "shortDescription": "Crispy fried chicken bites",
-    "description": "Perfect as a snack or appetizer",
-    "price": "€5.00",
-    "image": "/images/POPCORN-POLLO.png",
-    "category": "APPETIZERS"
-  },
+ 
   {
     "id": 3,
     "name": "Chicken Wings 5 PCS",
@@ -110,16 +101,7 @@
     "image": "/images/Chicken-Pakora-1.png",
     "category": "APPETIZERS"
   },
-  {
-    "id": 12,
-    "name": "Chicken Pakora",
-    "slug": "chicken-pakora",
-    "shortDescription": "Fried chicken cubes",
-    "description": "Prepared with chickpea flour and spices",
-    "price": "€6.00",
-    "image": "/images/Chicken-Pakora.png",
-    "category": "APPETIZERS"
-  },
+ 
   {
     "id": 13,
     "name": "Shrimp Pakora",
@@ -180,16 +162,7 @@
     "image": "/images/mix-pakora.png",
     "category": "APPETIZERS"
   },
-  {
-    "id": 19,
-    "name": "Kofte Grill",
-    "slug": "kofte-grill",
-    "shortDescription": "Grilled veal meatballs",
-    "description": "Accompanied by fragrant basmati rice and French fries",
-    "price": "€8.00",
-    "image": "/images/Grilled-Kofta.png",
-    "category": "TANDOOR AND GRILL SPECIALTIES"
-  },
+  
   {
     "id": 20,
     "name": "Chicken Skewers",
@@ -200,26 +173,8 @@
     "image": "/images/Chicken-Skewers.png",
     "category": "TANDOOR AND GRILL SPECIALTIES"
   },
-  {
-    "id": 21,
-    "name": "Lamb Rib",
-    "slug": "lamb-rib",
-    "shortDescription": "Succulent, grilled lamb chop",
-    "description": "Accompanied by fragrant basmati rice, fries, salad, herbs, sauces, and bread",
-    "price": "€14.00",
-    "image": "/images/Costata-di-Manzo.png",
-    "category": "TANDOOR AND GRILL SPECIALTIES"
-  },
-  {
-    "id": 22,
-    "name": "Beef Rib",
-    "slug": "beef-rib",
-    "shortDescription": "Succulent, grilled beef rib",
-    "description": "Accompanied by fragrant basmati rice, fries, salad, salt, pepper, sauces, and bread",
-    "price": "€12.00",
-    "image": "/images/Costata-di-Manzo-1.png",
-    "category": "TANDOOR AND GRILL SPECIALTIES"
-  },
+ 
+  
   {
     "id": 23,
     "name": "Beef Steak",
@@ -240,16 +195,7 @@
     "image": "/images/Bistecca-di-Pollo.png",
     "category": "TANDOOR AND GRILL SPECIALTIES"
   },
-  {
-    "id": 25,
-    "name": "Tandoori Charga",
-    "slug": "tandoori-charga",
-    "shortDescription": "Marinated whole chicken",
-    "description": "Prepared with yogurt, garlic, oil, and aromatic spices",
-    "price": "€15.00",
-    "image": "/images/TANDOORI-CHARGA.png",
-    "category": "TANDOOR AND GRILL SPECIALTIES"
-  },
+  
   {
     "id": 26,
     "name": "Tandoor Prawns",
@@ -290,16 +236,7 @@
     "image": "/images/MIX-GRILL-AL-TAJ-1.png",
     "category": "TANDOOR AND GRILL SPECIALTIES"
   },
-  {
-    "id": 30,
-    "name": "Chicken Cheese Kebab",
-    "slug": "chicken-cheese-kebab",
-    "shortDescription": "Ground chicken with cheese",
-    "description": "Flavored with selected spices and cooked on the grill",
-    "price": "€8.00",
-    "image": "/images/Chicken-Cheese-Kabab.png",
-    "category": "TANDOOR AND GRILL SPECIALTIES"
-  },
+ 
   {
     "id": 31,
     "name": "Chicken Wings",
@@ -420,16 +357,7 @@
     "image": "/images/Aloo-Palak.png",
     "category": "VEGETARIAN"
   },
-  {
-    "id": 43,
-    "name": "Karella Masala",
-    "slug": "karella-masala",
-    "shortDescription": "Karella cooked with onions and tomatoes",
-    "description": "Flavored with selected spices, available with gosht or qeema options",
-    "price": "€7.00",
-    "image": "/images/KARELLA-MASALLA.png",
-    "category": "VEGETARIAN"
-  },
+
   {
     "id": 44,
     "name": "Okra (Bindi) Masala",
@@ -480,16 +408,7 @@
     "image": "/images/Daal-Mash.png",
     "category": "DAAL CURRY SPECIALTY"
   },
-  {
-    "id": 49,
-    "name": "Daal Chana",
-    "slug": "daal-chana",
-    "shortDescription": "Yellow lentils cooked in curry sauce",
-    "description": "Yellow lentils cooked in curry sauce enriched with butter and spices",
-    "price": "€6.00",
-    "image": "/images/Daal-Chana.png",
-    "category": "DAAL CURRY SPECIALTY"
-  },
+  
   {
     "id": 50,
     "name": "Chicken Sweet and Sour",
@@ -1678,7 +1597,7 @@
     "shortDescription": "Vegetarian calzone",
     "description": "Calzone filled with tomato, mozzarella, mushrooms, and artichokes.",
     "price": "€8.00",
-    "image": "/images/CALZONE-NORMALE-1.png",
+    "image": "/images/CALZONE-NORMALE.png",
     "category": "CALZONE"
   },
   {
@@ -1688,7 +1607,7 @@
     "shortDescription": "Classic calzone",
     "description": "Calzone with tomato, mozzarella, and halal turkey ham.",
     "price": "€7.00",
-    "image": "/images/CALZONE-NORMALE.png",
+    "image": "/images/CALZONE-NORMALE-1-1.png",
     "category": "CALZONE"
   },
   {
@@ -1831,16 +1750,7 @@
     "image": "/images/Birra-Becks.png",
     "category": "DRINKS"
   },
-  {
-    "id": 184,
-    "name": "Moretti Beer",
-    "slug": "moretti-beer",
-    "shortDescription": "Italian lager beer",
-    "description": "Balanced and slightly bitter taste, ideal to pair with Italian dishes.",
-    "price": "€3.00",
-    "image": "/images/Birra-Moretti.png",
-    "category": "DRINKS"
-  },
+  
   {
     "id": 185,
     "name": "Red Bull",
@@ -1851,114 +1761,211 @@
     "image": "/images/Red-Bull.png",
     "category": "DRINKS"
   },
+  
   {
     "id": 186,
-    "name": "Bottled Drinks",
-    "slug": "bottled-drinks",
-    "shortDescription": "Selection of bottled drinks",
-    "description": "Variety of flavors available, fresh and thirst-quenching, ideal to accompany meals.",
-    "price": "€2.50",
-    "image": "/images/Bibite-in-Bottliga.png",
-    "category": "DRINKS"
-  },
-  {
-    "id": 187,
-    "name": "Canned Drinks",
-    "slug": "canned-drinks",
-    "shortDescription": "Large selection of canned drinks",
-    "description": "Available in different flavors, fresh, fizzy, and ready to drink.",
-    "price": "€2.00",
-    "image": "/images/Bibite-in-Lattina.png",
-    "category": "DRINKS"
-  },
-  {
-    "id": 188,
-    "name": "Coca-Cola on Tap",
-    "slug": "coca-cola-on-tap",
-    "shortDescription": "Coca-Cola served on tap",
-    "description": "Fresh, high-quality sparkling drink, ideal to accompany meals.",
-    "priceRange": "€2.00 - €3.00",
-    "image": "/images/Coca-Cola-alla-Spina.png",
-    "category": "DRINKS"
-  },
-  {
-    "id": 189,
-    "name": "PET Water 50cl",
-    "slug": "pet-water-50cl",
-    "shortDescription": "Mineral water in a 50cl PET bottle",
-    "description": "Fresh and purified mineral water, ideal for hydration at any time of day.",
-    "price": "€1.00",
-    "image": "/images/Acqua-PET-50cl.png",
-    "category": "DRINKS"
-  },
-  {
-    "id": 190,
-    "name": "Glass Water 75cl",
-    "slug": "glass-water-75cl",
-    "shortDescription": "Natural mineral water",
-    "description": "Packaged in a 75cl glass bottle, fresh and pure, ideal for table service.",
-    "price": "€2.50",
-    "image": "/images/Acqua-Vetro-75cl.png",
-    "category": "DRINKS"
-  },
-  {
-    "id": 191,
     "name": "Corona 33cl",
     "slug": "corona-33cl",
     "shortDescription": "Lager beer in a 33cl bottle",
-    "description": "Fresh and light lager beer, ideal for a refreshing drink.",
+    "description": "A fresh and light lager beer, perfect for a refreshing drink any time.",
     "price": "€4.00",
     "image": "/images/Corona-33cl.png",
-    "category": "BOTTLED BEERS"
+    "category": "MENABREA BLONDE ON TAP"
   },
   {
-    "id": 192,
+    "id": 187,
     "name": "Ceres 33cl",
     "slug": "ceres-33cl",
     "shortDescription": "Ceres Beer 33cl",
-    "description": "Rich and malty taste, perfect for every occasion.",
+    "description": "A beer with a rich, malty flavour, perfect for every occasion.",
     "price": "€4.00",
     "image": "/images/Ceres-33cl.png",
-    "category": "BOTTLED BEERS"
+    "category": "MENABREA BLONDE ON TAP"
   },
   {
-    "id": 193,
+    "id": 188,
     "name": "Bud 33cl",
     "slug": "bud-33cl",
     "shortDescription": "Budweiser beer in a 33cl bottle",
-    "description": "Light and refreshing taste, excellent to enjoy chilled.",
+    "description": "Light and refreshing taste, excellent choice for any moment.",
     "price": "€4.00",
     "image": "/images/Bud-33cl.png",
-    "category": "BOTTLED BEERS"
+    "category": "MENABREA BLONDE ON TAP"
   },
   {
-    "id": 194,
+    "id": 189,
     "name": "Heineken 0.0 33cl",
     "slug": "heineken-0-0-33cl",
     "shortDescription": "Heineken non-alcoholic beer",
-    "description": "33cl pack, authentic and fresh taste without alcohol.",
+    "description": "A non-alcoholic beer with an authentic and fresh taste, served in a 33cl pack.",
     "price": "€4.00",
     "image": "/images/Heineken-0.0-33cl.png",
-    "category": "BOTTLED BEERS"
+    "category": "MENABREA BLONDE ON TAP"
   },
   {
-    "id": 195,
+    "id": 190,
     "name": "Heineken 33cl",
     "slug": "heineken-33cl",
     "shortDescription": "High quality lager beer",
-    "description": "33cl bottle, fresh taste and premium quality.",
+    "description": "A high-quality lager beer in a 33cl bottle, fresh and full of flavour.",
     "price": "€3.50",
     "image": "/images/Heineken-33cl.png",
-    "category": "BOTTLED BEERS"
+    "category": "MENABREA BLONDE ON TAP"
   },
   {
-    "id": 196,
+    "id": 191,
     "name": "Beck's 33cl",
     "slug": "becks-33cl",
     "shortDescription": "33cl Lager Beer",
-    "description": "Fresh and light taste with hop aromas, perfect for a classic lager experience.",
+    "description": "A lager beer with a fresh and light taste and distinctive hop aromas.",
     "price": "€3.50",
     "image": "/images/Becks-33cl.png",
-    "category": "BOTTLED BEERS"
+    "category": "MENABREA BLONDE ON TAP"
+  },
+  {
+    "id": 192,
+    "name": "Moretti Beer",
+    "slug": "moretti-beer",
+    "shortDescription": "Italian lager beer",
+    "description": "An Italian lager beer with a balanced and slightly bitter taste, ideal with dishes.",
+    "price": "€3.00",
+    "image": "/images/Birra-Moretti.png",
+    "category": "MENABREA BLONDE ON TAP"
+  },
+  
+  {
+    "id": 193,
+    "name": "Curtefranca Bianco Ferghettina",
+    "slug": "curtefranca-bianco-ferghettina",
+    "shortDescription": "White wine made from Chardonnay and Pinot Blanc",
+    "description": "A refined white wine from Curtefranca, made with Chardonnay and Pinot Bianco grapes, offering freshness and elegance.",
+    "price": "€20.00",
+    "image": "/images/Curtefranca-Bianco-Ferghettina-1.png",
+    "category": "WHITE WINE"
+  },
+  {
+    "id": 194,
+    "name": "Lugana Zenato",
+    "slug": "lugana-zenato",
+    "shortDescription": "Trebbiano di Lugana white wine",
+    "description": "Fresh and vibrant white wine from Zenato winery, crafted with Trebbiano di Lugana grapes.",
+    "price": "€4.00 - €15.00",
+    "image": "/images/Lugana-Zenato.png",
+    "category": "WHITE WINE"
+  },
+  {
+    "id": 195,
+    "name": "Montenetto di Brescia Bianco – Barone Pizzini",
+    "slug": "montenetto-bianco-barone-pizzini",
+    "shortDescription": "High quality white wine",
+    "description": "A blend of Trebbiano and Chardonnay, delivering aromatic freshness with refined character.",
+    "price": "€4.00 - €15.00",
+    "image": "/images/Montenetto-di-Brescia-Bianco-Barone-Pizzini.png",
+    "category": "WHITE WINE"
+  },
+  {
+    "id": 196,
+    "name": "Gewürztraminer Aldeno",
+    "slug": "gewurztraminer-aldeno",
+    "shortDescription": "Aromatic white wine",
+    "description": "An aromatic white wine from Aldeno with fruit and spice notes, perfect for elegant pairings.",
+    "price": "€20.00",
+    "image": "/images/Gewurztraminer-Aldeno.png",
+    "category": "WHITE WINE"
+  },
+  {
+    "id": 197,
+    "name": "Rampaneto Curtefranca Bianco – Cavalleri",
+    "slug": "rampaneto-curtefranca-bianco-cavalleri",
+    "shortDescription": "Chardonnay white wine",
+    "description": "A prestigious Chardonnay-based Curtefranca Bianco from Cavalleri, smooth and aromatic.",
+    "price": "€25.00",
+    "image": "/images/Rampaneto-Curtefranca-Bianco-Cavalleri.png",
+    "category": "WHITE WINE"
+  },
+  {
+    "id": 198,
+    "name": "Court of the White Wolf – Ca' del Bosco",
+    "slug": "court-of-the-white-wolf-ca-del-bosco",
+    "shortDescription": "Exquisite white wine",
+    "description": "Corte del Lupo Bianco, an elegant selection by Ca' del Bosco, showcasing refined excellence.",
+    "price": "€35.00",
+    "image": "/images/Corte-del-Lupo-Rosso-Ca-del-Bosco.png",
+    "category": "WHITE WINE"
+  },
+  {
+    "id": 199,
+    "name": "Cabernet Serena",
+    "slug": "cabernet-serena",
+    "shortDescription": "Cabernet red wine",
+    "description": "A high-quality pure Cabernet with rich notes, crafted with passion and tradition.",
+    "price": "€3.00 - €12.00",
+    "image": "/images/Cabernet-Serena.png",
+    "category": "RED WINE"
+  },
+  {
+    "id": 200,
+    "name": "Montenetto di Brescia Rosso (BIO) – Barone Pizzini",
+    "slug": "montenetto-rosso-bio-barone-pizzini",
+    "shortDescription": "Organic red wine",
+    "description": "Produced using organic methods, this red wine from Montenetto di Brescia offers balance and depth.",
+    "price": "€4.00 - €15.00",
+    "image": "/images/CALZONE-NORMALE-1.png",
+    "category": "RED WINE"
+  },
+  {
+    "id": 201,
+    "name": "Curtefranca Rosso (BIO) – Barone Pizzini",
+    "slug": "curtefranca-rosso-bio-barone-pizzini",
+    "shortDescription": "Organic Curtefranca red wine",
+    "description": "A carefully crafted organic red wine blend from Barone Pizzini with expressive aromas.",
+    "price": "€17.00",
+    "image": "/images/Curtefranca-Rosso-BIO-Barone-Pizzini.png",
+    "category": "RED WINE"
+  },
+  {
+    "id": 202,
+    "name": "Montenetto di Brescia Red Stag Beetle (Organic) – Barone Pizzini",
+    "slug": "montenetto-red-stag-beetle-barone-pizzini",
+    "shortDescription": "Organic red wine",
+    "description": "Organic wine made from Marzemino and Merlot grapes, with rich character and deep roots in Lombardy.",
+    "price": "€25.00",
+    "image": "/images/Cervo-Volante-Montenetto-di-Brescia-Rosso-Bio-Barone-Pizzini.png",
+    "category": "RED WINE"
+  },
+  {
+    "id": 203,
+    "name": "Court of the Red Wolf – Ca' del Bosco",
+    "slug": "court-of-the-red-wolf-ca-del-bosco",
+    "shortDescription": "Premium red wine",
+    "description": "Corte del Lupo Rosso by Ca' del Bosco, with notes of red fruits and a refined Lombardy origin.",
+    "price": "€35.00",
+    "image": "/images/Corte-del-Lupo-Rosso-Ca-del-Bosco.png",
+    "category": "RED WINE"
+  },
+  {
+    "id": 204,
+    "name": "From Hand to Hand – Cavalleri",
+    "slug": "from-hand-to-hand-cavalleri",
+    "shortDescription": "Italian red wine",
+    "description": "‘Di Mano in Mano’ from Cavalleri, a fruity and expressive Italian red wine.",
+    "price": "€25.00",
+    "image": "/images/Di-Mano-in-Mano-Cavalleri.png",
+    "category": "RED WINE"
+  },
+  {
+    "id": 205,
+    "name": "Plumbago Planeta Nero d'Avola",
+    "slug": "plumbago-planeta-nero-d-avola",
+    "shortDescription": "Nero d'Avola red wine",
+    "description": "Fruity and rich Nero d’Avola from Sicily, with balanced character and smooth taste.",
+    "price": "€20.00",
+    "image": "/images/Plumbago-Planeta-Nero-dAvola.png",
+    "category": "RED WINE"
   }
+
+
+
+
+  
 ]

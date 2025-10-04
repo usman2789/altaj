@@ -55,9 +55,9 @@ const HomeTable = () => {
       {/* Header */}
       <div className="text-center mb-6">
         <h3 className="text-3xl font-bold text-white mb-2 font-serif">
-          Reserve Your Table
+         Prenota il tuo tavolo
         </h3>
-        <p className="text-[#D4A541]">Fill in the details below</p>
+        <p className="text-[#D4A541]">Compila i dettagli qui sotto</p>
       </div>
 
       {/* Full Name */}
@@ -191,10 +191,10 @@ const HomeTable = () => {
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
             </svg>
-            Reservation Confirmed!
+            Prenotazione confermata!
           </span>
         ) : (
-          'Book Your Table'
+          'Prenota il tuo tavolo'
         )}
       </button>
 

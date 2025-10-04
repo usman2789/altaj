@@ -74,8 +74,8 @@ const MenuPage = () => {
             Our <span className="text-[#D4A541]">Menu</span>
           </h1>
           <p className="text-xl sm:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Discover our authentic flavors from Pakistan, India, and Italy. 
-            Every dish crafted with passion and the finest ingredients.
+           Scopri i nostri sapori autentici provenienti da Pakistan, India e Italia.
+Ogni piatto è preparato con passione e con i migliori ingredienti.
           </p>
           
           {/* Decorative Elements */}
@@ -107,7 +107,7 @@ const MenuPage = () => {
                   <div className="w-12 h-0.5 bg-[#D4A541]"></div>
                 </div>
                 <p className="text-gray-400 mt-4 text-lg">
-                  {items.length} delicious option{items.length !== 1 ? 's' : ''} available
+                  {items.length} opzioni deliziose {items.length !== 1 ? 's' : ''} available
                 </p>
               </div>
 
@@ -140,20 +140,20 @@ const MenuPage = () => {
             Ready to <span className="text-[#D4A541]">Order</span>?
           </h3>
           <p className="text-xl text-gray-300 mb-8">
-            Contact us today to place your order or make a reservation
+            Contattaci oggi per effettuare un ordine o una prenotazione
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
               href="tel:+390300983508"
               className="bg-[#D4A541] hover:bg-[#B8941A] text-[#040402] font-bold py-3 px-8 rounded-lg transition-colors duration-300 transform hover:scale-105"
             >
-              Call Now: +39 030 0983 508
+              Chiama ora: +39 030 0983 508
             </a>
             <a 
               href="/contact"
               className="bg-transparent border-2 border-[#D4A541] text-[#D4A541] hover:bg-[#D4A541] hover:text-[#040402] font-bold py-3 px-8 rounded-lg transition-all duration-300"
             >
-              Contact Us
+              Contattaci
             </a>
           </div>
         </div>

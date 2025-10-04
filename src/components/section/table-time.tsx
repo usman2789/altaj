@@ -43,14 +43,14 @@ const TableTime = () => {
                   Explora Menu
                 </h2>
                 <p className="text-[#A48134] text-xl font-medium italic">
-                  Make Your Reservation!
+                  Effettua la tua prenotazione!
                 </p>
               </div>
 
               {/* Opening Hours */}
               <div className="mb-8">
                 <h3 className="text-2xl font-bold text-white mb-6 font-serif text-center">
-                  Opening Hours
+                  Orari di apertura
                 </h3>
                 <div className="space-y-4">
                   {openingHours.map((schedule, index) => (
@@ -69,7 +69,7 @@ const TableTime = () => {
               {/* Call Now Section */}
               <div className="text-center pt-6 border-t border-white/20">
                 <p className="text-xl font-bold text-white mb-3 font-serif">
-                  Call Now
+                  Chiama ora
                 </p>
                 <a 
                   href="tel:+393403366793"
