@@ -153,29 +153,29 @@ export default async function DishDetailPage({ params }: { params: Promise<{ slu
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
           
-          {/* Left Column - Image */}
+          {/* Left Column - Image - Square aspect ratio to prevent distortion */}
           <div className="relative">
             <div className="sticky top-8">
-              {/* Main Image */}
+              {/* Main Image - Square shape for consistent display */}
               <div className="relative aspect-square bg-gradient-to-br from-[#D4A541]/10 to-transparent rounded-2xl overflow-hidden border border-[#D4A541]/20">
                 <Image
                   src={dish.image}
                   alt={`${dish.name} - ${dish.shortDescription}`}
                   fill
-                  className="object-cover"
+                  className="object-contain transition-transform duration-500 hover:scale-105 will-change-transform"
                   sizes="(max-width: 768px) 100vw, 50vw"
                   priority
                 />
                 
                 {/* Category Badge - Hidden on Mobile */}
-                <div className="absolute top-4 left-4 hidden md:block">
+                <div className="absolute top-4 left-4 hidden md:block z-10">
                   <span className="bg-[#D4A541]/90 backdrop-blur-sm text-[#040402] text-sm font-bold px-3 py-2 rounded-full shadow-lg">
                     {dish.category}
                   </span>
                 </div>
 
                 {/* Price Badge */}
-                <div className="absolute top-4 right-4">
+                <div className="absolute top-4 right-4 z-10">
                   <span className="bg-[#040402]/90 backdrop-blur-sm text-[#D4A541] text-lg font-bold px-4 py-2 rounded-full border border-[#D4A541]/30 shadow-lg">
                     {displayPrice}
                   </span>
@@ -330,17 +330,19 @@ export default async function DishDetailPage({ params }: { params: Promise<{ slu
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {relatedDishes.map((relatedDish) => (
-                <Link key={relatedDish.id} href={`/menu/${relatedDish.slug}`} className="block">
+                <Link key={relatedDish.id} href={`/menu/${relatedDish.slug}`} className="block group">
                   <div className="bg-[#040402] border border-[#D4A541]/20 rounded-xl overflow-hidden hover:border-[#D4A541]/60 transition-all duration-300 hover:shadow-lg hover:shadow-[#D4A541]/20 hover:-translate-y-2">
-                    <div className="relative aspect-[555/592] overflow-hidden bg-gradient-to-br from-[#D4A541]/5 to-transparent">
+                    {/* Square aspect ratio for consistent related dish images */}
+                    <div className="relative aspect-square overflow-hidden bg-gradient-to-br from-[#D4A541]/5 to-transparent">
                       <Image
                         src={relatedDish.image}
                         alt={`${relatedDish.name} - ${relatedDish.shortDescription}`}
                         fill
-                        className="object-cover transition-transform duration-500 hover:scale-110"
+                        className="object-contain transition-transform duration-500 group-hover:scale-105 will-change-transform"
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        loading="lazy"
                       />
-                      <div className="absolute top-3 right-3">
+                      <div className="absolute top-3 right-3 z-10">
                         <span className="bg-[#040402]/90 backdrop-blur-sm text-[#D4A541] text-sm font-bold px-3 py-1 rounded-full border border-[#D4A541]/30">
                           {relatedDish.price || relatedDish.priceRange || 'Price on request'}
                         </span>

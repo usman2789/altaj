@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useCallback } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -31,8 +31,15 @@ const DishCard: React.FC<DishCardProps> = ({
   const [isInView, setIsInView] = useState(false);
   const cardRef = useRef<HTMLDivElement>(null);
 
+  // Memoized error handler
+  const handleImageError = useCallback(() => {
+    console.error(`Failed to load image: ${image}`);
+    setImageError(true);
+  }, [image]);
+
   // Intersection Observer for mobile scroll detection
   useEffect(() => {
+    const currentRef = cardRef.current;
     const observer = new IntersectionObserver(
       ([entry]) => {
         setIsInView(entry.intersectionRatio >= 0.7);
@@ -43,13 +50,13 @@ const DishCard: React.FC<DishCardProps> = ({
       }
     );
 
-    if (cardRef.current) {
-      observer.observe(cardRef.current);
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (cardRef.current) {
-        observer.unobserve(cardRef.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, []);
@@ -75,9 +82,9 @@ const DishCard: React.FC<DishCardProps> = ({
             : 'hover:border-[#D4A541]/60 hover:shadow-lg hover:shadow-[#D4A541]/20 hover:-translate-y-2'
           }`}
       >
-        {/* Image Container - Optimized for 555×592 (1:1.07 ratio) */}
+        {/* Image Container - Square aspect ratio to prevent distortion */}
         <div className="relative w-full overflow-hidden bg-gradient-to-br from-[#D4A541]/5 to-transparent">
-          <div className="aspect-[555/592] relative">
+          <div className="aspect-square relative">
             {imageError ? (
               <PlaceholderImage />
             ) : (
@@ -85,17 +92,15 @@ const DishCard: React.FC<DishCardProps> = ({
                 src={image}
                 alt={`${name} - ${shortDescription}`}
                 fill
-                className={`object-cover transition-transform duration-500 
-                  ${isInView ? 'scale-110' : 'group-hover:scale-110'}
+                className={`object-contain transition-transform duration-500 will-change-transform
+                  ${isInView ? 'scale-105' : 'group-hover:scale-105'}
                 `}
                 sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
                 placeholder="blur"
                 blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGBkbHB0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
                 priority={false}
-                onError={() => {
-                  console.error(`Failed to load image: ${image}`);
-                  setImageError(true);
-                }}
+                loading="lazy"
+                onError={handleImageError}
               />
             )}
           </div>
@@ -115,14 +120,14 @@ const DishCard: React.FC<DishCardProps> = ({
           </div>
 
           {/* Hover/Scroll Overlay */}
-          <div className={`absolute inset-0 bg-gradient-to-t from-[#040402]/80 via-transparent to-transparent transition-opacity duration-300 z-10
+          <div className={`absolute inset-0 bg-gradient-to-t from-[#040402]/80 via-transparent to-transparent transition-opacity duration-300 z-10 will-change-opacity
             ${isInView 
               ? 'opacity-100' 
               : 'opacity-0 group-hover:opacity-100'
             } md:block`}
           >
             <div className="absolute bottom-4 left-4 right-4">
-              <button className={`w-full bg-[#D4A541] hover:bg-[#B8941A] text-[#040402] font-bold py-2 px-4 rounded-lg transition-all duration-300 shadow-lg transform
+              <button className={`w-full bg-[#D4A541] hover:bg-[#B8941A] text-[#040402] font-bold py-2 px-4 rounded-lg transition-all duration-300 shadow-lg transform will-change-transform
                 ${isInView 
                   ? 'translate-y-0 opacity-100' 
                   : 'translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100'
