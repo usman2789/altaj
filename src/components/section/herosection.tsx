@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 interface HeroSlide {
   id: number;
@@ -294,14 +295,15 @@ const HeroSection = () => {
             </svg>
           </button>
 
-          {/* Book a Table Button */}
-          <button
+          {/* Explore Menu Button */}
+          <Link
+            href="/menu"
             onMouseEnter={() => setIsAutoPlaying(false)}
             onMouseLeave={() => setIsAutoPlaying(true)}
-            className="px-8 py-3 sm:px-10 sm:py-4 lg:px-12 lg:py-4 bg-[#A48134] text-white font-bold text-sm sm:text-base lg:text-lg rounded-full hover:bg-[#B8923A] transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-[#A48134]/50 active:scale-100 uppercase tracking-wider touch-manipulation"
+            className="px-8 py-3 sm:px-10 sm:py-4 lg:px-12 lg:py-4 bg-[#A48134] text-white font-bold text-sm sm:text-base lg:text-lg rounded-full hover:bg-[#B8923A] transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-[#A48134]/50 active:scale-100 uppercase tracking-wider touch-manipulation inline-block text-center"
           >
             EXPLORA MENU
-          </button>
+          </Link>
 
           {/* Next Button */}
           <button

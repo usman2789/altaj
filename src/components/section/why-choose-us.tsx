@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 interface FeatureItem {
   id: number;
@@ -139,8 +140,12 @@ const WhyChooseUs = () => {
             &ldquo;Vieni a scoprire il gusto autentico della tradizione Pak-Indiana&rdquo;
           </p>
           
-          {/* CTA Button - Enhanced with mobile touch animations */}
-          <button className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-[#A48134] to-[#a57f2cff] text-white font-serif text-base font-medium rounded-full hover:shadow-2xl hover:shadow-[#A48134]/30 hover:scale-105 active:shadow-2xl active:shadow-[#A48134]/30 active:scale-105 transition-all duration-300 group animate-pulse hover:animate-none active:animate-none touch-manipulation" style={{ animationDuration: '4s' }}>
+          {/* CTA Button - Enhanced with mobile touch animations and table booking link */}
+          <Link 
+            href="/tablebooking"
+            className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-[#A48134] to-[#a57f2cff] text-white font-serif text-base font-medium rounded-full hover:shadow-2xl hover:shadow-[#A48134]/30 hover:scale-105 active:shadow-2xl active:shadow-[#A48134]/30 active:scale-105 transition-all duration-300 group animate-pulse hover:animate-none active:animate-none touch-manipulation" 
+            style={{ animationDuration: '4s' }}
+          >
             <span>Prenota il Tuo Tavolo</span>
             <svg 
               className="ml-2 w-4 h-4 group-hover:translate-x-1 group-active:translate-x-1 active:translate-x-1 transition-transform duration-300" 
@@ -150,7 +155,7 @@ const WhyChooseUs = () => {
             >
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
-          </button>
+          </Link>
         </div>
       </div>
     </section>

@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
+import Link from 'next/link';
 
 interface Testimonial {
   id: number;
@@ -271,7 +272,7 @@ const Testimonials = () => {
           
           <div className="group cursor-pointer">
             <div className="text-3xl lg:text-4xl font-serif font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#A48134] to-[#a57f2cff] mb-2 group-hover:scale-110 group-active:scale-110 active:scale-110 transition-transform duration-300 touch-manipulation">
-              15+
+              2+
             </div>
             <p className="text-gray-400 font-serif group-hover:text-gray-300 group-active:text-gray-300 active:text-gray-300 transition-colors duration-300">Anni di Esperienza</p>
           </div>
@@ -284,12 +285,16 @@ const Testimonials = () => {
           </div>
         </div>
 
-        {/* Premium Call to Action - Enhanced mobile touch */}
+        {/* Premium Call to Action - Enhanced mobile touch with table booking link */}
         <div className="mt-16 text-center">
           <p className="text-gray-300 text-lg font-serif italic mb-6">
             Vuoi essere il prossimo a condividere la tua esperienza?
           </p>
-          <button className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-[#A48134] to-[#a57f2cff] text-white font-serif text-lg font-medium rounded-full hover:shadow-2xl hover:shadow-[#A48134]/50 hover:scale-105 active:shadow-2xl active:shadow-[#A48134]/50 active:scale-105 transition-all duration-300 group animate-pulse hover:animate-none active:animate-none touch-manipulation" style={{ animationDuration: '4s' }}>
+          <Link 
+            href="/tablebooking"
+            className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-[#A48134] to-[#a57f2cff] text-white font-serif text-lg font-medium rounded-full hover:shadow-2xl hover:shadow-[#A48134]/50 hover:scale-105 active:shadow-2xl active:shadow-[#A48134]/50 active:scale-105 transition-all duration-300 group animate-pulse hover:animate-none active:animate-none touch-manipulation" 
+            style={{ animationDuration: '4s' }}
+          >
             <span>Prenota Ora</span>
             <svg 
               className="ml-3 w-5 h-5 group-hover:translate-x-1 group-active:translate-x-1 active:translate-x-1 transition-transform duration-300" 
@@ -299,7 +304,7 @@ const Testimonials = () => {
             >
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
-          </button>
+          </Link>
         </div>
       </div>
     </section>

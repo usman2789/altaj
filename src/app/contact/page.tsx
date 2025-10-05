@@ -47,8 +47,8 @@ export default function ContactPage() {
           <div className="bg-[#040402] border-2 border-[#D4A541] rounded-lg p-8 text-center hover:shadow-lg hover:shadow-[#D4A541]/20 transition-all duration-300">
             <div className="flex justify-center mb-4">
               <div className="bg-[#D4A541] p-3 rounded-full">
-                <svg className="w-6 h-6 text-[#040402]" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M2 3.5A1.5 1.5 0 013.5 2h1.148a1.5 1.5 0 011.465 1.175l.716 3.223a1.5 1.5 0 01-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 006.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 011.767-1.052l3.223.716A1.5 1.5 0 0118 15.352V16.5a1.5 1.5 0 01-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 712.43 8.326 13.019 13.019 0 712 5V3.5z" clipRule="evenodd" />
+                <svg className="w-6 h-6 text-[#040402]" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
                 </svg>
               </div>
             </div>
@@ -61,8 +61,8 @@ export default function ContactPage() {
           <div className="bg-[#040402] border-2 border-[#D4A541] rounded-lg p-8 text-center hover:shadow-lg hover:shadow-[#D4A541]/20 transition-all duration-300">
             <div className="flex justify-center mb-4">
               <div className="bg-[#D4A541] p-3 rounded-full">
-                <svg className="w-6 h-6 text-[#040402]" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M2 3.5A1.5 1.5 0 713.5 2h1.148a1.5 1.5 0 011.465 1.175l.716 3.223a1.5 1.5 0 01-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 006.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 011.767-1.052l3.223.716A1.5 1.5 0 0718 15.352V16.5a1.5 1.5 0 01-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 712.43 8.326 13.019 13.019 0 712 5V3.5z" clipRule="evenodd" />
+                <svg className="w-6 h-6 text-[#040402]" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
                 </svg>
               </div>
             </div>
