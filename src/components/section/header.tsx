@@ -18,7 +18,7 @@ const Header = () => {
   const menuItems = [
     { name: 'Home', href: '/#' },
     { name: 'Menu', href: '/menu' },
-    { name: 'Order', href: '#' },
+    { name: 'Order', href: '/menu' },
     { name: 'Our Story', href: '/ourstory' },
     { name: 'Contact', href: '/contact' },
     // To add new menu item: { name: 'New Item', href: '/new-link' },

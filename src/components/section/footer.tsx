@@ -8,7 +8,7 @@ import Link from 'next/link';
 const QUICK_LINKS = [
   { href: '/', label: 'Home' },
   { href: '/menu', label: 'Menu' },
-  { href: '/shop', label: 'Shop' },
+  { href: '/menu', label: 'Shop' },
   { href: '/ourstory', label: 'Who We Are' },
   { href: '/contact', label: 'Contact us' },
 ];
