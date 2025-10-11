@@ -1,6 +1,6 @@
-import React from 'react';
-import DishCard from '@/components/section/dishcard';
-import menuData from '@/../public/data/menu.json';
+import React from "react";
+import DishCard from "@/components/section/dishcard";
+import menuData from "@/../public/data/menu.json";
 
 // Define the structure of a menu item
 interface MenuItem {
@@ -28,36 +28,36 @@ function groupItemsByCategory(items: MenuItem[]): Record<string, MenuItem[]> {
 
 // Custom category ordering for better UX
 const categoryOrder = [
-  'APPETIZERS',
-  'TANDOOR AND GRILL SPECIALTIES', 
-  'VEGETARIAN',
-  'DAAL CURRY SPECIALTY',
-  'MAIN COURSES - CHICKEN SPECIALTIES',
-  'MAIN COURSES - LAMB SPECIALTIES', 
-  'FISH CURRY SPECIALTIES',
-  'BASMATI RICE',
-  'SOUPS',
-  'TANDOOR BREAD',
-  'INDIAN DESSERTS',
-  'ETHNIC DRINKS',
-  'CLASSIC PIZZAS',
-  'SPECIAL PIZZAS',
-  'WHITE PIZZAS',
-  'CALZONE',
-  'COFFEE SHOP',
-  'DRINKS',
-  'MENABREA BLONDE ON TAP',
-  'BUBBLES',
-  'RED WINE'
+  "APPETIZERS",
+  "TANDOOR AND GRILL SPECIALTIES",
+  "VEGETARIAN",
+  "DAAL CURRY SPECIALTY",
+  "MAIN COURSES - CHICKEN SPECIALTIES",
+  "MAIN COURSES - LAMB SPECIALTIES",
+  "FISH CURRY SPECIALTIES",
+  "BASMATI RICE",
+  "SOUPS",
+  "TANDOOR BREAD",
+  "INDIAN DESSERTS",
+  "ETHNIC DRINKS",
+  "CLASSIC PIZZAS",
+  "SPECIAL PIZZAS",
+  "WHITE PIZZAS",
+  "CALZONE",
+  "COFFEE SHOP",
+  "DRINKS",
+  "MENABREA BLONDE ON TAP",
+  "BUBBLES",
+  "RED WINE",
 ];
 
 const MenuPage = () => {
   const groupedItems = groupItemsByCategory(menuData as MenuItem[]);
-  
+
   // Get ordered categories, including any that might not be in our predefined order
   const orderedCategories = [
-    ...categoryOrder.filter(cat => groupedItems[cat]),
-    ...Object.keys(groupedItems).filter(cat => !categoryOrder.includes(cat))
+    ...categoryOrder.filter((cat) => groupedItems[cat]),
+    ...Object.keys(groupedItems).filter((cat) => !categoryOrder.includes(cat)),
   ];
 
   return (
@@ -68,16 +68,17 @@ const MenuPage = () => {
         <div className="absolute inset-0 opacity-5">
           <div className="absolute top-0 left-0 w-full h-full bg-[url('/pattern.svg')] bg-repeat"></div>
         </div>
-        
+
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
             Our <span className="text-[#D4A541]">Menu</span>
           </h1>
           <p className="text-xl sm:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-           Scopri i nostri sapori autentici provenienti da Pakistan, India e Italia.
-Ogni piatto è preparato con passione e con i migliori ingredienti.
+            Scopri i nostri sapori autentici provenienti da Pakistan, India e
+            Italia. Ogni piatto è preparato con passione e con i migliori
+            ingredienti.
           </p>
-          
+
           {/* Decorative Elements */}
           <div className="flex justify-center mt-8 space-x-4">
             <div className="w-16 h-1 bg-gradient-to-r from-transparent via-[#D4A541] to-transparent"></div>
@@ -88,13 +89,16 @@ Ogni piatto è preparato con passione e con i migliori ingredienti.
       </div>
 
       {/* Menu Categories */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {orderedCategories.map((category) => {
           const items = groupedItems[category];
           if (!items || items.length === 0) return null;
 
+          // Create a slug from category name for the ID
+          const categorySlug = category.toLowerCase().replace(/\s+/g, '-').replace(/_/g, '-');
+
           return (
-            <section key={category} className="mb-16 lg:mb-20">
+            <section key={category} id={categorySlug} className="mb-16 lg:mb-20 scroll-mt-24">
               {/* Category Header */}
               <div className="text-center mb-8 lg:mb-12">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
@@ -143,13 +147,13 @@ Ogni piatto è preparato con passione e con i migliori ingredienti.
             Contattaci oggi per effettuare un ordine o una prenotazione
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
+            <a
               href="tel:+390300983508"
               className="bg-[#D4A541] hover:bg-[#B8941A] text-[#040402] font-bold py-3 px-8 rounded-lg transition-colors duration-300 transform hover:scale-105"
             >
               Chiama ora: +39 030 0983 508
             </a>
-            <a 
+            <a
               href="/contact"
               className="bg-transparent border-2 border-[#D4A541] text-[#D4A541] hover:bg-[#D4A541] hover:text-[#040402] font-bold py-3 px-8 rounded-lg transition-all duration-300"
             >

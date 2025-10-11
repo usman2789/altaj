@@ -110,6 +110,7 @@ const HomeTable = () => {
             name="date"
             value={formData.date}
             onChange={handleChange}
+            placeholder='Date'
             required
             className="w-full px-4 py-3 bg-white/5 border-2 border-[#D4A541]/30 rounded-xl focus:border-[#D4A541] focus:bg-white/10 transition-all duration-300 outline-none text-white group-hover:border-[#D4A541]/50"
           />
@@ -122,6 +123,7 @@ const HomeTable = () => {
             name="time"
             value={formData.time}
             onChange={handleChange}
+             placeholder='Time'
             required
             className="w-full px-4 py-3 bg-white/5 border-2 border-[#D4A541]/30 rounded-xl focus:border-[#D4A541] focus:bg-white/10 transition-all duration-300 outline-none text-white group-hover:border-[#D4A541]/50"
           />

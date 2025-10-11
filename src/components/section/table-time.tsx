@@ -1,6 +1,7 @@
 'use client';
 import HomeTable from '../ui/hometable';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const TableTime = () => {
   const openingHours = [
@@ -39,9 +40,11 @@ const TableTime = () => {
               
               {/* Header */}
               <div className="text-center mb-8">
-                <h2 className="text-4xl lg:text-5xl font-bold text-white mb-3 font-serif">
-                  Explora Menu
-                </h2>
+                <Link href="/menu" className="group block">
+                  <h2 className="text-4xl lg:text-5xl font-bold text-white mb-3 font-serif group-hover:text-[#A48134] transition-colors duration-300">
+                    Explora Menu
+                  </h2>
+                </Link>
                 <p className="text-[#A48134] text-xl font-medium italic">
                   Effettua la tua prenotazione!
                 </p>
