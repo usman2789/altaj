@@ -13,6 +13,9 @@ export default function TableBookingPage() {
     message: "",
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+
   const handleInputChange = (
     e: React.ChangeEvent<
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
@@ -25,10 +28,58 @@ export default function TableBookingPage() {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Form functionality will be added later
-    console.log("Table booking data:", formData);
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "6ff6b34b-58ef-44c9-baa6-9a6f1304f317",
+          subject: "New Table Booking - Al Taj Restaurant",
+          from_name: formData.fullName,
+          name: formData.fullName,
+          email: formData.email,
+          phone: formData.phoneNumber,
+          dateTime: formData.dateTime,
+          guests: formData.totalGuests,
+          occasion: formData.occasionType,
+          message: formData.message,
+        }),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setSubmitStatus('success');
+        setFormData({
+          fullName: "",
+          email: "",
+          phoneNumber: "",
+          dateTime: "",
+          totalGuests: "",
+          occasionType: "",
+          message: "",
+        });
+
+        setTimeout(() => {
+          setSubmitStatus('idle');
+        }, 5000);
+      } else {
+        throw new Error('Submission failed');
+      }
+    } catch (error) {
+      setSubmitStatus('error');
+      console.error('Form submission error:', error);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -129,6 +180,7 @@ export default function TableBookingPage() {
                   onChange={handleInputChange}
                   className="w-full px-4 py-4 bg-white/95 border-2 border-gray-300 rounded-lg text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#D4A541] focus:border-[#D4A541] transition-all duration-300 text-base group-hover:border-[#D4A541]/70 group-hover:shadow-lg group-hover:shadow-[#D4A541]/10"
                   required
+                  disabled={isSubmitting}
                 />
               </div>
 
@@ -145,6 +197,7 @@ export default function TableBookingPage() {
                   onChange={handleInputChange}
                   className="w-full px-4 py-4 bg-white/95 border-2 border-gray-300 rounded-lg text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#D4A541] focus:border-[#D4A541] transition-all duration-300 text-base group-hover:border-[#D4A541]/70 group-hover:shadow-lg group-hover:shadow-[#D4A541]/10"
                   required
+                  disabled={isSubmitting}
                 />
               </div>
 
@@ -161,6 +214,7 @@ export default function TableBookingPage() {
                   onChange={handleInputChange}
                   className="w-full px-4 py-4 bg-white/95 border-2 border-gray-300 rounded-lg text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#D4A541] focus:border-[#D4A541] transition-all duration-300 text-base group-hover:border-[#D4A541]/70 group-hover:shadow-lg group-hover:shadow-[#D4A541]/10"
                   required
+                  disabled={isSubmitting}
                 />
               </div>
 
@@ -176,6 +230,7 @@ export default function TableBookingPage() {
                   onChange={handleInputChange}
                   className="w-full px-4 py-4 bg-white/95 border-2 border-gray-300 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#D4A541] focus:border-[#D4A541] transition-all duration-300 text-base group-hover:border-[#D4A541]/70 group-hover:shadow-lg group-hover:shadow-[#D4A541]/10"
                   required
+                  disabled={isSubmitting}
                 />
               </div>
 
@@ -190,6 +245,7 @@ export default function TableBookingPage() {
                   onChange={handleInputChange}
                   className="w-full px-4 py-4 bg-white/95 border-2 border-gray-300 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#D4A541] focus:border-[#D4A541] transition-all duration-300 text-base appearance-none cursor-pointer group-hover:border-[#D4A541]/70 group-hover:shadow-lg group-hover:shadow-[#D4A541]/10"
                   required
+                  disabled={isSubmitting}
                 >
                   <option value="">Select number of guests</option>
                   <option value="1">1 Guest</option>
@@ -226,6 +282,7 @@ export default function TableBookingPage() {
                   onChange={handleInputChange}
                   className="w-full px-4 py-4 bg-white/95 border-2 border-gray-300 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#D4A541] focus:border-[#D4A541] transition-all duration-300 text-base appearance-none cursor-pointer group-hover:border-[#D4A541]/70 group-hover:shadow-lg group-hover:shadow-[#D4A541]/10"
                   required
+                  disabled={isSubmitting}
                 >
                   <option value="">Select occasion type</option>
                   <option value="casual-lunch">Casual Lunch</option>
@@ -263,14 +320,33 @@ export default function TableBookingPage() {
                   onChange={handleInputChange}
                   rows={5}
                   className="w-full px-4 py-4 bg-white/95 border-2 border-gray-300 rounded-lg text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#D4A541] focus:border-[#D4A541] transition-all duration-300 text-base resize-vertical group-hover:border-[#D4A541]/70 group-hover:shadow-lg group-hover:shadow-[#D4A541]/10"
+                  disabled={isSubmitting}
                 ></textarea>
               </div>
+
+              {/* Status Messages */}
+              {submitStatus === 'success' && (
+                <div className="bg-green-50 border border-green-200 text-green-700 px-4 py-3 rounded-lg text-center">
+                  Booking submitted successfully! We&apos;ll contact you soon to confirm your reservation.
+                </div>
+              )}
+
+              {submitStatus === 'error' && (
+                <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg text-center">
+                  Failed to submit booking. Please try again or call us directly.
+                </div>
+              )}
 
               {/* Submit Button */}
               <div className="text-center pt-4">
                 <button
                   type="submit"
-                  className="bg-[#D4A541] hover:bg-[#B8941A] text-[#040402] font-bold py-4 px-16 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-[#D4A541]/40 text-lg flex items-center justify-center mx-auto space-x-2 group-hover:shadow-2xl"
+                  disabled={isSubmitting}
+                  className={`font-bold py-4 px-16 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl text-lg flex items-center justify-center mx-auto space-x-2 ${
+                    isSubmitting
+                      ? 'bg-gray-400 cursor-not-allowed text-gray-700'
+                      : 'bg-[#D4A541] hover:bg-[#B8941A] text-[#040402] hover:shadow-[#D4A541]/40'
+                  }`}
                 >
                   <svg
                     className="w-5 h-5"
@@ -283,7 +359,7 @@ export default function TableBookingPage() {
                       clipRule="evenodd"
                     />
                   </svg>
-                  <span>Reserve Table</span>
+                  <span>{isSubmitting ? 'Submitting...' : 'Reserve Table'}</span>
                 </button>
               </div>
 

@@ -12,6 +12,9 @@ export default function ContactPage() {
     message: ''
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({
@@ -20,10 +23,56 @@ export default function ContactPage() {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Form functionality will be added later
-    console.log('Form data:', formData);
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "6ff6b34b-58ef-44c9-baa6-9a6f1304f317",
+          subject: "New Reservation - Al Taj Restaurant",
+          from_name: formData.fullName,
+          name: formData.fullName,
+          email: formData.email,
+          phone: formData.phoneNumber,
+          dateTime: formData.dateTime,
+          guests: formData.totalGuests,
+          message: formData.message,
+        }),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setSubmitStatus('success');
+        setFormData({
+          fullName: '',
+          email: '',
+          phoneNumber: '',
+          dateTime: '',
+          totalGuests: '',
+          message: ''
+        });
+
+        setTimeout(() => {
+          setSubmitStatus('idle');
+        }, 5000);
+      } else {
+        throw new Error('Submission failed');
+      }
+    } catch (error) {
+      setSubmitStatus('error');
+      console.error('Form submission error:', error);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -128,6 +177,7 @@ export default function ContactPage() {
                   onChange={handleInputChange}
                   className="w-full px-4 py-4 bg-white/95 border border-gray-300 rounded-lg text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#D4A541] focus:border-[#D4A541] transition-all duration-300 text-base"
                   required
+                  disabled={isSubmitting}
                 />
               </div>
 
@@ -141,6 +191,7 @@ export default function ContactPage() {
                   onChange={handleInputChange}
                   className="w-full px-4 py-4 bg-white/95 border border-gray-300 rounded-lg text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#D4A541] focus:border-[#D4A541] transition-all duration-300 text-base"
                   required
+                  disabled={isSubmitting}
                 />
               </div>
 
@@ -154,6 +205,7 @@ export default function ContactPage() {
                   onChange={handleInputChange}
                   className="w-full px-4 py-4 bg-white/95 border border-gray-300 rounded-lg text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#D4A541] focus:border-[#D4A541] transition-all duration-300 text-base"
                   required
+                  disabled={isSubmitting}
                 />
               </div>
 
@@ -167,6 +219,7 @@ export default function ContactPage() {
                   onChange={handleInputChange}
                   className="w-full px-4 py-4 bg-white/95 border border-gray-300 rounded-lg text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#D4A541] focus:border-[#D4A541] transition-all duration-300 text-base"
                   required
+                  disabled={isSubmitting}
                 />
               </div>
 
@@ -178,6 +231,7 @@ export default function ContactPage() {
                   onChange={handleInputChange}
                   className="w-full px-4 py-4 bg-white/95 border border-gray-300 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#D4A541] focus:border-[#D4A541] transition-all duration-300 text-base appearance-none cursor-pointer"
                   required
+                  disabled={isSubmitting}
                 >
                   <option value="">Total Guests</option>
                   <option value="1">1 Guest</option>
@@ -208,16 +262,35 @@ export default function ContactPage() {
                   onChange={handleInputChange}
                   rows={6}
                   className="w-full px-4 py-4 bg-white/95 border border-gray-300 rounded-lg text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#D4A541] focus:border-[#D4A541] transition-all duration-300 text-base resize-vertical"
+                  disabled={isSubmitting}
                 ></textarea>
               </div>
+
+              {/* Status Messages */}
+              {submitStatus === 'success' && (
+                <div className="bg-green-50 border border-green-200 text-green-700 px-4 py-3 rounded-lg text-center">
+                  Thank you! Your reservation request has been sent successfully. We&apos;ll contact you soon.
+                </div>
+              )}
+
+              {submitStatus === 'error' && (
+                <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg text-center">
+                  Something went wrong. Please try again or call us directly.
+                </div>
+              )}
 
               {/* Submit Button */}
               <div className="text-center">
                 <button
                   type="submit"
-                  className="bg-[#D4A541] hover:bg-[#B8941A] text-[#040402] font-bold py-4 px-12 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg text-lg"
+                  disabled={isSubmitting}
+                  className={`font-bold py-4 px-12 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg text-lg ${
+                    isSubmitting
+                      ? 'bg-gray-400 cursor-not-allowed text-gray-700'
+                      : 'bg-[#D4A541] hover:bg-[#B8941A] text-[#040402]'
+                  }`}
                 >
-                  Send Request
+                  {isSubmitting ? 'Sending...' : 'Send Request'}
                 </button>
               </div>
             </form>

@@ -3,3 +3,11 @@
 For headings & important text → use Cinzel or Playfair Display.
 
 For body text / menus / small UI text → use Lato or Open Sans.
+
+
+Things that could be improve inlcude :
+- add to cart page and functionality
+-products and cetgories on homepage
+-favicons
+-images optimization
+-SEO

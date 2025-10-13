@@ -2,8 +2,18 @@
 
 import { useState } from 'react';
 
+interface TableFormData {
+  fullName: string;
+  email: string;
+  phone: string;
+  date: string;
+  time: string;
+  guests: string;
+  message: string;
+}
+
 const HomeTable = () => {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<TableFormData>({
     fullName: '',
     email: '',
     phone: '',
@@ -27,15 +37,33 @@ const HomeTable = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate API call
-    setTimeout(() => {
-      console.log('Form submitted:', formData);
-      setSubmitStatus('success');
-      setIsSubmitting(false);
-      
-      // Reset form after 3 seconds
-      setTimeout(() => {
+    setSubmitStatus('idle');
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "6ff6b34b-58ef-44c9-baa6-9a6f1304f317",
+          subject: "New Table Reservation - Al Taj Restaurant (Home Page)",
+          from_name: formData.fullName,
+          name: formData.fullName,
+          email: formData.email,
+          phone: formData.phone,
+          date: formData.date,
+          time: formData.time,
+          guests: formData.guests,
+          message: formData.message,
+        }),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setSubmitStatus('success');
         setFormData({
           fullName: '',
           email: '',
@@ -45,9 +73,19 @@ const HomeTable = () => {
           guests: '',
           message: '',
         });
-        setSubmitStatus('idle');
-      }, 3000);
-    }, 1500);
+
+        setTimeout(() => {
+          setSubmitStatus('idle');
+        }, 3000);
+      } else {
+        throw new Error('Submission failed');
+      }
+    } catch (error) {
+      setSubmitStatus('error');
+      console.error('Form submission error:', error);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -55,7 +93,7 @@ const HomeTable = () => {
       {/* Header */}
       <div className="text-center mb-6">
         <h3 className="text-3xl font-bold text-white mb-2 font-serif">
-         Prenota il tuo tavolo
+          Prenota il tuo tavolo
         </h3>
         <p className="text-[#D4A541]">Compila i dettagli qui sotto</p>
       </div>
@@ -69,6 +107,7 @@ const HomeTable = () => {
           onChange={handleChange}
           placeholder="Full Name"
           required
+          disabled={isSubmitting}
           className="w-full px-4 py-3 bg-white/5 border-2 border-[#D4A541]/30 rounded-xl focus:border-[#D4A541] focus:bg-white/10 transition-all duration-300 outline-none placeholder-gray-400 text-white group-hover:border-[#D4A541]/50"
         />
         <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-[#D4A541]/0 to-[#D4A541]/0 group-hover:from-[#D4A541]/5 group-hover:to-[#D4A541]/5 pointer-events-none transition-all duration-300"></div>
@@ -83,6 +122,7 @@ const HomeTable = () => {
           onChange={handleChange}
           placeholder="Email Address"
           required
+          disabled={isSubmitting}
           className="w-full px-4 py-3 bg-white/5 border-2 border-[#D4A541]/30 rounded-xl focus:border-[#D4A541] focus:bg-white/10 transition-all duration-300 outline-none placeholder-gray-400 text-white group-hover:border-[#D4A541]/50"
         />
         <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-[#D4A541]/0 to-[#D4A541]/0 group-hover:from-[#D4A541]/5 group-hover:to-[#D4A541]/5 pointer-events-none transition-all duration-300"></div>
@@ -97,6 +137,7 @@ const HomeTable = () => {
           onChange={handleChange}
           placeholder="Phone Number"
           required
+          disabled={isSubmitting}
           className="w-full px-4 py-3 bg-white/5 border-2 border-[#D4A541]/30 rounded-xl focus:border-[#D4A541] focus:bg-white/10 transition-all duration-300 outline-none placeholder-gray-400 text-white group-hover:border-[#D4A541]/50"
         />
         <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-[#D4A541]/0 to-[#D4A541]/0 group-hover:from-[#D4A541]/5 group-hover:to-[#D4A541]/5 pointer-events-none transition-all duration-300"></div>
@@ -110,9 +151,9 @@ const HomeTable = () => {
             name="date"
             value={formData.date}
             onChange={handleChange}
-            placeholder='Date'
             required
-            className="w-full px-4 py-3 bg-white/5 border-2 border-[#D4A541]/30 rounded-xl focus:border-[#D4A541] focus:bg-white/10 transition-all duration-300 outline-none text-white group-hover:border-[#D4A541]/50"
+            disabled={isSubmitting}
+            className="w-full px-4 py-3 bg-white/5 border-2 border-[#D4A541]/30 rounded-xl focus:border-[#D4A541] focus:bg-white/10 transition-all duration-300 outline-none text-white group-hover:border-[#D4A541]/50 [color-scheme:dark]"
           />
           <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-[#D4A541]/0 to-[#D4A541]/0 group-hover:from-[#D4A541]/5 group-hover:to-[#D4A541]/5 pointer-events-none transition-all duration-300"></div>
         </div>
@@ -123,9 +164,9 @@ const HomeTable = () => {
             name="time"
             value={formData.time}
             onChange={handleChange}
-             placeholder='Time'
             required
-            className="w-full px-4 py-3 bg-white/5 border-2 border-[#D4A541]/30 rounded-xl focus:border-[#D4A541] focus:bg-white/10 transition-all duration-300 outline-none text-white group-hover:border-[#D4A541]/50"
+            disabled={isSubmitting}
+            className="w-full px-4 py-3 bg-white/5 border-2 border-[#D4A541]/30 rounded-xl focus:border-[#D4A541] focus:bg-white/10 transition-all duration-300 outline-none text-white group-hover:border-[#D4A541]/50 [color-scheme:dark]"
           />
           <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-[#D4A541]/0 to-[#D4A541]/0 group-hover:from-[#D4A541]/5 group-hover:to-[#D4A541]/5 pointer-events-none transition-all duration-300"></div>
         </div>
@@ -138,6 +179,7 @@ const HomeTable = () => {
           value={formData.guests}
           onChange={handleChange}
           required
+          disabled={isSubmitting}
           className="w-full px-4 py-3 bg-white/5 border-2 border-[#D4A541]/30 rounded-xl focus:border-[#D4A541] focus:bg-white/10 transition-all duration-300 outline-none appearance-none cursor-pointer text-white group-hover:border-[#D4A541]/50"
         >
           <option value="" className="bg-[#040402] text-gray-400">Number of Guests</option>
@@ -163,6 +205,7 @@ const HomeTable = () => {
           onChange={handleChange}
           placeholder="Special Requests (Optional)"
           rows={4}
+          disabled={isSubmitting}
           className="w-full px-4 py-3 bg-white/5 border-2 border-[#D4A541]/30 rounded-xl focus:border-[#D4A541] focus:bg-white/10 transition-all duration-300 outline-none placeholder-gray-400 text-white resize-none group-hover:border-[#D4A541]/50"
         />
         <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-[#D4A541]/0 to-[#D4A541]/0 group-hover:from-[#D4A541]/5 group-hover:to-[#D4A541]/5 pointer-events-none transition-all duration-300"></div>
@@ -174,36 +217,19 @@ const HomeTable = () => {
         disabled={isSubmitting}
         className={`w-full py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 active:scale-95 ${
           isSubmitting
-            ? 'bg-gray-400 cursor-not-allowed'
+            ? 'bg-gray-400 cursor-not-allowed text-gray-700'
             : submitStatus === 'success'
             ? 'bg-green-500 text-white'
             : 'bg-gradient-to-r from-[#D4A541] to-[#B8923A] text-black hover:shadow-2xl hover:shadow-[#D4A541]/50'
         }`}
       >
-        {isSubmitting ? (
-          <span className="flex items-center justify-center gap-2">
-            <svg className="animate-spin h-5 w-5" viewBox="0 0 24 24">
-              <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
-              <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
-            </svg>
-            Submitting...
-          </span>
-        ) : submitStatus === 'success' ? (
-          <span className="flex items-center justify-center gap-2">
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-            </svg>
-            Prenotazione confermata!
-          </span>
-        ) : (
-          'Prenota il tuo tavolo'
-        )}
+        {isSubmitting ? 'Invio in corso...' : submitStatus === 'success' ? 'Prenotazione confermata!' : 'Prenota il tuo tavolo'}
       </button>
 
       {/* Success Message */}
       {submitStatus === 'success' && (
         <div className="mt-4 p-4 bg-green-50 border border-green-200 rounded-xl text-center animate-fade-in">
-          <p className="text-green-700 font-medium">Thank you! We&apos;ll contact you shortly to confirm your reservation.</p>
+          <p className="text-green-700 font-medium">Grazie! Ti contatteremo a breve per confermare la prenotazione.</p>
         </div>
       )}
     </form>
