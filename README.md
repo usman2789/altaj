@@ -9,7 +9,7 @@ It features an elegant design with over **200 dynamic menu pages**, **email orde
 
 - Responsive and performance-optimized UI  
 - 200+ interactive Italian menu pages  
-- Order system with **email notifications**  
+- Reservation system with **email notifications**  
 - Direct **WhatsApp ordering**  
 - Deployed with **Vercel** for fast access  
 
@@ -20,7 +20,7 @@ It features an elegant design with over **200 dynamic menu pages**, **email orde
 - **Framework:** Next.js  
 - **Language:** TypeScript  
 - **Styling:** Tailwind CSS  
-- **Mail Service:** Nodemailer / Web3Forms  
+- **Mail Service:**  Web3Forms  
 - **Hosting:** Vercel  
 
 ---
