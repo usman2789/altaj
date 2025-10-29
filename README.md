@@ -1,44 +1,52 @@
-🍝 Al Taj – Italian Restaurant Website
+# 🍝 Al Taj – Italian Restaurant Website  
 
-A modern, fully responsive website for Al Taj, an Italian restaurant offering an elegant online dining experience with over 200 beautifully designed menu pages.
+**Al Taj** is a modern, responsive Italian restaurant website built with **Next.js** and **TypeScript**.  
+It features an elegant design with over **200 dynamic menu pages**, **email order notifications**, and **WhatsApp ordering integration** for quick communication.  
 
-Built with Next.js and TypeScript, it focuses on performance, design, and direct communication through email order notifications and WhatsApp integration.
+---
 
-🚀 Features
+## 🚀 Features  
 
-Fully responsive and fast-loading UI
+- Responsive and performance-optimized UI  
+- 200+ interactive Italian menu pages  
+- Order system with **email notifications**  
+- Direct **WhatsApp ordering**  
+- Deployed with **Vercel** for fast access  
 
-Interactive Italian menu (200+ pages)
+---
 
-Order system with email notifications
+## 🧩 Tech Stack  
 
-Direct WhatsApp ordering support
+- **Framework:** Next.js  
+- **Language:** TypeScript  
+- **Styling:** Tailwind CSS  
+- **Mail Service:** Nodemailer / Web3Forms  
+- **Hosting:** Vercel  
 
-Simple, elegant, and performance-optimized
+---
 
-🧩 Tech Stack
+## ⚡ Setup  
 
-Next.js
-
-TypeScript
-
-Tailwind CSS
-
-Nodemailer / Web3Forms
-
-Vercel (deployment)
-
-⚡ Setup
-git clone https://github.com/usman2789/al-taj.git
+Clone the repository:  
+```bash
+git clone https://github.com/your-username/al-taj.git
+```
+Navigate into the project directory:
+```bash
 cd al-taj
+```
+
+Install dependencies:
+```bash
 npm install
+```
+Run the development server:
+```bash
 npm run dev
-
-🌍 Deployment
-
-Deployed seamlessly on Vercel for fast global access and easy updates.
-
-👨‍💻 Developer
-
-Developed by Muhammad Usman
-Next.js · TypeScript · Tailwind CSS
+```
+Then open in your browser:
+```bash
+http://localhost:3000
+```
+Developed by Usman
+Built with ❤️ using Next.js, TypeScript, and Tailwind CSS
