@@ -117,6 +117,8 @@ const MenuPage = () => {
             <div className="w-16 h-1 bg-gradient-to-r from-transparent via-[#D4A541] to-transparent"></div>
           </div>
         </div>
+      </div>
+
       {/* Menu Categories */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {orderedCategories.map((category) => {
@@ -175,7 +177,6 @@ const MenuPage = () => {
       </div>
 
       {/* Call to Action */}
-
       <div className="bg-gradient-to-r from-[#D4A541]/10 via-[#D4A541]/5 to-[#D4A541]/10 py-16">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h3 className="text-3xl sm:text-4xl font-bold text-white mb-6">
