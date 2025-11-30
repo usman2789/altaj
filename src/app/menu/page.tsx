@@ -71,22 +71,22 @@ const MenuPage = () => {
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header with Button */}
-          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 mb-6">
-            <div className="text-center lg:text-left">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white">
+          <div className="flex flex-row items-center justify-between gap-4 mb-6">
+            <div className="text-left">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white">
                 Our <span className="text-[#D4A541]">Menu</span>
               </h1>
             </div>
             
             {/* Download Menu Button */}
-            <div className="flex justify-center lg:justify-end">
+            <div className="flex justify-end flex-shrink-0">
               <a
                 href="/altaj-menu.pdf"
                 download="Altaj-Menu.pdf"
-                className="bg-[#D4A541] hover:bg-[#B8941A] text-[#040402] font-bold py-3 px-6 sm:px-8 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
+                className="bg-[#D4A541] hover:bg-[#B8941A] text-[#040402] font-bold py-2 px-4 sm:py-3 sm:px-6 md:px-8 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl text-sm sm:text-base"
               >
                 <svg 
-                  className="w-5 h-5" 
+                  className="w-4 h-4 sm:w-5 sm:h-5" 
                   fill="none" 
                   stroke="currentColor" 
                   viewBox="0 0 24 24"
@@ -98,20 +98,21 @@ const MenuPage = () => {
                     d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" 
                   />
                 </svg>
-                <span className="whitespace-nowrap">Download Menu</span>
+                <span className="whitespace-nowrap hidden sm:inline">Download Menu</span>
+                <span className="whitespace-nowrap sm:hidden">Download</span>
               </a>
             </div>
           </div>
 
           {/* Description */}
-          <p className="text-xl sm:text-2xl text-gray-300 max-w-3xl text-center lg:text-left leading-relaxed mb-8">
+          <p className="text-lg sm:text-xl md:text-2xl text-gray-300 max-w-3xl leading-relaxed mb-8">
             Scopri i nostri sapori autentici provenienti da Pakistan, India e
             Italia. Ogni piatto è preparato con passione e con i migliori
             ingredienti.
           </p>
 
           {/* Decorative Elements */}
-          <div className="flex justify-center lg:justify-start mt-8 space-x-4">
+          <div className="flex justify-start mt-8 space-x-4">
             <div className="w-16 h-1 bg-gradient-to-r from-transparent via-[#D4A541] to-transparent"></div>
             <div className="w-4 h-1 bg-[#D4A541] rounded-full"></div>
             <div className="w-16 h-1 bg-gradient-to-r from-transparent via-[#D4A541] to-transparent"></div>
